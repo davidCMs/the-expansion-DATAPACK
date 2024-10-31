@@ -1,11 +1,11 @@
 # make the armor stand rotate slowly towards the players rotation.
-execute anchored eyes rotated as @p[tag=exp.spaceship_pilot] positioned ^ ^ ^4 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run tp @s ~ ~ ~ ~ ~
+execute on passengers on passengers anchored eyes rotated as @s[type=player,tag=exp.spaceship_pilot] on vehicle on vehicle positioned ^ ^ ^4 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
 
 # store rotation data of the armor stand and assign it to a scoreboard value.
 data modify storage expansion:rotation Rotation set from entity @s Rotation
 execute store result score #pitch exp.math run data get storage expansion:rotation Rotation[1] 1000
 execute store result score #yaw exp.math run data get storage expansion:rotation Rotation[0] 1000
-execute store result score #roll exp.math run data get entity @p[tag=exp.spaceship_pilot] Rotation[0] 1000
+execute store result score #roll exp.math on passengers on passengers run data get entity @s[tag=exp.spaceship_pilot] Rotation[0] 1000
 
 # calculate the motion vector values.
 function expansion:vehicles/spaceship/propulsion/motion_calculation

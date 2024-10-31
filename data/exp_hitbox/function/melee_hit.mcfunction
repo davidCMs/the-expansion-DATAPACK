@@ -2,8 +2,8 @@
 advancement revoke @s only exp_hitbox:attack_on_hitbox
 
 # store some info about the attack
-execute store result score @s exp.player_attack run attribute @s minecraft:generic.attack_damage get
-execute store result score @s exp.player_attack_speed run attribute @s minecraft:generic.attack_speed get 100
+execute store result score @s exp.player_attack run attribute @s minecraft:attack_damage get
+execute store result score @s exp.player_attack_speed run attribute @s minecraft:attack_speed get 100
 
 # drastically reduce the players attack damage if their attack cooldown is still active
 scoreboard players operation @s exp.player_attack_cooldown /= #20 exp.const

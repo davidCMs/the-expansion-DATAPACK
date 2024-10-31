@@ -12,7 +12,7 @@ execute on passengers if entity @s[type=item_display,tag=exp.spaceship_display] 
 
 tag @s remove exp.new_ship
 
-execute at @s rotated as @p[tag=exp.spaceship_pilot] run tp @s ~ ~ ~ ~ ~
+execute at @s rotated as @p[tag=exp.spaceship_pilot] run rotate @s ~ ~
 
 function expansion:vehicles/spaceship/propulsion/speed_percentage
 function expansion:utilities/fuel_percentage

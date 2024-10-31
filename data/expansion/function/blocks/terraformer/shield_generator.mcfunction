@@ -1,5 +1,5 @@
 # rotate the entity
-tp @s[scores={exp.counter_1=0}] ~ ~ ~ ~7 ~
+rotate @s[scores={exp.counter_1=0}] ~7 ~
 
 # cube and sphere mode particles and oxygen logic
 execute if score @s exp.counter_1 matches 0 positioned ~ ~0.5 ~ run function expansion:blocks/terraformer/sphere_mode

@@ -9,7 +9,7 @@ execute if entity @s[type=minecraft:marker,tag=exp.planetarium_neptune] at @s ru
 execute if entity @s[type=minecraft:marker,tag=exp.planetarium_pluto] at @s run tp @s ~ ~ ~ ~80 ~
 execute if entity @s[type=minecraft:marker,tag=exp.planetarium_moon] at @s run tp @s ~ ~ ~ ~360 ~
 execute if entity @s[type=minecraft:marker,tag=exp.planetarium_europa] at @s run tp @s ~ ~ ~ ~360 ~
-execute if entity @s[type=minecraft:marker,tag=exp.planetarium_asteroids] at @s run tp @s ~ ~ ~ ~ ~
+execute if entity @s[type=minecraft:marker,tag=exp.planetarium_asteroids] at @s run rotate @s ~ ~
 execute if entity @s[type=minecraft:marker,tag=exp.planetarium_ceres] at @s run tp @s ~ ~ ~ ~60 ~
 
 

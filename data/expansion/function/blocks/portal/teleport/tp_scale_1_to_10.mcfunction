@@ -5,9 +5,6 @@ execute store result entity @s Pos[2] double 10 run data get storage expansion:p
 
 # Teleport the player to the carrier armor stand. 
 # Note that the teleportation is rotated as the carrier armor stand which was previously rotated as the target portal.
-execute at @s if data storage expansion:portal portal_out[{dim:7}] in expansion:space align xyz positioned ~0.5 ~ ~0.5 run tp @e[tag=exp.teleported,limit=1,sort=nearest] ~ ~ ~ ~ ~
-execute at @s if data storage expansion:portal portal_out[{dim:8}] in expansion:asteroids align xyz positioned ~0.5 ~ ~0.5 run tp @e[tag=exp.teleported,limit=1,sort=nearest] ~ ~ ~ ~ ~
-
-execute at @e[tag=exp.teleported,limit=1,sort=nearest] run playsound expansion:portal.transport block @a ~ ~ ~ 1 1 0
+execute at @s as @p[tag=exp.teleported] run function expansion:blocks/portal/teleport/teleport
 
 kill @s

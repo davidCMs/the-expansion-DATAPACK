@@ -36,6 +36,13 @@
         "predicate": {
           "dimension": "expansion:europa"
         }
+      },
+      {
+        "condition": "minecraft:location_check",
+        "predicate": {
+          "dimension": "expansion:storage"
+        }
       }
+      
     ]
   }

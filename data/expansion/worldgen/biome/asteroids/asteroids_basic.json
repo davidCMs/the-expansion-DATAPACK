@@ -13,7 +13,7 @@
     "creature": [],
     "monster": []
   },
-  "carvers": {},
+  "carvers": [],
   "features": [
     [
       "expansion:asteroids/asteroid_big"

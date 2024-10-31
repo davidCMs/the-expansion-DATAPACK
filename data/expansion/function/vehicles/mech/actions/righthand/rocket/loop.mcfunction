@@ -2,7 +2,7 @@
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
 # rotate towards the target
-execute at @s anchored feet facing entity @n[type=!#expansion:ignore,tag=!exp.block,tag=!exp.vehicle,tag=!exp.ignore,predicate=expansion:compare_score/unique_id] eyes positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run tp @s ^ ^ ^ ~ ~
+execute at @s anchored feet facing entity @n[type=!#expansion:ignore,tag=!exp.block,tag=!exp.vehicle,tag=!exp.ignore,predicate=expansion:compare_score/unique_id] eyes positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
 
 # fly forwards with the current rotation
 execute at @s run tp @s ^ ^ ^1.5
@@ -10,12 +10,12 @@ execute at @s run tp @s ^ ^ ^1.5
 # add rome random patterns
 execute at @s if predicate expansion:chance/025_chance run tp @s ^ ^ ^ ~2 ~
 execute at @s if predicate expansion:chance/025_chance run tp @s ^ ^ ^ ~-2 ~
-execute at @s if predicate expansion:chance/025_chance run tp @s ^ ^ ^ ~ ~2
-execute at @s if predicate expansion:chance/025_chance run tp @s ^ ^ ^ ~ ~-2
+execute at @s if predicate expansion:chance/025_chance run rotate @s ~ ~2
+execute at @s if predicate expansion:chance/025_chance run rotate @s ~ ~-2
 
 # avoid nearby blocks
-execute at @s unless block ^ ^-1 ^ #expansion:air run tp @s ^ ^ ^ ~ ~-10
-execute at @s unless block ^ ^1 ^ #expansion:air run tp @s ^ ^ ^ ~ ~10
+execute at @s unless block ^ ^-1 ^ #expansion:air run rotate @s ~ ~-10
+execute at @s unless block ^ ^1 ^ #expansion:air run rotate @s ~ ~10
 execute at @s unless block ^-1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~-10 ~
 execute at @s unless block ^1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~10 ~
 

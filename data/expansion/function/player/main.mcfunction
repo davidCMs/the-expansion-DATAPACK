@@ -38,6 +38,7 @@ execute if score @s exp.death matches 1.. run function expansion:player/death
 
 # cooldown utility
 scoreboard players remove @s[scores={exp.cooldown=1..}] exp.cooldown 1
+scoreboard players remove @s[scores={exp.portal_cooldown=1..}] exp.portal_cooldown 1
 execute if score @s exp.warmup matches 1.. run function expansion:utilities/warmup/main
 
 # custom hitbox attack cooldown

@@ -1,1 +1,1 @@
-tp @s[tag=exp.buggy_turn] ~ ~ ~ ~4 ~
+rotate @s[tag=exp.buggy_turn] ~4 ~

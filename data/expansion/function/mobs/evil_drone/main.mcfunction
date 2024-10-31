@@ -15,5 +15,5 @@ particle minecraft:dust{color:[0d,1d,0.949d],scale:1.5} ^ ^.8 ^-0.7 0 0 0 0 1 fo
 execute on passengers if entity @s[nbt={HurtTime:9s}] run function expansion:mobs/evil_drone/hurt
 execute unless predicate expansion:passengers/drone_hitbox run function expansion:mobs/evil_drone/no_passenger
 
-# prevent drone from clipping into each other
-execute facing entity @e[type=armor_stand,tag=exp.evil_drone,distance=0.5..1.2,limit=1] feet if block ^ ^ ^-0.05 #expansion:air run tp @s ^ ^ ^-0.05
+# prevent drones from clipping into each other
+execute at @s facing entity @n[type=armor_stand,tag=exp.evil_drone,distance=0.5..1.2] feet if block ^ ^ ^-0.05 #expansion:air run tp @s ^ ^ ^-0.05

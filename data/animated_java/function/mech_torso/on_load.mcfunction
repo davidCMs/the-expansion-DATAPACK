@@ -27,4 +27,3 @@ scoreboard objectives add aj.empty_combo.frame dummy
 scoreboard objectives add aj.empty_shield.frame dummy
 scoreboard objectives add aj.empty_punch1_l.frame dummy
 scoreboard objectives add aj.empty_punch1_r.frame dummy
-execute as @e[type=item_display,tag=aj.mech_torso.root] unless score @s aj.is_rig_loaded matches 1 at @s run function animated_java:mech_torso/root/on_load

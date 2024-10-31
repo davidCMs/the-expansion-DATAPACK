@@ -7,7 +7,7 @@
     "water_color": 0,
     "water_fog_color": 512
   },
-  "carvers": {},
+  "carvers": [],
   "features": [
     [
       "expansion:moon/starsky_caves/stars"

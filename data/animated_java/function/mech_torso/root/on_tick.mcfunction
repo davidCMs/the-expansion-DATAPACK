@@ -30,6 +30,5 @@ execute if entity @s[tag=aj.mech_torso.animation.empty_combo.playing] run functi
 execute if entity @s[tag=aj.mech_torso.animation.empty_shield.playing] run function animated_java:mech_torso/animations/empty_shield/zzz/on_tick
 execute if entity @s[tag=aj.mech_torso.animation.empty_punch1_l.playing] run function animated_java:mech_torso/animations/empty_punch1_l/zzz/on_tick
 execute if entity @s[tag=aj.mech_torso.animation.empty_punch1_r.playing] run function animated_java:mech_torso/animations/empty_punch1_r/zzz/on_tick
-execute on passengers if entity @s[tag=aj.mech_torso.data] run function animated_java:mech_torso/root/zzz/1
-execute at @s on passengers run tp @s ~ ~ ~ ~ ~
+execute at @s on passengers run rotate @s ~ ~
 function #animated_java:mech_torso/as_root/post_tick

@@ -39,4 +39,8 @@ execute if score .bit10 exp.value matches 1 if data storage expansion:portal por
 execute if score .bit11 exp.value matches 0 if data storage expansion:portal portal_out[{bit11:1b}] run data modify storage expansion:portal portal_out[{bit11:1b}].matches set value 0b
 execute if score .bit11 exp.value matches 1 if data storage expansion:portal portal_out[{bit11:0b}] run data modify storage expansion:portal portal_out[{bit11:0b}].matches set value 0b
 
+# put self at the end of the array
+data modify storage expansion:portal temp set from storage expansion:portal portal_out[{matches:1b}]
 data remove storage expansion:portal portal_out[{matches:1b}]
+data modify storage expansion:portal portal_out append from storage expansion:portal temp
+data remove storage expansion:portal temp

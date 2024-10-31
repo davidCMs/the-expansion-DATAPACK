@@ -1,19 +1,24 @@
-# Synchronises the rotation of the armor stand with the target portals rotation.
+# Synchronises the rotation of the armor stand with the target portals rotation and load the dimension
 data modify entity @s Rotation[0] set from storage expansion:portal portal_out[0].facing
+execute store result score #temp exp.dim_test run data get storage expansion:portal portal_out[0].dim
 
-# Stores the dimensions of the home portal and the target portal in scoreboards.
-#execute store result score @s exp.dim_test run data get entity @e[type=minecraft:armor_stand,tag=exp.portal_main,limit=1,sort=nearest] ArmorItems[3].components.minecraft:custom_data.portal_array[0].dim
-execute store result score @s exp.dim_test run data get storage expansion:portal portal_out[0].dim
+execute store result score #origin exp.value run data get storage expansion:portal portal_out[-1].scale 10000
+execute store result score #origin exp.x run data get storage expansion:portal portal_out[-1].x 100
+execute store result score #origin exp.z run data get storage expansion:portal portal_out[-1].z 100
 
-# Remove the teleport tag within a few ticks
-schedule function expansion:blocks/portal/teleport/schedule_tp_tag 1t
+execute store result score #dest exp.value run data get storage expansion:portal portal_out[0].scale 100
+execute store result score #dest exp.x run data get storage expansion:portal portal_out[0].x 100
+execute store result score #dest exp.z run data get storage expansion:portal portal_out[0].z 100
 
-# Run different teleport functions depending on the home and target dimensions. This is necessary because the target coordinates need to be scaled according to the target dimension scale.
-# There is probably a better way to do this(like immediately taking the dimension scale into account when making the portal array but I'm really too tired to improve a single tick function)
-execute if score @s[tag=!exp.teleported,predicate=expansion:dimension/scale_1] exp.dim_test matches 0..6 run function expansion:blocks/portal/teleport/tp_scale_1
-execute if score @s[tag=!exp.teleported,predicate=expansion:dimension/scale_10] exp.dim_test matches 7..8 run function expansion:blocks/portal/teleport/tp_scale_10
-execute if score @s[tag=!exp.teleported,predicate=expansion:dimension/scale_1] exp.dim_test matches 0..6 run function expansion:blocks/portal/teleport/tp_scale_10_to_1
-execute if score @s[tag=!exp.teleported,predicate=expansion:dimension/scale_10] exp.dim_test matches 7..8 run function expansion:blocks/portal/teleport/tp_scale_1_to_10
+scoreboard players operation #origin exp.value /= #dest exp.value
+scoreboard players operation #dest exp.x *= #origin exp.value
+scoreboard players operation #dest exp.z *= #origin exp.value
 
-# add tag
-tag @s add exp.teleported
+execute store result entity @s Pos[0] double 0.0001 run scoreboard players get #dest exp.x
+execute store result entity @s Pos[1] double 0.01 run data get storage expansion:portal portal_out[0].y 100
+execute store result entity @s Pos[2] double 0.0001 run scoreboard players get #dest exp.z
+
+execute at @s as @p[tag=exp.teleported] run function expansion:blocks/portal/teleport/teleport
+
+kill @s
+scoreboard players reset #temp exp.dim_test

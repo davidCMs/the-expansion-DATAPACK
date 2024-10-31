@@ -5,7 +5,7 @@
     "equipment": {
       "mainhand": {
         "items": [
-          "minecraft:carrot_on_a_stick"
+          "minecraft:jigsaw"
         ],
         "predicates": {
           "minecraft:custom_data": "{portal_core:1b}"

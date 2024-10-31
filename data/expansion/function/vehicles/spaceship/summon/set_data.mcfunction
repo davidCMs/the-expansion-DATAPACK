@@ -10,7 +10,7 @@ execute on passengers if entity @s[type=minecraft:item_display,tag=exp.spaceship
 # switch the model to the landed version
 execute on passengers as @s[type=minecraft:item_display,tag=exp.spaceship_display] run function expansion:vehicles/spaceship/model_switching/increase_model
 
-execute on passengers run attribute @s[type=minecraft:armor_stand,tag=exp.spaceship_display] minecraft:generic.scale base set 1.4
+execute on passengers run attribute @s[type=minecraft:armor_stand,tag=exp.spaceship_display] minecraft:scale base set 1.4
 
 # apply nogravity if in a zero gravity environment
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}

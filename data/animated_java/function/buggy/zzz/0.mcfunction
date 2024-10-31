@@ -5,8 +5,8 @@ tag @s remove aj.new
 execute if data storage aj:temp args.variant run function animated_java:buggy/zzz/2 with storage aj:temp args
 execute unless data storage aj:temp args.animation run function animated_java:buggy/set_default_pose
 execute if data storage aj:temp args.animation run function animated_java:buggy/zzz/6 with storage aj:temp args
-tp @s ~ ~ ~ ~ ~
-execute at @s on passengers run tp @s ~ ~ ~ ~ ~
+rotate @s ~ ~
+execute at @s on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
 function #animated_java:buggy/as_root/on_summon

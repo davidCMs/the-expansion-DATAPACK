@@ -11,7 +11,7 @@ tag @e[type=interaction,tag=exp.new_rocket_lcdet_up,limit=1,sort=nearest] remove
 
 data merge entity @s {item:{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_model_data":123494}},teleport_duration:1,transformation:{scale:[1.0f,1.0f,1.0f],translation:[0.0f,0.5f,0.0f]}}
 
-execute positioned ^ ^ ^ rotated ~ ~ run tp @s ^ ^ ^ ~ ~
+execute positioned ^ ^ ^ rotated ~ ~ run rotate @s ~ ~
 
 scoreboard players set @s exp.max_range 100
 scoreboard players set @s exp.cooldown 5

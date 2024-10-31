@@ -1,4 +1,4 @@
-execute as @e[type=item_display,tag=aj.enhancer.root,distance=..1,limit=1,sort=nearest] run function animated_java:enhancer/animations/scanning/tween {to_frame: 15, duration: 30}
+execute as @n[type=item_display,tag=aj.enhancer.root,distance=..1] run function animated_java:enhancer/animations/scanning/tween {to_frame: 15, duration: 30}
 
 item replace entity @s container.0 from block ~ ~ ~ container.5
 

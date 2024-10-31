@@ -1,1 +1,1 @@
-attribute @s minecraft:generic.gravity modifier remove 28458
+attribute @s minecraft:gravity modifier remove 28458

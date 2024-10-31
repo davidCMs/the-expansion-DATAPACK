@@ -17,7 +17,7 @@ execute if entity @s[tag=exp.oxygenator] run return run function expansion:block
 # assembler
 execute if entity @s[tag=exp.assembler] positioned ~ ~-1 ~ run return run function expansion:blocks/assembler/main
 # portal
-execute if entity @s[tag=exp.portal_main,tag=exp.activated_portal] run return run function expansion:blocks/portal/main
+execute if entity @s[tag=exp.portal_main] run return run function expansion:blocks/portal/main
 # assembler
 execute if entity @s[tag=exp.tesla_coil] run return run function expansion:blocks/tesla_coil/main
 # modification station

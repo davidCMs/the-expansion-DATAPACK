@@ -1,4 +1,5 @@
 {
+  "name": "expansion:venus/facility_start_pool",
   "fallback": "minecraft:empty",
   "elements": [
     {

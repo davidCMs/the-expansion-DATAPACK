@@ -1,14 +1,13 @@
 # Put the portal animation on the head of the exp.portal_main armor stand. This item also stores all information in an array.
-item replace entity @s armor.head with minecraft:carrot_on_a_stick[minecraft:custom_model_data=1012604]
+data modify entity @s ArmorItems[3].components."minecraft:custom_model_data" set value 1012604
 
-# Create a unique ID for every portal which increments every time a new portal is activated. exp.counter_1 is the ID scoreboard for the portals.
-execute unless score @s exp.counter_1 matches 0.. run function expansion:blocks/portal/activation/assign_id
+playsound expansion:portal.activate ambient @a[distance=..10] ~ ~ ~ 1
+particle flash ~ ~1.2 ~
+particle explosion ~ ~1.2 ~
+particle end_rod ~ ~1.2 ~ 0 0 0 0.2 50
 
-# create the portal array and 'upload' it to the global portal array
-function expansion:blocks/portal/activation/create_array
-data modify storage expansion:portal portal_array append from entity @s ArmorItems[3].components.minecraft:custom_data.portal_array[]
-
-playsound expansion:portal.activate ambient @a ~ ~ ~ 1
+scoreboard players reset @s exp.timer_2
 
 # Add tag
 tag @s add exp.activated_portal
+tag @s remove exp.paused_portal

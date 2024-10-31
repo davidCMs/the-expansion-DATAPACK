@@ -6,4 +6,4 @@ execute if entity @s[tag=exp.barrel_open] if block ~ ~ ~ minecraft:barrel[open=f
 execute if entity @s[tag=exp.barrel_open] run function expansion:blocks/modification_station/interaction
 
 # rotate the little hud vehicle
-execute on passengers at @s run tp @s ~ ~ ~ ~1 ~
+execute on passengers at @s run rotate @s ~1 ~

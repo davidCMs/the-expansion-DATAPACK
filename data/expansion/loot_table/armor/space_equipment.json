@@ -102,8 +102,8 @@
               "function": "minecraft:set_attributes",
               "modifiers": [
                 {
-                  "attribute": "minecraft:generic.armor",
-                  "id": "generic.armor",
+                  "attribute": "minecraft:armor",
+                  "id": "armor",
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "head"

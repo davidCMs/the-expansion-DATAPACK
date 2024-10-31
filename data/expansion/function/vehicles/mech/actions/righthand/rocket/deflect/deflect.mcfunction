@@ -1,6 +1,6 @@
 execute on passengers run data remove entity @s interaction
 
-execute rotated as @p[tag=exp.deflected_rocket] positioned as @s run tp @s ^ ^ ^ ~ ~
+execute rotated as @p[tag=exp.deflected_rocket] positioned as @s run rotate @s ~ ~
 
 tag @e[tag=exp.mech_pilot,limit=1,sort=nearest] add exp.rocket_target
 

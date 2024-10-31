@@ -14,7 +14,7 @@ execute at @s anchored eyes positioned ^ ^ ^6 run function expansion:items/railg
 execute at @s anchored eyes positioned ^ ^ ^3 run function expansion:items/railgun/shoot_particles3
 
 # rotate the player a bit to simulate knockback from the gun
-tp @s ~ ~ ~ ~ ~-2
+rotate @s ~ ~-2
 
 # technical details
 scoreboard players set @s exp.cooldown 15

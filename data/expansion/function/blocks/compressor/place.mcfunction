@@ -1,7 +1,7 @@
-execute if entity @s[y_rotation=-135.1..-45] positioned ~ ~1 ~ rotated 90 0 run function animated_java:compressor/summon/default
-execute if entity @s[y_rotation=45.1..135] positioned ~ ~1 ~ rotated 270 0 run function animated_java:compressor/summon/default
-execute if entity @s[y_rotation=-45..45] positioned ~ ~1 ~ rotated 180 0 run function animated_java:compressor/summon/default
-execute if entity @s[y_rotation=135.1..-135] positioned ~ ~1 ~ rotated 360 0 run function animated_java:compressor/summon/default
+execute if entity @s[y_rotation=-135.1..-45] positioned ~ ~1 ~ rotated 90 0 run function animated_java:compressor/summon {args: {}}
+execute if entity @s[y_rotation=45.1..135] positioned ~ ~1 ~ rotated 270 0 run function animated_java:compressor/summon {args: {}}
+execute if entity @s[y_rotation=-45..45] positioned ~ ~1 ~ rotated 180 0 run function animated_java:compressor/summon {args: {}}
+execute if entity @s[y_rotation=135.1..-135] positioned ~ ~1 ~ rotated 360 0 run function animated_java:compressor/summon {args: {}}
 
 summon minecraft:armor_stand ~ ~ ~ {Silent:1b,Invulnerable:1b,NoGravity:1b,Marker:0b,Invisible:1b,DisabledSlots:2039583,Tags:["exp.compressor","exp.block","smithed.block"]}
 

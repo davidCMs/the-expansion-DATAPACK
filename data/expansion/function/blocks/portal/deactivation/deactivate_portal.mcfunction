@@ -1,7 +1,10 @@
 # Search the current portal in the global portal array and remove its entry.
 function expansion:blocks/portal/deactivation/search_match_id
-tag @s remove exp.activated_portal
 
-execute at @e[type=minecraft:armor_stand,tag=exp.portal_main,limit=1,sort=nearest] run playsound expansion:portal.shutdown ambient @a ~ ~ ~ 1
+function expansion:blocks/portal/deactivation/pause_portal
+#tag @s remove exp.paused_portal
 
 item replace entity @s armor.head with minecraft:air
+
+execute at @s run playsound expansion:portal.shutdown ambient @a[distance=..10] ~ ~ ~ 1
+execute at @s run particle poof ~ ~1.2 ~ 0 0 0 0 5

@@ -4,7 +4,7 @@ execute if entity @s[y_rotation=-45..45] run summon minecraft:armor_stand ^ ^ ^ 
 execute if entity @s[y_rotation=135.1..-135] run summon minecraft:armor_stand ^ ^ ^ {Silent:1b,NoAI:1b,Invulnerable:1b,Invisible:1b,Rotation:[0f,0f],Tags:["exp.mech","exp.new_vehicle","exp.vehicle","exp.moddable_vehicle","smithed.block"],ArmorItems:[{},{},{},{id:"minecraft:jigsaw",count:1,components:{"minecraft:custom_model_data":124401}}],Passengers:[{id:"minecraft:armor_stand",Marker:1b,Invisible:1b,Tags:["exp.AI_resetter"],Passengers:[{id:"minecraft:cat",Tags:["exp.mech_seat"],NoAI:1b,Silent:1b,Invulnerable:1b,active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:-1,show_particles:0b}]}]},{id:"minecraft:interaction",Tags:["exp.mech_rcdet","smithed.block"],width:2,height:2f,response:0b}],active_effects:[{id:"minecraft:invisibility",amplifier:1b,duration:1,show_particles:0b}]}
 
 # summon the animated java rigs
-execute positioned ~ ~1.48 ~ rotated as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function animated_java:mech_legs/summon/default
+execute positioned ~ ~1.48 ~ rotated as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function animated_java:mech_legs/summon {args: {}}
 execute positioned ~ ~1.48 ~ rotated as @e[type=armor_stand,tag=exp.mech,limit=1,sort=nearest] run function animated_java:mech_torso/summon/empty_both
 
 # mount the animated java rigs to the entity stack

@@ -4,6 +4,5 @@ execute unless score @s aj.is_rig_loaded matches 1 run function #animated_java:g
 function #animated_java:enhancer/as_root/pre_tick
 execute if entity @s[tag=aj.enhancer.animation.idle.playing] run function animated_java:enhancer/animations/idle/zzz/on_tick
 execute if entity @s[tag=aj.enhancer.animation.scanning.playing] run function animated_java:enhancer/animations/scanning/zzz/on_tick
-execute on passengers if entity @s[tag=aj.enhancer.data] run function animated_java:enhancer/root/zzz/1
-execute at @s on passengers run tp @s ~ ~ ~ ~ ~
+execute at @s on passengers run rotate @s ~ ~
 function #animated_java:enhancer/as_root/post_tick

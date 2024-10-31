@@ -43,7 +43,9 @@ scoreboard objectives add exp.mech_right_anim dummy
 scoreboard objectives add exp.timer_1 dummy
 scoreboard objectives add exp.timer_2 dummy
 scoreboard objectives add exp.cooldown dummy
+scoreboard objectives add exp.rboots_warmup dummy
 scoreboard objectives add exp.rboots_cooldown dummy
+scoreboard objectives add exp.portal_cooldown dummy
 scoreboard objectives add exp.warmup dummy
 # counters
 scoreboard objectives add exp.counter_1 dummy

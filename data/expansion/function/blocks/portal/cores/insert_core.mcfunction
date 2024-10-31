@@ -1,4 +1,4 @@
-item replace entity @s armor.head from entity @p weapon.mainhand expansion:portal/count_to_1
+item replace entity @s container.0 from entity @p weapon.mainhand expansion:portal/count_to_1
 
 function expansion:blocks/portal/cores/detect_color
 
@@ -9,6 +9,6 @@ execute if score @s exp.hold_count matches 1.. run item replace entity @p weapon
 execute if score @s exp.hold_count matches 0 run item replace entity @p weapon.mainhand with minecraft:air
 
 # exp.hold_value keeps track of core count
-execute as @e[type=minecraft:armor_stand,tag=exp.portal_main,limit=1,sort=nearest] run function expansion:blocks/portal/cores/add_core_count
+execute as @n[type=minecraft:armor_stand,tag=exp.portal_main,distance=..5] run function expansion:blocks/portal/cores/add_core_count
 
-playsound expansion:portal.insert_core block @a ~ ~ ~ 1 1 0
+playsound expansion:portal.insert_core block @a[distance=..10] ~ ~ ~ 1 1 0
