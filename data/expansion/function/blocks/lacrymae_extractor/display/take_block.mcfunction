@@ -3,6 +3,4 @@ execute if items entity @s container.0 obsidian run loot give @p loot minecraft:
 
 item replace entity @s container.0 with minecraft:air
 
-tag @s add exp.took_extraction_block
-
-tag @e[type=minecraft:armor_stand,tag=exp.lacrymae_extractor,limit=1,sort=nearest] remove exp.obsidian_inside
+execute on vehicle run scoreboard players set @s exp.timer_1 0

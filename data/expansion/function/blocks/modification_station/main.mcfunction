@@ -5,16 +5,16 @@ scoreboard players operation #modstation exp.unique_id = @s exp.unique_id
 execute unless block ~ ~ ~ minecraft:barrel run function expansion:blocks/modification_station/destroy
 
 # runs when a player is within 5 blocks
-execute if entity @p[distance=..5.5] run function expansion:blocks/modification_station/player_nearby
+execute if entity @p[distance=..6] run function expansion:blocks/modification_station/player_nearby
 
 # deselect the vehicle if none is found
-execute if entity @s[tag=exp.has_vehicle_selected] unless entity @e[type=minecraft:armor_stand,tag=exp.mod_vehicle,predicate=expansion:compare_score/modstation,distance=..50,limit=1] run function expansion:blocks/modification_station/select_vehicle/deselect
+execute if score @s exp.hold_value matches 1.. if predicate expansion:periodic/10 run function expansion:blocks/modification_station/select_vehicle/check
 
 # finish upgrading a vehicle
-execute if entity @s[tag=exp.modifying_vehicle] if score @s exp.timer_1 matches 1 run function expansion:blocks/modification_station/upgrade/finish
+execute if score @s exp.timer_1 matches 1 run function expansion:blocks/modification_station/upgrade/finish
 
 # movement of the little bots
-execute if score @s exp.counter_1 matches ..4 as @e[type=minecraft:armor_stand,tag=exp.mod_drone,predicate=expansion:compare_score/modstation,limit=5,sort=nearest] run function expansion:blocks/modification_station/mod_robots/main
+execute positioned ~ ~3 ~ on passengers if entity @s[tag=exp.modstation.bot_link] on origin run function expansion:blocks/modification_station/mod_robots/main
 
 # timer for upgrade
 scoreboard players remove @s[scores={exp.timer_1=1..}] exp.timer_1 1

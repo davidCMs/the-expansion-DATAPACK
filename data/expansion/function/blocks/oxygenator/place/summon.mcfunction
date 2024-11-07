@@ -1,0 +1,3 @@
+summon minecraft:item_display ~ ~1 ~ {Tags:["exp.oxygenator","exp.oxygenator.new","exp.block","smithed.block"],Passengers:[{id:"minecraft:marker",Tags:["exp.sphere_display","smithed.block"]}],transformation:{left_rotation:[0.0f,0.0f,0.0f,1.0f],right_rotation:[0.0f,0.0f,0.0f,1.0f],translation:[0.0f,-0.5f,0.0f],scale:[1.001f,1.001f,1.001f]},item:{id:"minecraft:carrot_on_a_stick",count:1,components:{"minecraft:custom_model_data":1012309}}}
+
+execute positioned ~ ~1 ~ as @n[type=minecraft:item_display,tag=exp.oxygenator.new,distance=..0.1] positioned ~ ~-1 ~ run function expansion:blocks/oxygenator/place/setup

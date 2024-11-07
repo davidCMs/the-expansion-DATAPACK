@@ -1,4 +1,4 @@
-execute store result score input exp.value run data get entity @s ArmorItems[3].components.minecraft:custom_data.portal_array[0].portal_id
+execute store result score input exp.value run data get entity @s item.components.minecraft:custom_data.portal_array[0].portal_id
 function expansion:blocks/portal/activation/dec_to_bin
 
 data modify storage expansion:portal portal_array[].matches set value 1b

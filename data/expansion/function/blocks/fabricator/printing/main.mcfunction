@@ -1,6 +1,3 @@
-# display the printed item
-execute if score @s exp.timer_1 matches 15 run item replace entity @e[type=minecraft:item_display,tag=exp.fabricator_display,limit=1,sort=nearest] container.0 from entity @s armor.feet
-
 # change the loader
 scoreboard players operation @s exp.hold_value_alt = @s exp.timer_1
 scoreboard players operation @s exp.hold_value_alt %= #3 exp.const

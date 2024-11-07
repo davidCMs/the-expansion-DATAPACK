@@ -39,11 +39,11 @@ execute store result storage expansion:portal init.portal_array[0].bit10 byte 1 
 execute store result storage expansion:portal init.portal_array[0].bit11 byte 1 run scoreboard players get .bit11 exp.value
 
 # Store the color code in the array.
-execute store result storage expansion:portal init.portal_array[0].core1 byte 1 run scoreboard players get @n[type=minecraft:item_display,tag=exp.port_1,distance=..5] exp.hold_value_alt
-execute store result storage expansion:portal init.portal_array[0].core2 byte 1 run scoreboard players get @n[type=minecraft:item_display,tag=exp.port_2,distance=..5] exp.hold_value_alt
-execute store result storage expansion:portal init.portal_array[0].core3 byte 1 run scoreboard players get @n[type=minecraft:item_display,tag=exp.port_3,distance=..5] exp.hold_value_alt
-execute store result storage expansion:portal init.portal_array[0].core4 byte 1 run scoreboard players get @n[type=minecraft:item_display,tag=exp.port_4,distance=..5] exp.hold_value_alt
-execute store result storage expansion:portal init.portal_array[0].core5 byte 1 run scoreboard players get @n[type=minecraft:item_display,tag=exp.port_5,distance=..5] exp.hold_value_alt
+execute store result storage expansion:portal init.portal_array[0].core1 byte 1 on passengers if entity @s[tag=exp.port_1] run scoreboard players get @s exp.hold_value_alt
+execute store result storage expansion:portal init.portal_array[0].core2 byte 1 on passengers if entity @s[tag=exp.port_2] run scoreboard players get @s exp.hold_value_alt
+execute store result storage expansion:portal init.portal_array[0].core3 byte 1 on passengers if entity @s[tag=exp.port_3] run scoreboard players get @s exp.hold_value_alt
+execute store result storage expansion:portal init.portal_array[0].core4 byte 1 on passengers if entity @s[tag=exp.port_4] run scoreboard players get @s exp.hold_value_alt
+execute store result storage expansion:portal init.portal_array[0].core5 byte 1 on passengers if entity @s[tag=exp.port_5] run scoreboard players get @s exp.hold_value_alt
 
 # Store the position in the array.
 execute store result score @s exp.dy run data get entity @s Pos[1] 100
@@ -54,7 +54,7 @@ execute store result storage expansion:portal init.portal_array[0].x double 0.01
 execute store result storage expansion:portal init.portal_array[0].z double 0.01 run data get entity @s Pos[2] 100
 
 # copy the storage to the entity
-data modify entity @s ArmorItems[3].components.minecraft:custom_data.portal_array set from storage expansion:portal init.portal_array
+data modify entity @s item.components.minecraft:custom_data.portal_array set from storage expansion:portal init.portal_array
 
 # copy the temp array to a permanent one
 data modify storage expansion:portal portal_array append from storage expansion:portal init.portal_array[]

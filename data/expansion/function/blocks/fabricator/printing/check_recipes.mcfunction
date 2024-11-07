@@ -1,2 +1,3 @@
 function expansion:blocks/fabricator/recipes
-execute if data entity @s ArmorItems[0].id run function expansion:blocks/fabricator/printing/prepare_print
+
+execute unless items entity @s container.0 jigsaw[custom_data={placeholder:1b}] run function expansion:blocks/fabricator/printing/prepare_print

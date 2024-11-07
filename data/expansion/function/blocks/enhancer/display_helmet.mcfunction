@@ -1,5 +1,5 @@
-execute as @n[type=item_display,tag=aj.enhancer.root,distance=..1] run function animated_java:enhancer/animations/scanning/tween {to_frame: 15, duration: 30}
+execute on passengers if entity @s[tag=aj.enhancer.root] run function animated_java:enhancer/animations/scanning/tween {to_frame: 15, duration: 30}
 
-item replace entity @s container.0 from block ~ ~ ~ container.5
+item replace entity @s container.0 from block ~ ~-1 ~ container.5
 
-execute on vehicle run function expansion:blocks/enhancer/upgrade/remove
+function expansion:blocks/enhancer/upgrade/remove

@@ -1,3 +1,3 @@
 advancement revoke @s only expansion:utility/rocketpart_lc
 
-execute as @e[type=minecraft:armor_stand,tag=exp.rocket_part,distance=..7,limit=1,sort=nearest] run function expansion:blocks/rocket_parts/destroy
+execute as @n[type=minecraft:item_display,tag=exp.rocket_part,distance=..7] run function expansion:blocks/rocket_parts/destroy

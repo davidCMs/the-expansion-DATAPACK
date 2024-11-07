@@ -30,7 +30,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{portal_core:1b,green_core:1b}"
+              "tag": "{portal_core:1b,green_core:1b,core_id:2}"
             }
           ]
         }

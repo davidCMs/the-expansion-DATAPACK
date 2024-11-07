@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"exp.enhancer_rcdet\"]}"
+              "nbt": "{Tags:[\"exp.enhancer.rcdet\"]}"
             }
           }
         ]
@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:blocks/enhancer/interaction/click"
+    "function": "expansion:blocks/enhancer/interaction/interact"
   }
 }

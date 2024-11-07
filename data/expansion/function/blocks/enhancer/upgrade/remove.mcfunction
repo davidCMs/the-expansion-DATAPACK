@@ -2,4 +2,4 @@ execute unless items block ~ ~ ~ container.0 * if data block ~ ~ ~ Items[{Slot:5
 execute unless items block ~ ~ ~ container.3 * if data block ~ ~ ~ Items[{Slot:5b}].components.minecraft:custom_data.ModStorage.protection run function expansion:blocks/enhancer/upgrade/remove/protection
 execute unless items block ~ ~ ~ container.6 * if data block ~ ~ ~ Items[{Slot:5b}].components.minecraft:custom_data.ModStorage.utility run function expansion:blocks/enhancer/upgrade/remove/utility
 
-execute on passengers run item replace entity @s container.0 from block ~ ~ ~ container.5
+item replace entity @s container.0 from block ~ ~ ~ container.5

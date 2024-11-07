@@ -9,5 +9,4 @@ tp @s ~ ~ ~ ~ ~
 execute at @s on passengers run rotate @s ~ ~
 data modify entity @s teleport_duration set value 1
 execute on passengers run data modify entity @s teleport_duration set value 1
-function expansion:blocks/assembler/place/root
 function #animated_java:assembler/as_root/on_summon

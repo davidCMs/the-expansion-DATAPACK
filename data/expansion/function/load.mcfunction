@@ -55,6 +55,9 @@ scoreboard objectives add exp.hold_count dummy
 scoreboard objectives add exp.x dummy
 scoreboard objectives add exp.y dummy
 scoreboard objectives add exp.z dummy
+scoreboard objectives add exp.yaw dummy
+scoreboard objectives add exp.pitch dummy
+scoreboard objectives add exp.roll dummy
 # pocket space utility
 scoreboard objectives add exp.unique_id dummy
 # weapons/damage

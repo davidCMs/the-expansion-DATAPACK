@@ -86,3 +86,5 @@ particle end_rod ^-2.669 ^39.911 ^0.000 0 0 0 0 1 force @a
 particle end_rod ^0.325 ^39.999 ^0.000 0 0 0 0 1 force @a
 
 particle end_rod ~ ~ ~ 0 20 0 0 10 force @a
+
+rotate @s ~7 ~

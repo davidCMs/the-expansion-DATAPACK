@@ -9,7 +9,7 @@ scoreboard players operation #search exp.unique_id = @s exp.unique_id
 execute if score @s exp.rightclick matches 1.. if predicate expansion:nbt_checks/selected_item/expansion_coas run function expansion:player/rightclick/main
 
 # oxygen regulation
-execute if entity @s[tag=exp.has_oxygen] unless entity @e[type=minecraft:armor_stand,tag=exp.oxygenator,tag=exp.scanning,distance=..20,limit=1,sort=nearest] run function expansion:mechanics/oxygen/remove_oxygen_tag
+#execute if entity @s[tag=exp.has_oxygen] unless entity @e[type=minecraft:armor_stand,tag=exp.oxygenator,tag=exp.scanning,distance=..20,limit=1,sort=nearest] run function expansion:mechanics/oxygen/remove_oxygen_tag
 
 # run the vehicle functions if the player is inside a vehicle
 execute if entity @s[tag=exp.inside_vehicle] run function expansion:vehicles/main

@@ -1,1 +1,0 @@
-execute as @p[tag=exp.inside_portal] run function expansion:blocks/portal/teleport/remove_inside_tag

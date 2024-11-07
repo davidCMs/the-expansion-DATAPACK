@@ -6,6 +6,3 @@ loot insert ~ ~ ~ loot expansion:items/fuel/lacrymae
 execute on passengers run item replace entity @s[tag=exp.extractor_display] container.0 with minecraft:obsidian
 
 scoreboard players set @s exp.timer_1 0
-
-# remove the tag
-tag @s remove exp.obsidian_inside

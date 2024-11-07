@@ -9,7 +9,7 @@
             "entity": "this",
             "predicate": {
               "type": "minecraft:interaction",
-              "nbt": "{Tags:[\"exp.extractor_rcdet\"]}"
+              "nbt": "{Tags:[\"exp.extractor.rcdet\"]}"
             }
           }
         ]

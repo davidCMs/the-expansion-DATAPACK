@@ -1,26 +1,28 @@
+execute if block ~ ~ ~ minecraft:barrel if entity @p[distance=..6] run function expansion:utilities/barrel/toggle_open
+
 # terraformer
-execute if entity @s[tag=exp.shield_generator] run return run function expansion:blocks/terraformer/main
+execute if entity @s[tag=exp.terraformer] run return run function expansion:blocks/terraformer/main
 # lacrymae extractor
-execute if entity @s[tag=exp.lacrymae_extractor] run return run function expansion:blocks/lacrymae_extractor/main
+execute if entity @s[tag=exp.lacrymae_extractor] if entity @p[distance=..50] run return run function expansion:blocks/lacrymae_extractor/main
 # planetarium
-execute if entity @s[tag=exp.planetarium] run return run function expansion:blocks/planetarium/main
+execute if entity @s[tag=exp.planetarium] if entity @p[distance=..50] run return run function expansion:blocks/planetarium/main
 # compressor
-execute if entity @s[tag=exp.compressor] run return run function expansion:blocks/compressor/main
+execute if entity @s[tag=exp.compressor] if entity @p[distance=..50] run return run function expansion:blocks/compressor/main
 # enhancer
-execute if entity @s[tag=exp.enhancer] run return run function expansion:blocks/enhancer/main
+execute if entity @s[tag=exp.enhancer] if entity @p[distance=..50] run return run function expansion:blocks/enhancer/main
 # arc furnace
-execute if entity @s[tag=exp.arc_furnace] run return run function expansion:blocks/arc_furnace/main
+execute if entity @s[tag=exp.arc_furnace] if entity @p[distance=..50] run return run function expansion:blocks/arc_furnace/main
 # fabricator
-execute if entity @s[tag=exp.fabricator] run return run function expansion:blocks/fabricator/main
+execute if entity @s[tag=exp.fabricator] if entity @p[distance=..50] run return run function expansion:blocks/fabricator/main
 # oxygenator
-execute if entity @s[tag=exp.oxygenator] run return run function expansion:blocks/oxygenator/main
+execute if entity @s[tag=exp.oxygenator] if entity @p[distance=..50] run return run function expansion:blocks/oxygenator/main
 # assembler
-execute if entity @s[tag=exp.assembler] positioned ~ ~-1 ~ run return run function expansion:blocks/assembler/main
+execute if entity @s[tag=exp.assembler] if entity @p[distance=..50] run return run function expansion:blocks/assembler/main
 # portal
-execute if entity @s[tag=exp.portal_main] run return run function expansion:blocks/portal/main
-# assembler
-execute if entity @s[tag=exp.tesla_coil] run return run function expansion:blocks/tesla_coil/main
+execute if entity @s[tag=exp.portal] if entity @p[distance=..50] at @s run return run function expansion:blocks/portal/main
+# tesla coil
+execute if entity @s[tag=exp.tesla_coil] if entity @p[distance=..50] run return run function expansion:blocks/tesla_coil/main
 # modification station
-execute if entity @s[tag=exp.modstation] run return run function expansion:blocks/modification_station/main
+execute if entity @s[tag=exp.modstation] if entity @p[distance=..50] run return run function expansion:blocks/modification_station/main
 # drone home
-execute if entity @s[tag=exp.drone_home] run function expansion:mobs/evil_drone/drone_home/tick
+execute if entity @s[tag=exp.drone_home] at @s run return run function expansion:mobs/evil_drone/drone_home/main

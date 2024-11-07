@@ -2,7 +2,7 @@
 tag @s add exp.teleported
 
 # prepate the teleport array
-execute as @n[type=armor_stand,tag=exp.activated_portal,distance=..0.1] run function expansion:blocks/portal/prepare_array
+execute as @n[type=item_display,tag=exp.activated_portal,distance=..0.1] run function expansion:blocks/portal/prepare_array
 
 # If everything is valid, proceed to the teleportation.
 execute if score #temp exp.hold_count matches 2 summon minecraft:marker run function expansion:blocks/portal/teleport/teleportation_stage_2
