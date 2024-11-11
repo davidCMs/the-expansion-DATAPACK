@@ -1,6 +1,3 @@
-# set the score of the display equal to the score of the ship
-execute store result score @s exp.unique_id on vehicle run scoreboard players get @s exp.unique_id
-
 # merge the mod array with the spaceship
 data modify entity @s item.components.minecraft:custom_data.ModStorage merge from storage expansion:temp ModStorage
 
@@ -9,6 +6,5 @@ data modify entity @s item.components.minecraft:custom_model_data set from stora
 
 # remove tag
 execute on vehicle run tag @s remove exp.being_modified
-scoreboard players reset @s exp.unique_id
 
 

@@ -1,4 +1,0 @@
-execute if items block ~ ~ ~ container.0 *[custom_data~{fuel_mod:1}] if data entity @s item.components.minecraft:custom_data.ModStorage.fuel.id run item replace block ~ ~ ~ container.0 with minecraft:air
-execute if items block ~ ~ ~ container.9 *[custom_data~{blaster_mod:1}] if data entity @s item.components.minecraft:custom_data.ModStorage.blaster.id run item replace block ~ ~ ~ container.9 with minecraft:air
-execute if items block ~ ~ ~ container.18 *[custom_data~{speed_mod:1}] if data entity @s item.components.minecraft:custom_data.ModStorage.speed.id run item replace block ~ ~ ~ container.18 with minecraft:air
-execute if items block ~ ~ ~ container.5 *[custom_data~{spaceship_skin:1}] if data entity @s item.components.minecraft:custom_data.ModStorage.skin.id run item replace block ~ ~ ~ container.5 with minecraft:air

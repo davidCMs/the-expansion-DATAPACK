@@ -9,4 +9,5 @@ execute if score @s exp.hold_value matches 3 on passengers if entity @s[tag=exp.
 data remove entity @s item.components.minecraft:custom_data.ModStorage
 data remove storage expansion:temp ModStorage
 
+scoreboard players reset @s exp.timer_1
 tag @s remove exp.modifying_vehicle
