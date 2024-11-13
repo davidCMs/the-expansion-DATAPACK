@@ -1,19 +1,33 @@
-execute if entity @s[tag=exp.initiate] run function expansion:blocks/oxygenator/oxygenate/scan/init
+# initiate the scan
+execute if score @s exp.timer_1 matches 1 run function expansion:blocks/oxygenator/oxygenate/scan/init
+scoreboard players add @s exp.timer_1 1
 
-execute unless score @s exp.counter_1 > @s exp.hold_value run function expansion:blocks/oxygenator/oxygenate/fill_space/main
+# visualize airflow
+execute if entity @s[tag=exp.displaying_air] on passengers if entity @s[tag=exp.scanner_link] on origin at @s run particle end_rod ~ ~.5 ~
 
-execute unless score @s exp.timer_1 matches 1.. run function expansion:blocks/oxygenator/leaves/leaves_check
+# reset the score that keeps track of the amount of currently present scanners
+scoreboard players reset @s exp.hold_value
 
-# conditions that decide if a scan is succesful or not
-execute unless entity @s[tag=exp.scanning] run function expansion:blocks/oxygenator/oxygenate/success
-execute if score @s exp.counter_1 > @s exp.hold_value run function expansion:blocks/oxygenator/oxygenate/fail
-execute if entity @e[type=minecraft:marker,tag=exp.oxygen_marker,distance=19..20,limit=1,sort=furthest] run function expansion:blocks/oxygenator/oxygenate/fail
+# reset flow control counters, these limit the amount of snowballs that scan every tick
+scoreboard players reset #temp exp.counter_1
+scoreboard players reset #temp exp.counter_2
 
-scoreboard players remove @s exp.timer_1 1
+# signal to all the oxygen markers whether or not the base is already pressurized
+# used to give players entering a pressurized base instant access to oxygen instead of having to wait until the end of the current scan
+execute store success score #temp exp.oxygen_max if entity @s[tag=exp.pressurized]
 
-# give players who have been hit by the wave oxygen
-execute at @a[distance=..20,tag=!exp.inside_check] positioned ~ ~1 ~ if entity @e[type=minecraft:marker,tag=exp.oxygen_marker,distance=..1.4,limit=1,sort=arbitrary] run function expansion:blocks/oxygenator/oxygenate/give_oxygen
+# fill the base with oxygen markers
+execute at @s on passengers if entity @s[type=snowball,tag=exp.scanner_link] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
 
-# particles
+# remove leaves from the block
+execute if predicate expansion:periodic/200 run item modify block ~ ~ ~ container.6 expansion:utility/reduce_count
+
+# in and outtake particles
 function expansion:blocks/oxygenator/particles
 
+# merge the number of current scans with the score of the text display
+execute if predicate expansion:periodic/2 on passengers if entity @s[type=text_display] run function expansion:blocks/oxygenator/gui/text_display/merge_scan_score
+
+# run when a scan finishes for whatever reason
+execute store result score @s exp.bool run function expansion:blocks/oxygenator/oxygenate/scan/check_valid
+execute if score @s exp.bool matches 1.. run function expansion:blocks/oxygenator/oxygenate/scan/finish

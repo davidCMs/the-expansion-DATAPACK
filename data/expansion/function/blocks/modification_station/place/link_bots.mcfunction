@@ -1,3 +1,3 @@
 execute summon item_display run function expansion:blocks/modification_station/place/summon_bots
 
-function expansion:utilities/link_snowball_from_storage
+function expansion:utilities/snowball_link/link_from_storage

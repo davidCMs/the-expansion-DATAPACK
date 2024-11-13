@@ -1,6 +1,6 @@
 playsound expansion:drone.dismiss neutral @a ~ ~ ~
 
-execute as @s on passengers run kill @s
+execute on passengers run kill @s
 kill @s
 
 # give the player the drone, or spawn it if this function is called from player_death

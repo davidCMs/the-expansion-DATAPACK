@@ -1,6 +1,7 @@
 execute as @p unless entity @s[gamemode=creative] run loot spawn ~ ~ ~ loot expansion:blocks/oxygenator
 
-execute if entity @s[tag=exp.scanning] run function expansion:blocks/oxygenator/oxygenate/fail
+scoreboard players set @s exp.bool -1
+execute if score @s exp.timer_1 matches 1.. run function expansion:blocks/oxygenator/oxygenate/fail
 
 execute on passengers run kill @s
 

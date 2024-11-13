@@ -1,7 +1,7 @@
 scoreboard players reset #temp exp.hold_value
 
 # link the vehicle to the snowball
-execute on passengers if entity @s[tag=exp.modstation.vehicle_link] run function expansion:utilities/link_snowball_from_storage
+execute on passengers if entity @s[tag=exp.modstation.vehicle_link] run function expansion:utilities/snowball_link/link_from_storage
 
 # tag the vehicle
 execute on passengers if entity @s[tag=exp.modstation.vehicle_link] on origin run function expansion:blocks/modification_station/select_vehicle/on_vehicle

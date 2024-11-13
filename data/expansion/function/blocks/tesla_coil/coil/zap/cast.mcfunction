@@ -1,6 +1,11 @@
-summon minecraft:marker ~ ~1.75 ~ {Tags:["exp.zap"]}
-execute at @s positioned ~ ~2 ~ facing ~ ~3 ~ run tp @e[type=minecraft:marker,tag=exp.zap,limit=1,sort=nearest] ~ ~ ~ ~ ~
-execute as @e[type=minecraft:marker,tag=exp.zap,limit=1,sort=nearest] at @s run function expansion:blocks/tesla_coil/coil/zap/loop
-kill @e[type=minecraft:marker,tag=exp.zap,limit=1,sort=nearest]
+tag @s add exp.zap
 
-function expansion:blocks/tesla_coil/coil/zap/sound
+function expansion:utilities/snowball_link/link_from_storage
+
+rotate @s facing ~ ~3 ~
+
+execute at @s store result score @s exp.bool run function expansion:blocks/tesla_coil/coil/zap/loop
+
+execute on origin run tag @s remove exp.zap_target
+
+kill @s

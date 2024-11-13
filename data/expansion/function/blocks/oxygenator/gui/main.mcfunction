@@ -1,7 +1,7 @@
 execute unless items block ~ ~ ~ container.0 * run loot replace block ~ ~ ~ container.0 loot expansion:items/gui/icons/air
 
-execute unless items block ~ ~ ~ container.1 * if score @s exp.bool matches 0 run loot replace block ~ ~ ~ container.1 loot expansion:items/gui/icons/pressure
-execute unless items block ~ ~ ~ container.1 * if score @s exp.bool matches 1 run loot replace block ~ ~ ~ container.1 loot expansion:items/gui/icons/depressure
+execute unless items block ~ ~ ~ container.1 * unless score @s exp.timer_1 matches 1.. run loot replace block ~ ~ ~ container.1 loot expansion:items/gui/icons/pressure
+execute unless items block ~ ~ ~ container.1 * if score @s exp.timer_1 matches 1.. run loot replace block ~ ~ ~ container.1 loot expansion:items/gui/icons/depressure
 
 execute unless items block ~ ~ ~ container.2 * run loot replace block ~ ~ ~ container.2 loot expansion:items/gui/icons/sphere
 

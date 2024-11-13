@@ -1,3 +1,3 @@
 tag @s add exp.pressurized
-title @a[tag=exp.inside_check,distance=..20] subtitle {"translate":"exp_screentxt_oxygen_breathe"}
-title @a[tag=exp.inside_check,distance=..20] title {"translate":"exp_screentxt_oxygen_pressuresuccess"}
+
+execute on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/pressurized

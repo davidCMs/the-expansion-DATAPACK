@@ -49,8 +49,15 @@ scoreboard players set @s[scores={exp.player_attack_cooldown=..-1}] exp.player_a
 scoreboard players set @s[scores={exp.jump=1..}] exp.jump 0
 scoreboard players set @s[scores={exp.rightclick=1..}] exp.rightclick 0
 
+## stinky section
 # delete gui items
 clear @s minecraft:jigsaw[custom_data~{gui_item:1b}]
+# kill gui items
+execute if predicate expansion:periodic/5 run kill @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{gui_item:1b}}}},distance=..20,limit=10,sort=arbitrary]
+# remove water when mining ores
+execute if predicate expansion:periodic/5 as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{expansion_ore:1b}}}},distance=..10,limit=1] at @s run function expansion:blocks/ores/fix_water
+# craft fabricator
+execute if predicate expansion:periodic/5 at @e[type=item,nbt={Item:{id:"minecraft:jigsaw",components:{"minecraft:custom_data":{steel_ingot:1b}},count:15}},distance=..10,limit=1,sort=arbitrary] if entity @e[type=item,nbt={Item:{id:"minecraft:diamond",count:2}},distance=..1.5,limit=1,sort=arbitrary] if entity @e[type=item,nbt={Item:{id:"minecraft:copper_ingot",count:5}},distance=..1.5,limit=1,sort=arbitrary] if entity @e[type=item,nbt={Item:{id:"minecraft:crafting_table",count:1}},distance=..1.5,limit=1,sort=arbitrary] run function expansion:blocks/fabricator/create
 
 # remove ticking tag
 tag @s remove exp.tick_player

@@ -9,6 +9,3 @@ execute as @e[type=#expansion:block_base,tag=exp.block] at @s positioned ~ ~-1 ~
 
 # slowcasting
 execute as @e[type=#expansion:slowcasters,tag=exp.slowcast] at @s run function expansion:utilities/raycast/slowcast/main
-
-# remove water when mining ores
-execute as @e[type=item,nbt={Item:{components:{"minecraft:custom_data":{expansion_ore:1b}}}},limit=1,sort=arbitrary] at @s run function expansion:blocks/ores/fix_water

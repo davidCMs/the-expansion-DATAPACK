@@ -1,0 +1,10 @@
+{
+	"replace": false,
+	"values": [
+		"minecraft:marker",
+		"minecraft:item_display",
+		"minecraft:interaction",
+		"minecraft:player",
+		"minecraft:armor_stand"
+	]
+}

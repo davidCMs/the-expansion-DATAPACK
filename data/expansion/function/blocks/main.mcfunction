@@ -1,5 +1,11 @@
-execute if block ~ ~ ~ minecraft:barrel if entity @p[distance=..6] run function expansion:utilities/barrel/toggle_open
+## global block logic
+# check if a player is nearby
+tag @s[tag=exp.player_nearby] remove exp.player_nearby
+execute if entity @p[distance=..6] run tag @s add exp.player_nearby
+# toggle the barrel for barrel UI blocks
+execute if block ~ ~ ~ minecraft:barrel if entity @s[tag=exp.player_nearby] run function expansion:utilities/barrel/toggle_open
 
+## specific block logic
 # terraformer
 execute if entity @s[tag=exp.terraformer] run return run function expansion:blocks/terraformer/main
 # lacrymae extractor
@@ -15,7 +21,7 @@ execute if entity @s[tag=exp.arc_furnace] if entity @p[distance=..50] run return
 # fabricator
 execute if entity @s[tag=exp.fabricator] if entity @p[distance=..50] run return run function expansion:blocks/fabricator/main
 # oxygenator
-execute if entity @s[tag=exp.oxygenator] if entity @p[distance=..50] run return run function expansion:blocks/oxygenator/main
+execute if entity @s[tag=exp.oxygenator] run return run function expansion:blocks/oxygenator/main
 # assembler
 execute if entity @s[tag=exp.assembler] if entity @p[distance=..50] run return run function expansion:blocks/assembler/main
 # portal

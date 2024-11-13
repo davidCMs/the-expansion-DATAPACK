@@ -1,1 +1,0 @@
-execute unless block ~ ~ ~ #expansion:airtight unless entity @n[type=minecraft:marker,distance=..0.001] run function expansion:blocks/oxygenator/oxygenate/fill_space/summon_scanner

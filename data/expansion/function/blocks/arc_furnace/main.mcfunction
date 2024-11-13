@@ -9,4 +9,4 @@ execute on passengers if items entity @s container.0 * on vehicle run function e
 execute if entity @s[tag=exp.smelting] on passengers unless items entity @s container.0 * on vehicle run function expansion:blocks/arc_furnace/switch_model/turn_off
 
 # gui functions
-execute if entity @p[distance=..6] run function expansion:blocks/arc_furnace/gui
+execute if entity @s[tag=exp.player_nearby] run function expansion:blocks/arc_furnace/gui

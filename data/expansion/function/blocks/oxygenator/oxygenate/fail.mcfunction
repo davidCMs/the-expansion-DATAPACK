@@ -1,28 +1,31 @@
-# finish the scan by killing all the armor stands and resetting the block counter
-kill @e[type=minecraft:marker,tag=exp.oxygen_marker,distance=..20]
-scoreboard players set @s exp.counter_1 0
-scoreboard players set @s exp.counter_2 0
-item replace block ~ ~ ~ container.1 with minecraft:air
+# prompt players inside with what happened
+execute if score @s exp.bool matches 2 on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/blockcap
+execute if score @s exp.bool matches 3 on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/scancap
+execute if score @s exp.bool matches 4 on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/noleaves
+execute if score @s exp.bool matches 5 on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/button
+execute if score @s exp.bool matches 6 on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/toolong
+execute if score @s exp.bool matches -1 on passengers if entity @s[tag=exp.oxygen_link] on origin run function expansion:blocks/oxygenator/oxygenate/titles/button
 
-# remove players oxygen supply
-execute if entity @s[tag=!exp.pressurized,tag=!exp.leaves_depleted] run title @a[tag=!exp.has_oxygen,distance=..20] subtitle {"translate":"exp_screentxt_oxygen_basetoobig"}
-execute if entity @s[tag=!exp.pressurized,tag=!exp.leaves_depleted] run title @a[tag=!exp.has_oxygen,distance=..20] title {"translate":"exp_screentxt_oxygen_pressurefail"}
+# trigger gui flash if leaves are missing
+execute if score @s exp.bool matches 4 run scoreboard players set @s exp.cooldown 20
 
-execute if entity @s[tag=exp.pressurized,tag=!exp.leaves_depleted] run title @a[tag=exp.has_oxygen,distance=..20] subtitle {"translate":"exp_screentxt_oxygen_nobreathe"}
-execute if entity @s[tag=exp.pressurized,tag=!exp.leaves_depleted] run title @a[tag=exp.has_oxygen,distance=..20] title {"translate":"exp_screentxt_oxygen_pressurestop"}
+# remove all the oxygen scanner markers
+execute on passengers if entity @s[tag=exp.scanner_link] run function expansion:blocks/oxygenator/oxygenate/fill_space/remove_link
+# remove oxygen from connected players
+execute on passengers if entity @s[tag=exp.oxygen_link] run function expansion:blocks/oxygenator/oxygenate/oxygen_link/remove
 
-execute if entity @s[tag=exp.leaves_depleted] run title @a[tag=exp.has_oxygen,distance=..20] subtitle {"translate":"exp_screentxt_oxygen_noleaves"}
-execute if entity @s[tag=exp.leaves_depleted] run title @a[tag=exp.has_oxygen,distance=..20] title {"translate":"exp_screentxt_oxygen_pressurefail"}
+# stop the fan
+function expansion:blocks/oxygenator/gui/animated_texture/stop
 
-tag @e[tag=exp.has_oxygen,distance=..20] remove exp.has_oxygen
-tag @e[tag=exp.inside_check,distance=..20] remove exp.inside_check
-
-data modify entity @s ArmorItems[3].components.minecraft:custom_model_data set value 1012309
-
-scoreboard players reset @s exp.timer_1
-
-# remove the tag that ensures immediate access to oxygen, the base will have to be entirely reexp.pressurized.
+# remove the tag that ensures immediate access to oxygen, the base will have to be entirely repressurized.
+# remove button stop tag
 tag @s remove exp.pressurized
+tag @s remove exp.depressurize
 
-# stop the scan
-tag @s remove exp.scanning
+# prevent another scan
+scoreboard players reset @s exp.timer_1
+scoreboard players set @s exp.hold_count 0
+scoreboard players set @s exp.hold_value 0
+
+# update the button
+loot replace block ~ ~ ~ container.1 loot expansion:items/gui/icons/pressure

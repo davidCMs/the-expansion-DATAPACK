@@ -1,8 +1,8 @@
-execute if entity @e[type=minecraft:armor_stand,tag=exp.active_coil,distance=0.9..10,limit=1] run function expansion:blocks/tesla_coil/coil/target_entity
+# choose a target and cast a zap to it
+execute if function expansion:blocks/tesla_coil/coil/choose_target on passengers if entity @s[type=snowball] run function expansion:blocks/tesla_coil/coil/add_target
 
-execute unless entity @s[tag=exp.has_zapped] if entity @e[type=#expansion:turret_target,distance=0.9..10,limit=1] run function expansion:blocks/tesla_coil/coil/target_entity
+# apply the cooldown if the 
+execute if score #temp exp.bool matches 1 run scoreboard players set @s exp.cooldown 20
 
 # idle particle
 particle minecraft:electric_spark ~ ~1.9 ~ 0.3 0.1 0.3 0 1 force
-
-tag @s remove exp.has_zapped

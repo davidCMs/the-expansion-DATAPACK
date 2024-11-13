@@ -1,11 +1,15 @@
 # damage
-damage @s[tag=exp.zapped,tag=!exp.active_coil] 6 expansion:zapped
+damage @s[tag=!exp.active_coil] 6 expansion:zapped
 
+# give players mining patigue to make the block harder to counter
 effect give @s minecraft:mining_fatigue 2 5 true
 
+# reset the cooldown of a turret this hits
+execute if entity @s[tag=exp.tesla_coil,scores={exp.cooldown=2..}] run scoreboard players set @s exp.cooldown 2
+
 # particles
-execute if entity @s[tag=exp.zapped] anchored eyes run particle minecraft:flash ~ ~1.2 ~ 0 0 0 0 1 force
-execute if entity @s[tag=exp.zapped,tag=!exp.tesla_coil] anchored eyes run particle minecraft:flame ~ ~1.2 ~ 0 0 0 0.01 10 force
+execute if entity @s[tag=!exp.tesla_coil] anchored eyes run particle minecraft:flash ~ ~1.2 ~ 0 0 0 0 1 force
+execute if entity @s[tag=!exp.tesla_coil] anchored eyes run particle minecraft:flame ~ ~1.2 ~ 0 0 0 0.01 10 force
 
 # lightning transforms, doesn't run on peaceful difficulty
 execute store result score @s exp.bool run difficulty
@@ -14,4 +18,3 @@ scoreboard players reset @s exp.bool
 
 # remove tags
 tag @s remove exp.zap_target
-tag @s[tag=exp.zapped] remove exp.zapped
