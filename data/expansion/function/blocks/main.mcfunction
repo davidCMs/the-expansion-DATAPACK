@@ -30,5 +30,8 @@ execute if entity @s[tag=exp.portal] if entity @p[distance=..50] at @s run retur
 execute if entity @s[tag=exp.tesla_coil] if entity @p[distance=..50] run return run function expansion:blocks/tesla_coil/main
 # modification station
 execute if entity @s[tag=exp.modstation] if entity @p[distance=..50] run return run function expansion:blocks/modification_station/main
+# modification station
+execute if entity @s[tag=exp.planetarium] if entity @p[distance=..50] run return run function expansion:blocks/planetarium/main
+
 # drone home
 execute if entity @s[tag=exp.drone_home] at @s run return run function expansion:mobs/evil_drone/drone_home/main

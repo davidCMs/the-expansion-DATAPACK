@@ -1,6 +1,3 @@
-# kill any planetarium markers that may be present
-execute if entity @s[tag=exp.markertag1] run function expansion:vehicles/spaceship/markers/kill_markers
-
 # clear all the spaceships effects
 effect clear @s minecraft:invisibility
 effect clear @s minecraft:weakness

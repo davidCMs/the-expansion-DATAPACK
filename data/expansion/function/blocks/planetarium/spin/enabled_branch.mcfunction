@@ -1,0 +1,27 @@
+# prepare the distance for the planets down this pivot
+execute unless entity @s[tag=exp.root_display] run scoreboard players operation #temp exp.distance = @s exp.distance
+execute if entity @s[tag=exp.root_display] run scoreboard players set #temp exp.distance 0
+scoreboard players operation #temp exp.distance *= @s exp.distance_mod
+scoreboard players operation #temp exp.distance /= #100 exp.const
+
+execute unless entity @s[tag=exp.root_display] run scoreboard players operation #temp exp.offset = @s exp.offset
+execute if entity @s[tag=exp.root_display] run scoreboard players set #temp exp.offset 0
+scoreboard players operation #temp exp.offset *= @s exp.offset_mod
+scoreboard players operation #temp exp.offset /= #100 exp.const
+
+# position the planet at the found distance
+execute unless entity @s[tag=exp.planetarium_freemove] run function expansion:blocks/planetarium/spin/set_display_distance
+execute unless entity @s[tag=exp.planetarium_freemove] positioned as @s run function expansion:blocks/planetarium/spin/set_display_offset
+
+# rotation
+execute rotated as @s[tag=exp.root_display] run rotate @s ~-0.6 ~
+execute rotated as @s[tag=exp.mini_earth,tag=!exp.root_display] run rotate @s ~-5 ~
+execute rotated as @s[tag=exp.mini_moon,tag=!exp.root_display] run rotate @s ~-0.67 ~
+execute rotated as @s[tag=exp.mini_mars,tag=!exp.root_display] run rotate @s ~-8.1 ~
+execute rotated as @s[tag=exp.mini_venus,tag=!exp.root_display] run rotate @s ~0.2 ~
+execute rotated as @s[tag=exp.mini_jupiter,tag=!exp.root_display] run rotate @s ~-12.2 ~
+execute rotated as @s[tag=exp.mini_europa,tag=!exp.root_display] run rotate @s ~1.14 ~
+execute if entity @s[tag=exp.planetarium_freemove,tag=!exp.root_display] run function expansion:blocks/planetarium/spin/comets
+
+# reset the node to its previous state
+execute if entity @s[tag=exp.disabled_node,tag=!exp.root_display] run function expansion:blocks/planetarium/enable_node

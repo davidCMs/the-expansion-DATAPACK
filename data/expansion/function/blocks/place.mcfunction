@@ -28,7 +28,7 @@ execute if predicate expansion:nbt_checks/selected_item/blocks/modstation run fu
 # transporter (pocket space)
 execute if predicate expansion:nbt_checks/selected_item/items/pocket_space run function expansion:blocks/transporter/place/summon
 # planetarium
-execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium run function expansion:blocks/planetarium/place
+execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium run function expansion:blocks/planetarium/place/summon
 
 # remove one from the helt item count
 item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count

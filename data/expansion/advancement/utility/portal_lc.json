@@ -17,6 +17,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:blocks/portal/assembly/destroy_portal/interact"
+    "function": "expansion:blocks/portal/destroy/interact"
   }
 }

@@ -3,6 +3,9 @@ tag @s add exp.exiting_ship
 # make the player ride the spaceship to make it easier to detect entities
 ride @s mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
 
+# kill any planetarium markers that may be present
+execute on vehicle on vehicle run function expansion:vehicles/spaceship/markers/deactivate_markers
+
 # remove passenger count
 execute on vehicle on vehicle run scoreboard players remove @s exp.passenger_count 1
 

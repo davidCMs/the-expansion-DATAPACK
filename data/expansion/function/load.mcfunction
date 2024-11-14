@@ -58,12 +58,18 @@ scoreboard objectives add exp.z dummy
 scoreboard objectives add exp.yaw dummy
 scoreboard objectives add exp.pitch dummy
 scoreboard objectives add exp.roll dummy
+scoreboard objectives add exp.distance dummy
+scoreboard objectives add exp.distance_mod dummy
+scoreboard objectives add exp.offset dummy
+scoreboard objectives add exp.offset_mod dummy
+scoreboard objectives add exp.size dummy
+scoreboard objectives add exp.size_mod dummy
 # pocket space utility
 scoreboard objectives add exp.unique_id dummy
 # weapons/damage
 scoreboard objectives add exp.ammo dummy
 scoreboard objectives add exp.max_range dummy
-scoreboard objectives add exp.distance dummy
+
 # mobs
 scoreboard objectives add exp.health dummy
 # dimension checks

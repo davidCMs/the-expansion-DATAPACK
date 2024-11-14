@@ -8,9 +8,6 @@ execute at @s if entity @s[nbt={SelectedItem:{components:{"minecraft:custom_data
 # blasters
 execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship unless predicate expansion:nbt_checks/selected_item/blocks/planetarium unless predicate expansion:nbt_checks/selected_item/items/fleet_finder on vehicle on vehicle on passengers if data entity @s[type=interaction,tag=exp.spaceship_rcdet] interaction on vehicle unless score @s exp.counter_2 matches 1.. if score @s exp.speed matches 11.. rotated as @s run function expansion:vehicles/spaceship/blasters/determine_blaster
 
-# planetarium used for markers in space
-execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship if predicate expansion:nbt_checks/selected_item/blocks/planetarium if predicate expansion:dimension/space if entity @s[tag=exp.spaceship_pilot] run function expansion:vehicles/spaceship/markers/marker_switcher
-
 # fleet finder
 execute at @s if predicate expansion:nbt_checks/root_vehicle/spaceship if predicate expansion:nbt_checks/selected_item/items/fleet_finder run function expansion:items/fleet_finder/find
 

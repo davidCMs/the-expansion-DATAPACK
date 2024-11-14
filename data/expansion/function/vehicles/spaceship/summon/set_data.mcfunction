@@ -18,6 +18,9 @@ data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
 # copy the fuel level from the players hand item
 execute store result score @s exp.fuel_level run data get entity @p[tag=exp.tick_player] SelectedItem.components.minecraft:custom_data.fuel_lvl
 
+# deactivate the markers
+function expansion:vehicles/spaceship/markers/deactivate_markers
+
 # set scores
 scoreboard players set @s exp.fuel_max 256
 scoreboard players set @s exp.speed 10

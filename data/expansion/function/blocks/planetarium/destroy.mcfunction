@@ -1,0 +1,1 @@
+kill @e[tag=exp.planetarium_part]
