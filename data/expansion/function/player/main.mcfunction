@@ -47,7 +47,7 @@ scoreboard players set @s[scores={exp.player_attack_cooldown=..-1}] exp.player_a
 
 # reset all the detection scoreboards
 scoreboard players set @s[scores={exp.jump=1..}] exp.jump 0
-scoreboard players set @s[scores={exp.rightclick=1..}] exp.rightclick 0
+execute unless score @s exp.rightclick matches 0 run scoreboard players set @s exp.rightclick 0
 
 ## stinky section
 # delete gui items
