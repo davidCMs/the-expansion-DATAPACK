@@ -1,7 +1,6 @@
 {
   "pools": [
     {
-      "description": "treasure rolls",
       "rolls": 1,
       "entries": [
         {
@@ -26,7 +25,6 @@
       ]
     },
     {
-      "description": "value rolls",
       "rolls": {
         "type": "minecraft:uniform",
         "min": 2,
@@ -64,7 +62,6 @@
       ]
     },
     {
-      "description": "filler rolls",
       "rolls": 4,
       "entries": [
         {
