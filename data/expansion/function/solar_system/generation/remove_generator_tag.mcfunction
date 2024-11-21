@@ -1,1 +1,0 @@
-tag @a[tag=exp.generator] remove exp.generator

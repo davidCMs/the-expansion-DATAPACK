@@ -1,0 +1,3 @@
+scoreboard players reset #generated_solar_system exp.bool
+
+function expansion:solar_system/generation/start_system_generation
