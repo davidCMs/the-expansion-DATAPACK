@@ -14,7 +14,7 @@ execute if entity @s[tag=exp.inside_vehicle] run function expansion:vehicles/mai
 # temperature, oxygen, gravity & planet events
 execute if predicate expansion:dimension/exp_dimensions run function expansion:solar_system/planets_main
 # reset gravity if not on an expansion planet
-execute if entity @s[tag=exp.has_changed_gravity] unless predicate expansion:dimension/exp_dimensions run function expansion:mechanics/gravity/remove_all
+execute if function expansion:mechanics/gravity/has_changed_gravity unless predicate expansion:dimension/exp_dimensions run function expansion:mechanics/gravity/remove_all
 
 # equipment modules
 execute if predicate expansion:nbt_checks/armor/space_equipment/has_module run function expansion:items/space_equipment/modules/main

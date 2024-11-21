@@ -10,7 +10,7 @@ effect give @s[tag=!exp.trying_transition] minecraft:blindness 1000 255 true
 tag @s[tag=exp.rocket_pilot] add exp.trying_transition
 
 # attempt to enter the lunar module
-ride @s mount @e[type=minecraft:camel,tag=exp.module_seats,limit=1,sort=nearest]
+ride @s mount @n[type=minecraft:camel,tag=exp.module_seats,distance=..20]
 
 # remove effects/tags and finish the transition
-execute if entity @s[predicate=expansion:nbt_checks/root_vehicle/lunar_module] run function expansion:solar_system/transitions/moon_earth/moon_success
+execute if predicate expansion:nbt_checks/root_vehicle/lunar_module run function expansion:solar_system/transitions/moon_earth/moon_success

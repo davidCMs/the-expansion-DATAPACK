@@ -6,5 +6,3 @@ function expansion:mechanics/gravity/europa/remove
 function expansion:mechanics/gravity/zero/remove
 
 function expansion:mechanics/gravity/zero/remove_movement_modifier
-
-tag @s remove exp.has_changed_gravity

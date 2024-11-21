@@ -12,4 +12,4 @@ execute if entity @s[tag=exp.module_pilot] run function expansion:utilities/weat
 scoreboard players set @s exp.cooldown 1
 
 # teleport
-execute as @a[tag=exp.landing_earth_init,limit=2,sort=nearest] in minecraft:overworld run tp @s ~ 450 ~
+execute as @a[tag=exp.landing_earth_init,limit=2,sort=nearest] in minecraft:overworld run tp @s ~ 300 ~

@@ -5,4 +5,4 @@ execute positioned ~ ~-1 ~ if block ~ ~ ~ #expansion:air run function expansion:
 
 tag @s[tag=exp.no_floor] remove exp.ignores_gravity_effects
 
-execute if entity @s[tag=exp.has_changed_gravity,tag=exp.ignores_gravity_effects] run function expansion:mechanics/gravity/remove_all
+execute if entity @s[tag=exp.ignores_gravity_effects] if function expansion:mechanics/gravity/has_changed_gravity run function expansion:mechanics/gravity/remove_all

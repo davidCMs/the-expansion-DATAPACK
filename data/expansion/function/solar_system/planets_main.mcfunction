@@ -1,5 +1,5 @@
 # gravity
-execute if predicate expansion:dimension/altered_gravity unless entity @s[tag=exp.ignores_gravity_effects] unless entity @s[tag=exp.has_changed_gravity] run function expansion:mechanics/gravity/apply
+execute if predicate expansion:dimension/altered_gravity unless entity @s[tag=exp.ignores_gravity_effects] if function expansion:mechanics/gravity/has_changed_gravity run function expansion:mechanics/gravity/apply
 execute if predicate expansion:dimension/zero_gravity unless entity @s[tag=exp.ignores_gravity_effects] run function expansion:mechanics/gravity/zero/main
 
 # temperature
