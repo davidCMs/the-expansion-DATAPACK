@@ -1,1 +1,1 @@
-execute in expansion:moon run tp @s ~ 128 ~
+execute in expansion:moon run spreadplayers ~ ~ 0 1 false @s

@@ -1,1 +1,1 @@
-execute in minecraft:overworld run tp @s ~ 128 ~
+execute in minecraft:overworld run spreadplayers ~ ~ 0 1 false @s

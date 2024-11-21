@@ -9,7 +9,7 @@ function expansion:items/magnetic_boots/floor_check/remove_tags
 execute as @p[tag=exp.has_active_drone,tag=exp.clicked_ship] run function expansion:mobs/drone_pet/force_dismiss
 
 # align the rotation of the player with the spaceship
-execute rotated as @s run tp @p[tag=exp.clicked_ship] ^ ^ ^ ~ ~
+execute rotated as @s run rotate @p[tag=exp.clicked_ship] ~ ~
 
 # mount the spaceship
 execute on passengers run ride @p[tag=exp.clicked_ship] mount @s[type=minecraft:armor_stand,tag=exp.spaceship_display]

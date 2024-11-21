@@ -1,1 +1,1 @@
-execute in expansion:asteroids run tp @s ~ 128 ~
+execute in expansion:asteroids run spreadplayers ~ ~ 0 100 false @s

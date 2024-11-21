@@ -1,1 +1,1 @@
-execute in expansion:mars run tp @s ~ 128 ~
+execute in expansion:mars run spreadplayers ~ ~ 0 1 false @s

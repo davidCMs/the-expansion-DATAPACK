@@ -13,8 +13,8 @@ execute if entity @s[tag=exp.inside_vehicle] run function expansion:vehicles/mai
 
 # temperature, oxygen, gravity & planet events
 execute if predicate expansion:dimension/exp_dimensions run function expansion:solar_system/planets_main
-# reset gravity
-execute unless predicate expansion:dimension/exp_dimensions if entity @s[tag=exp.has_changed_gravity] run function expansion:mechanics/gravity/remove_all
+# reset gravity if not on an expansion planet
+execute if entity @s[tag=exp.has_changed_gravity] unless predicate expansion:dimension/exp_dimensions run function expansion:mechanics/gravity/remove_all
 
 # equipment modules
 execute if predicate expansion:nbt_checks/armor/space_equipment/has_module run function expansion:items/space_equipment/modules/main
@@ -30,7 +30,7 @@ execute unless predicate expansion:nbt_checks/armor/magnetic_boots run tag @s[ta
 # pocket space transportation
 execute if entity @s[tag=exp.check_loaded] run function expansion:items/transporter/transport/check_loaded
 
-# death fix for vehicles
+# death fix
 execute if score @s exp.death matches 1.. run function expansion:player/death
 
 # cooldown utility

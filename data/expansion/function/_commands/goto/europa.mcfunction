@@ -1,1 +1,1 @@
-execute in expansion:europa run tp @s ~ 200 ~
+execute in expansion:europa run spreadplayers ~ ~ 0 1 false @s

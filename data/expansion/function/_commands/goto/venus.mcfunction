@@ -1,1 +1,1 @@
-execute in expansion:venus run tp @s ~ 128 ~
+execute in expansion:venus run spreadplayers ~ ~ 0 1 false @s

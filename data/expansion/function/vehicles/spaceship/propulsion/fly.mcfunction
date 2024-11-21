@@ -1,4 +1,4 @@
-# make the armor stand rotate slowly towards the players rotation.
+# make the armor stand and item display rotate slowly towards the players rotation.
 execute on passengers on passengers anchored eyes rotated as @s[type=player,tag=exp.spaceship_pilot] on vehicle on vehicle positioned ^ ^ ^4 rotated as @s positioned ^ ^ ^40 facing entity @s eyes facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
 
 # store rotation data of the armor stand and assign it to a scoreboard value.
