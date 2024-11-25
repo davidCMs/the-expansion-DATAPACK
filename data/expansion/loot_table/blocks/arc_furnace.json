@@ -46,7 +46,7 @@
         },
         {
           "function": "minecraft:set_custom_data",
-          "tag": "{crafting_count:1,expansion_coas:1b,exp_block:1b,arc_furnace:1b}"
+          "tag": "{crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_block:1b,arc_furnace:1b}"
         }
       ]
     }

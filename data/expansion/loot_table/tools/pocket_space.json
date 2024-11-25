@@ -22,6 +22,7 @@
             {
               "function": "minecraft:set_components",
                   "components": {
+                    "minecraft:max_stack_size": 1,
                   "!minecraft:max_damage": {},
                   "minecraft:unbreakable": {
                       "show_in_tooltip": false
@@ -30,7 +31,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_block:1b,pocket_space:1b,room_id:-1,expansion_coas:1b}"
+              "tag": "{Unbreakable:1b,exp_block:1b,max_stack_size:1,pocket_space:1b,room_id:-1,expansion_coas:1b}"
             },
             {
               "function": "minecraft:set_lore",

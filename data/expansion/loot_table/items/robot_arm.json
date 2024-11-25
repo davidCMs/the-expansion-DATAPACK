@@ -22,6 +22,7 @@
               {
                 "function": "minecraft:set_components",
                     "components": {
+                    "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},
                     "minecraft:unbreakable": {
                         "show_in_tooltip": false
@@ -30,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{robot_arm:1b,crafting_count:1}"
+                "tag": "{robot_arm:1b,crafting_count:1,max_stack_size:64}"
               }
             ]
           }

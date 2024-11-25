@@ -1,4 +1,4 @@
-data modify entity @s item.components."minecraft:custom_data".placeholder set value 1
+loot replace entity @s container.0 loot expansion:items/gui/filler
 data merge entity @s {transformation:{scale:[0.0f,0.0f,0.0f]}}
 
 # steel plate
