@@ -1,5 +1,5 @@
-execute unless entity @s[tag=exp.home_too_far] unless entity @p[gamemode=!spectator,distance=..30] run function expansion:mobs/evil_drone/idle
-execute unless entity @s[tag=exp.home_too_far] if entity @p[gamemode=!spectator,distance=..30] run function expansion:mobs/evil_drone/ranged_drone/main
+execute unless entity @s[tag=exp.home_too_far] unless entity @p[gamemode=!spectator,gamemode=!creative,distance=..30] run function expansion:mobs/evil_drone/idle
+execute unless entity @s[tag=exp.home_too_far] if entity @p[gamemode=!spectator,gamemode=!creative,distance=..30] run function expansion:mobs/evil_drone/ranged_drone/main
 
 # return to home if the drone wanders to far, except if the drone is rogue
 execute if entity @e[type=minecraft:armor_stand,tag=exp.drone_home,limit=1,sort=nearest,distance=50..60] run tag @s[tag=!exp.rogue_drone] add exp.home_too_far

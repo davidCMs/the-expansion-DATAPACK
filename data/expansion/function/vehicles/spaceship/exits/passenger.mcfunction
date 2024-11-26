@@ -24,10 +24,10 @@ effect give @s slow_falling 1 1 true
 # clear the speed effect (used for FOV)
 effect clear @s speed
 
-# teleport the player next to the spaceship
-execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^ ^1 ~ ~
-
 ride @s dismount
+
+# teleport the player next to the spaceship
+execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^0.2 ^1 ~ ~
 
 # remove basic player effects
 function expansion:vehicles/spaceship/exits/remove_effects

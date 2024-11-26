@@ -1,4 +1,6 @@
-# --- only runs as the spaceship pilot
+# --- only runs as the spaceship
+
+function expansion:vehicles/spaceship/markers/activate_markers
 
 # teleport the player to space
 execute if predicate expansion:dimension/overworld positioned 23 128 23 run function expansion:solar_system/transitions/to_space/from_planet
