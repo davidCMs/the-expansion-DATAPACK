@@ -16,5 +16,5 @@ advancement grant @p only expansion:progression/get_rocket
 
 # kill all the rocket parts
 execute as @n[type=minecraft:item_display,tag=exp.rocket_bottom,distance=..1] run function expansion:blocks/rocket_parts/kill
-execute positioned ~ ~2 ~ as @n[type=minecraft:armor_stand,tag=exp.rocket_cockpit,distance=..1] run function expansion:blocks/rocket_parts/kill
+execute positioned ~ ~1 ~ as @n[type=minecraft:item_display,tag=exp.rocket_cockpit,distance=..1] run function expansion:blocks/rocket_parts/kill
 function expansion:blocks/rocket_parts/kill

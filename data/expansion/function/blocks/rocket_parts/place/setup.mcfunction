@@ -1,4 +1,6 @@
-tag @s remove exp.block.new
+tag @s remove exp.rocket_part.new
+
+data merge entity @s {transformation:{scale:[2.0,2.0,2.0],translation:[0,1,0]}}
 
 fill ~ ~ ~ ~ ~1 ~ minecraft:barrier keep
 
