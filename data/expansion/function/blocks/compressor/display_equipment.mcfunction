@@ -1,3 +1,3 @@
-data merge entity @s {transformation:{left_rotation:{axis:[0f,0f,1f],angle:1.57f},scale:[0.3,0.3,0.3],translation:[-0.25f,-0.2f,-0.2f]}}
+data merge entity @s {transformation:{left_rotation:[0.0,0.707,0.0,0.707],right_rotation:[-0.707,0.0,0.0,0.707],scale:[0.5,0.5,0.5],translation:[-0.1f,0.185f,0.2f]}}
 
-rotate @s ~ -90
+rotate @s ~ 0

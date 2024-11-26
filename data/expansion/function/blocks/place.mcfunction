@@ -30,7 +30,7 @@ execute if predicate expansion:nbt_checks/selected_item/items/pocket_space run f
 # planetarium
 execute if predicate expansion:nbt_checks/selected_item/blocks/planetarium run function expansion:blocks/planetarium/place/summon
 
-# remove one from the helt item count
+# remove one from the held item count
 item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count
 
 # sound

@@ -1,5 +1,5 @@
 data modify entity @s[type=minecraft:snowball] Owner set from storage expansion:owner data.current_UUID
-#data merge entity @s {Item:{id:"minecraft:air",count:1}}
+data merge entity @s {Item:{id:"minecraft:jigsaw",components:{item_model:"air"},count:1}}
 data remove storage expansion:owner data.current_UUID
 
 # administration

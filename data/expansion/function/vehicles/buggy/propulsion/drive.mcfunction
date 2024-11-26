@@ -7,10 +7,13 @@ execute unless score #input exp.math matches 0.. run scoreboard players operatio
 
 # turn when pressing a or d
 scoreboard players operation #turn exp.math = #angle exp.math
-execute on passengers if entity @s[type=player] if predicate expansion:input/left unless predicate expansion:input/right on vehicle on passengers at @s run function expansion:vehicles/buggy/propulsion/turn_left
-execute on passengers if entity @s[type=player] if predicate expansion:input/right unless predicate expansion:input/left on vehicle on passengers at @s run function expansion:vehicles/buggy/propulsion/turn_right
+execute on passengers if entity @s[type=player,predicate=expansion:input/left,predicate=!expansion:input/right] on vehicle on passengers at @s run function expansion:vehicles/buggy/propulsion/turn_left
+execute on passengers if entity @s[type=player,predicate=expansion:input/right,predicate=!expansion:input/left] on vehicle on passengers at @s run function expansion:vehicles/buggy/propulsion/turn_right
 execute on passengers rotated as @s[tag=exp.buggy_turn] on vehicle positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^20 facing entity @s eyes facing ^ ^ ^-5 positioned as @s run rotate @s ~ 0
 execute on passengers rotated as @s[tag=exp.buggy_turn] on vehicle on passengers if entity @s[tag=aj.buggy.root] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^20 facing entity @s eyes facing ^ ^ ^-5 positioned as @s run rotate @s ~ 0
+
+# smoothly rotate the player with the buggy when steering
+execute on passengers rotated as @s[tag=exp.buggy_turn] on vehicle on passengers if entity @s[type=player,predicate=expansion:input/cardinal] positioned ^ ^ ^5 rotated as @s positioned ^ ^ ^20 facing entity @s eyes facing ^ ^ ^-5 positioned as @s run rotate @s ~ 0
 
 # zero gravity
 execute if predicate expansion:dimension/zero_gravity if score @s exp.speed matches ..-11 unless block ^ ^-1 ^-1 #expansion:air run data merge entity @s[nbt={NoGravity:1b}] {NoGravity:0b}

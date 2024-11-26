@@ -9,9 +9,12 @@ execute if score #temp exp.bool matches 2.. run item replace entity @p[tag=exp.c
 # extract the max tank level upon insertion
 execute store result score @s exp.fuel_max run data get entity @s item.components."minecraft:custom_data".oxygen_max
 
-execute if items entity @s container.0 minecraft:carrot_on_a_stick[minecraft:custom_data~{oxygen_tank:1b}] rotated as @s run function expansion:blocks/compressor/display_tank
-execute if items entity @s container.0 minecraft:carrot_on_a_stick[minecraft:custom_data~{space_equipment:1b}] rotated as @s run function expansion:blocks/compressor/display_equipment
+execute if items entity @s container.0 *[minecraft:custom_data~{oxygen_tank:1b}] rotated as @s run function expansion:blocks/compressor/display_tank
+execute if items entity @s container.0 *[minecraft:custom_data~{space_equipment:1b}] rotated as @s run function expansion:blocks/compressor/display_equipment
 
 # intiate the compression process
 function expansion:blocks/compressor/compress/start
+
+# remove the custom name from the compressor
+execute on passengers if entity @s[type=interaction] run data merge entity @s {CustomName:'""'}
 

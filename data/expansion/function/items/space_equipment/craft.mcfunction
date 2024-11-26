@@ -14,4 +14,4 @@ scoreboard players reset #output exp.oxygen_percent
 
 # copy the used oxygen tank to the equipment
 data modify entity @s item.components."minecraft:custom_data".ModStorage.oxygen_tank set from block ~ ~ ~ Items[{Slot:11b}]
-data modify entity @s item.components."minecraft:custom_data".ModStorage.oxygen_tank.Slot set value 3b
+data remove entity @s item.components."minecraft:custom_data".ModStorage.oxygen_tank.Slot

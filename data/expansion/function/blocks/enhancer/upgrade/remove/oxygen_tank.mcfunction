@@ -1,5 +1,5 @@
 loot replace block ~ ~ ~ container.0 loot expansion:tools/oxygen_tanks/tier1/empty
-data modify block ~ ~ ~ Items[{Slot:0b}] set from block ~ ~ ~ Items[{Slot:5b}].components.minecraft:custom_data.ModStorage.oxygen_tank
+data modify block ~ ~ ~ Items[{Slot:0b}] set from block ~ ~ ~ Items[{Slot:5b}].components."minecraft:custom_data".ModStorage.oxygen_tank
 
 # remove oxygen tank lore from equipment
 item modify block ~ ~ ~ container.5 expansion:oxygen_tank/remove_from_equipment
@@ -18,4 +18,5 @@ item modify block ~ ~ ~ container.0 expansion:oxygen_tank/merge_cmd_from_data
 # merge new oxygen values with the source
 item modify block ~ ~ ~ container.0 expansion:oxygen_tank/merge_oxygen_percent_from_score
 
-data remove block ~ ~ ~ Items[{Slot:5b}].components.minecraft:custom_data.ModStorage.oxygen_tank
+# remove the oxygen tank data from the equipment
+data remove block ~ ~ ~ Items[{Slot:5b}].components."minecraft:custom_data".ModStorage.oxygen_tank

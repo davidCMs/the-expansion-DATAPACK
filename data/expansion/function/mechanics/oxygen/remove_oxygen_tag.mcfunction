@@ -1,2 +1,0 @@
-execute unless entity @e[type=minecraft:armor_stand,scores={exp.counter_1=0},tag=exp.shield_generator,distance=..40,limit=1,sort=nearest] positioned ~-24 ~-24 ~-24 unless entity @e[type=minecraft:armor_stand,scores={exp.counter_1=1},tag=exp.shield_generator,dx=47,dy=47,dz=47,limit=1,sort=nearest] run tag @s remove exp.has_oxygen
-tag @s remove exp.inside_check

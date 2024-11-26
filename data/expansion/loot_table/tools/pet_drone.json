@@ -31,7 +31,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_tool:1b,max_stack_size:1,pet_drone:1b,expansion_coas:1b}"
+              "tag": "{Unbreakable:1b,exp_tool:1b,crafting_count:1,max_stack_size:1,pet_drone:1b,expansion_coas:1b}"
             },
             {
               "function": "minecraft:set_lore",
