@@ -1,3 +1,4 @@
+kill @n[type=item,nbt={Age:0s},distance=..2]
 execute as @p unless entity @s[gamemode=creative] run loot spawn ~ ~ ~ loot expansion:blocks/terraformer
 
 execute on passengers if entity @s[tag=exp.origin_link] run function expansion:blocks/terraformer/unlink

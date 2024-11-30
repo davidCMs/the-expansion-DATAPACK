@@ -7,10 +7,10 @@ execute if score #temp exp.yaw matches -30..30 unless entity @s[tag=exp.highligh
 execute unless score #temp exp.yaw matches -30..30 if entity @s[tag=exp.highlighted_marker] run function expansion:vehicles/spaceship/markers/hide_marker
 
 # rotate the markers towards the planet
-execute if entity @s[tag=exp.earth_marker] facing 23 128 23 run return run rotate @s ~ ~
-execute if entity @s[tag=exp.moon_marker] facing -584 128 135 run return run rotate @s ~ ~
-execute if entity @s[tag=exp.mars_marker] facing -1848 128 -1304 run return run rotate @s ~ ~
-execute if entity @s[tag=exp.venus_marker] facing 1367 128 1705 run return run rotate @s ~ ~
-execute if entity @s[tag=exp.jupiter_marker] facing -2840 128 1559 run return run rotate @s ~ ~
-execute if entity @s[tag=exp.europa_marker] facing -3528 128 1609 run return run rotate @s ~ ~
+execute if entity @s[tag=exp.earth_marker] facing 0 128 0 run return run rotate @s ~ ~
+execute if entity @s[tag=exp.moon_marker] facing -608 128 112 run return run rotate @s ~ ~
+execute if entity @s[tag=exp.mars_marker] facing -1872 128 -1328 run return run rotate @s ~ ~
+execute if entity @s[tag=exp.venus_marker] facing 1344 128 1728 run return run rotate @s ~ ~
+execute if entity @s[tag=exp.jupiter_marker] facing -2864 128 1536 run return run rotate @s ~ ~
+execute if entity @s[tag=exp.europa_marker] facing -3552 128 1632 run return run rotate @s ~ ~
 execute if entity @s[tag=exp.asteroids_marker] facing -10000 128 ~ run return run rotate @s ~ ~

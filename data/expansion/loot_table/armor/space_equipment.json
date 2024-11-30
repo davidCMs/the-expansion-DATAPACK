@@ -89,12 +89,6 @@
                 },
                 {
                   "translate": "exp_armor_equipment_tip3"
-                },
-                {
-                  "translate": "exp_armor_equipment_tip4"
-                },
-                {
-                  "translate": "exp_armor_equipment_tip5"
                 }
               ],
               "mode": "replace_all"

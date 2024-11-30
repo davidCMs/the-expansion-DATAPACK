@@ -20,7 +20,7 @@ execute store success score #temp exp.oxygen_max if entity @s[tag=exp.pressurize
 execute at @s on passengers if entity @s[type=snowball,tag=exp.scanner_link] run function expansion:blocks/oxygenator/oxygenate/fill_space/main
 
 # remove leaves from the block
-execute if predicate expansion:periodic/200 run item modify block ~ ~ ~ container.6 expansion:utility/reduce_count
+execute if predicate expansion:periodic/500 run item modify block ~ ~ ~ container.6 expansion:utility/reduce_count
 
 # in and outtake particles
 function expansion:blocks/oxygenator/particles

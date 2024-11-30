@@ -1,7 +1,7 @@
 # temporary tag
 tag @s add exp.exiting_ship
 # make the player ride the spaceship to make it easier to detect entities
-ride @s mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,limit=1,sort=nearest]
+ride @s mount @e[type=minecraft:armor_stand,tag=exp.spaceship_display,distance=..10,limit=1,sort=nearest]
 
 # kill any planetarium markers that may be present
 execute on vehicle on vehicle run function expansion:vehicles/spaceship/markers/deactivate_markers
@@ -24,10 +24,9 @@ effect give @s slow_falling 1 1 true
 # clear the speed effect (used for FOV)
 effect clear @s speed
 
-ride @s dismount
-
 # teleport the player next to the spaceship
-execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^0.2 ^1 ~ ~
+execute on vehicle on vehicle at @s rotated ~ 0 on passengers on passengers run tp @s[tag=exp.exiting_ship,tag=exp.inside_spaceship] ^-2 ^0.1 ^1 ~ ~
+ride @s dismount
 
 # remove basic player effects
 function expansion:vehicles/spaceship/exits/remove_effects

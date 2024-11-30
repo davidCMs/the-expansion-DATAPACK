@@ -12,7 +12,4 @@ execute if score #generate_moon exp.bool matches 1 positioned -608 128 112 run r
 execute if score #generate_mars exp.bool matches 1 positioned -1872 128 -1328 run return run function expansion:solar_system/generation/attempt_placement
 execute if score #generate_venus exp.bool matches 1 positioned 1344 128 1728 run return run function expansion:solar_system/generation/attempt_placement
 execute if score #generate_jupiter exp.bool matches 1 positioned -2864 128 1536 run return run function expansion:solar_system/generation/attempt_placement
-execute if score #generate_europa exp.bool matches 1 positioned -3552 128 1632 run function expansion:solar_system/generation/attempt_placement
-
-# after the entire sequence, lock the solar system generation on future reloads and notify the players
-function expansion:solar_system/generation/finish
+execute if score #generate_europa exp.bool matches 1 positioned -3552 128 1632 run return run function expansion:solar_system/generation/attempt_placement

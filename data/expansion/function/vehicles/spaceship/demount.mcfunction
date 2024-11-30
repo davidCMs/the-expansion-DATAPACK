@@ -5,11 +5,11 @@ execute on passengers if entity @s[type=item_display,tag=exp.spaceship_display] 
 execute on passengers if entity @s[type=item_display,tag=exp.spaceship_display] run function expansion:vehicles/spaceship/model_switching/decrease_model_alt
 
 # spawn the placeholder item and copy all the spaceship data to it
-execute as @p unless entity @s[gamemode=creative] at @s run loot spawn ~ ~ ~ loot expansion:vehicles/spaceship
+execute as @p[tag=exp.clicked_ship] unless entity @s[gamemode=creative] at @s run loot spawn ~ ~ ~ loot expansion:vehicles/spaceship
 
-execute on passengers if entity @s[type=item_display,tag=exp.spaceship_display] run data modify entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{exp_spaceship:1b}}}},distance=..0.1] Item set from entity @s item
+execute on passengers if entity @s[type=item_display,tag=exp.spaceship_display] at @p[tag=exp.clicked_ship,gamemode=!creative,gamemode=!spectator] run data modify entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{exp_spaceship:1b}}}},distance=..0.01] Item set from entity @s item
 
-data merge entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{exp_spaceship:1b}}}},distance=..0.1] {PickupDelay:0s}
+execute at @p[tag=exp.clicked_ship,gamemode=!creative,gamemode=!spectator] run data merge entity @n[type=item,nbt={Item:{components:{"minecraft:custom_data":{exp_spaceship:1b}}}},distance=..0.01] {PickupDelay:0s}
 
 # sound
 playsound block.metal.break block @a[distance=..5] ~ ~ ~

@@ -67,7 +67,6 @@
                 {
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
-                  "parameters": {},
                   "formula": "minecraft:ore_drops"
                 }
               ],
