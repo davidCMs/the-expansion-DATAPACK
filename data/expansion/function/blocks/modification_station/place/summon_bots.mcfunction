@@ -3,7 +3,7 @@ tag @s add exp.mod_drone.new
 
 tp @s ~ ~2 ~
 
-item replace entity @s container.0 with jigsaw[custom_model_data=123800]
+item replace entity @s container.0 with jigsaw[item_model="expansion:mobs/mod_drone"]
 
 data merge entity @s {teleport_duration:1}
 

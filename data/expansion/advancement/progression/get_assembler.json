@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:carrot_on_a_stick",
           "components": {
-            "minecraft:custom_model_data": 1012050
+            "item_model": "expansion:blocks/assembler"
           }
         },
         "frame": "task",

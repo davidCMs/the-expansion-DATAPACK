@@ -16,15 +16,12 @@
               "entity": "this"
             },
             {
-              "function": "minecraft:set_custom_model_data",
-              "value": 123457
-            },
-            {
               "function": "minecraft:set_components",
                   "components": {
+                    "item_model": "expansion:crafting/buggy_tire",
                     "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},
-                  "minecraft:unbreakable": {
+                    "minecraft:unbreakable": {
                       "show_in_tooltip": false
                       }
                   }

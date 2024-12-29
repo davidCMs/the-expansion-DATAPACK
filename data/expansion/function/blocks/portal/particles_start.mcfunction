@@ -1,7 +1,9 @@
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^-1.69 ^2.1 ^ 0.1 0.1 0.1 1 20 force
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^-1.2 ^3.3 ^ 0.1 0.1 0.1 1 20 force
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^ ^3.8 ^ 0.1 0.1 0.1 1 20 force
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^1.2 ^3.3 ^ 0.1 0.1 0.1 1 20 force
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^1.69 ^2.1 ^ 0.1 0.1 0.1 1 20 force
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^1.2 ^0.9 ^ 0.1 0.1 0.1 1 20 force
-$particle trail{duration:1,color:[0d,0.82d,0.878d],target:[$(x)d,$(dy)d,$(z)d]} ^-1.2 ^0.9 ^ 0.1 0.1 0.1 1 20 force
+execute positioned ^-1.69 ^2.1 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+execute positioned ^-1.2 ^3.3 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+execute positioned ^ ^3.8 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+execute positioned ^1.2 ^3.3 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+execute positioned ^1.69 ^2.1 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+execute positioned ^1.2 ^0.9 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+execute positioned ^-1.2 ^0.9 ^ run function expansion:blocks/portal/particles/idle with entity @s item.components.minecraft:custom_data.portal_array[0].Pos
+
+execute if predicate expansion:chance/050_chance run particle firework ~ ~2.1 ~ 0 0 0 0.02 1

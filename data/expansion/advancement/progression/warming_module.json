@@ -10,7 +10,12 @@
     "icon": {
           "id": "minecraft:jigsaw",
           "components": {
-            "minecraft:custom_model_data": 123483
+            "item_model": "expansion:modules/equipment",
+            "custom_model_data": {
+              "strings": [
+                "warming"
+              ]
+            }
           }
     },
     "frame": "goal",

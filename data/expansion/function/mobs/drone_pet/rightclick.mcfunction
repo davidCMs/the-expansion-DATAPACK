@@ -1,5 +1,5 @@
 scoreboard players operation #search exp.unique_id = @s exp.unique_id
 
-tag @n[type=minecraft:interaction,predicate=expansion:compare_score/unique_id,tag=!exp.searching_structure,tag=exp.pet_drone,distance=..10] add exp.searching_structure
+execute positioned ^ ^ ^2 as @n[type=interaction,tag=exp.pet_drone_rcdet,predicate=expansion:compare_score/unique_id,distance=..10] on vehicle run tag @s add exp.searching_structure
 
 advancement revoke @s only expansion:utility/drone_pet_rc

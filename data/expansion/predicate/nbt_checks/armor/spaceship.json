@@ -4,11 +4,12 @@
   "predicate": {
     "equipment": {
       "head": {
-        "items": [
-          "minecraft:carrot_on_a_stick"
-        ],
         "components": {
-            "minecraft:custom_model_data": 1012002
+          "minecraft:custom_model_data": {
+            "strings": [
+              "spaceship"
+            ]
+          }
         }
       }
     }

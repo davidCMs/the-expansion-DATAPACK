@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:jigsaw",
           "components": {
-            "minecraft:custom_model_data": 123601
+            "item_model": "expansion:crafting/amethonium_ingot"
           }
         },
         "frame": "task",

@@ -1,3 +1,3 @@
-execute store result score @s exp.counter_1 run data get block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data
+execute store result score @s exp.counter_1 run data get block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data.floats[0]
 scoreboard players add @s exp.counter_1 1
-execute store result block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data double 1 run scoreboard players get @s exp.counter_1
+execute store result block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data.floats[0] float 1 run scoreboard players get @s exp.counter_1

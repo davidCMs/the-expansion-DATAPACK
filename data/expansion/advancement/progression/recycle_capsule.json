@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:jigsaw",
           "components": {
-            "minecraft:custom_model_data": 123460
+            "item_model": "expansion:wrench"
           }
         },
         "frame": "task",

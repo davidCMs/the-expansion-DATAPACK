@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:purpur_slab",
           "components": {
-            "minecraft:custom_model_data": 123456
+            "item_model": "expansion:blocks/titanium_ore"
           }
         },
         "frame": "task",

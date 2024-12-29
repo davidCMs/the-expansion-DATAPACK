@@ -5,4 +5,4 @@ execute positioned ~-.5 ~ ~-.5 as @p[dx=0,dy=0,dz=0] positioned ~.5 ~ ~.5 run fu
 function expansion:blocks/portal/activation/periodic_checkup
 
 # particles
-execute if predicate expansion:periodic/5 run function expansion:blocks/portal/particles with entity @s item.components.minecraft:custom_data.portal_array[0]
+execute if predicate expansion:periodic/5 run function expansion:blocks/portal/particles with entity @s item.components.minecraft:custom_data.portal_array[0].Pos

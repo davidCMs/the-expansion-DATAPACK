@@ -9,6 +9,3 @@ execute if entity @s[tag=exp.landing_moon] run function expansion:vehicles/lunar
 
 # exit the vehicle if the rootvehicle is no longer the lander but the tag is still active
 execute unless predicate expansion:nbt_checks/root_vehicle/lunar_module as @n[type=minecraft:armor_stand,tag=exp.lunar_module,distance=..10] run function expansion:vehicles/lunar_module/exit
-
-execute if entity @s[tag=exp.landing_earth] unless score @s exp.cooldown matches 1.. run function expansion:solar_system/transitions/moon_earth/moon_earth_check
-

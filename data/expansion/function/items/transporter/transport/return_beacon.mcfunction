@@ -2,7 +2,7 @@
 execute if score @s exp.dim_test matches -10.. unless score @s exp.dim_test = #temp exp.dim_test run function expansion:items/transporter/loop/punishment
 
 # initiate the data item
-item replace entity @s[tag=!exp.added_data] armor.head with jigsaw[minecraft:custom_model_data=124401]
+item replace entity @s[tag=!exp.added_data] armor.head with jigsaw[minecraft:item_model="expansion:empty"]
 data merge entity @s[tag=!exp.added_data] {Silent:1b,Marker:1b,Invisible:1b}
 
 # add an entry for a return position

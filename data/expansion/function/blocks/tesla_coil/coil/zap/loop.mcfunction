@@ -1,11 +1,11 @@
 tp @s ^ ^ ^ ~ ~
 
+# create random electricity effect
+execute if predicate expansion:chance/070_chance at @s on origin facing entity @s eyes as @n[type=snowball,tag=exp.zap,distance=..0.1] run function expansion:blocks/tesla_coil/coil/zap/bend
+
 # particles
 particle minecraft:electric_spark ~ ~ ~ 0 0 0 0.2 1 force
 particle minecraft:electric_spark ~ ~ ~ 0 0 0 0 1 force
-
-# create random electricity effect
-execute at @s on origin facing entity @s eyes as @n[type=snowball,tag=exp.zap,distance=..0.1] run function expansion:blocks/tesla_coil/coil/zap/bend
 
 # stop the raycast if an entity is hit
 execute on origin if entity @s[dx=0] run return run function expansion:blocks/tesla_coil/coil/zap/damage

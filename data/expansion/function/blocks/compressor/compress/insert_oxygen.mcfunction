@@ -18,11 +18,7 @@ execute if items entity @s container.0 carrot_on_a_stick[custom_data~{space_equi
 
 # set the custom model data equal to the equipment data
 # change the sources custom model data based on the oxygen percentage
-scoreboard players operation #temp exp.math = #target exp.oxygen_percent
-execute store result score #tier exp.value run data get entity @s item.components.minecraft:custom_data.tier
-function expansion:mechanics/oxygen/find_tank_cmd
-#execute unless items entity @s container.0 carrot_on_a_stick[custom_data~{oxygen_tank:1b}] run data modify storage expansion:oxygen_calc data.tank_cmd set from entity @s item.components."minecraft:custom_model_data"
-# else, change the oxygen tank model with the oxygen level
+execute store result storage expansion:oxygen_calc data.tank_cmd int 1 run scoreboard players get #target exp.oxygen_percent
 execute if items entity @s container.0 carrot_on_a_stick[custom_data~{oxygen_tank:1b}] run item modify entity @s container.0 expansion:oxygen_tank/merge_cmd_from_data
 
 # signal the compressor to stop the compressing if the tank is 100%

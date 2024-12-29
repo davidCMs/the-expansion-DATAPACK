@@ -6,7 +6,7 @@ execute if items block ~ ~ ~ container.15 * if function expansion:blocks/fabrica
 execute unless items block ~ ~ ~ container.15 * run function expansion:blocks/fabricator/printing/insert_item
 
 # reset the loader
-execute if items block ~ ~ ~ container.16 jigsaw[custom_data~{gui_item:1b}] run data modify block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data set value 124470
+execute if items block ~ ~ ~ container.16 jigsaw[custom_data~{gui_item:1b}] run data modify block ~ ~ ~ Items[{Slot:16b}].components.minecraft:custom_model_data.floats[0] set value 0f
 
 # check if there are any items left in the printer and restart the print if true
 function expansion:blocks/fabricator/printing/check_remaining

@@ -10,7 +10,12 @@
     "icon": {
           "id": "minecraft:jigsaw",
           "components": {
-            "minecraft:custom_model_data": 123482
+            "item_model": "expansion:modules/equipment",
+            "custom_model_data": {
+              "strings": [
+                "cooling"
+              ]
+            }
           }
     },
     "frame": "goal",
@@ -33,7 +38,9 @@
             "items": [
               "minecraft:jigsaw"
             ],
-            "custom_data": "{cooling_module:1b}"
+            "predicates": {
+              "minecraft:custom_data": "{warming_module:1b}"
+            }
           }
         ]
       }

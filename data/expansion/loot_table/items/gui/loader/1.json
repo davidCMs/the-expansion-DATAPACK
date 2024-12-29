@@ -16,8 +16,20 @@
                 "entity": "this"
               },
               {
-                "function": "minecraft:set_custom_model_data",
-                "value": 124471
+                "function": "minecraft:set_components",
+                "components": 
+                {
+                  "item_model": "expansion:blocks/fabricator",
+                  "custom_model_data": {
+                    "strings": [
+                      "gui",
+                      "loader"
+                    ],
+                    "floats": [
+                      1
+                    ]
+                  }
+                }
               },
               {
                 "function": "minecraft:set_custom_data",

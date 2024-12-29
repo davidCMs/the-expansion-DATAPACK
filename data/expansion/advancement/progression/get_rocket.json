@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:carrot_on_a_stick",
           "components": {
-            "minecraft:custom_model_data": 1012000
+            "item_model": "expansion:vehicles/rocket"
           }
         },
         "frame": "task",

@@ -9,7 +9,7 @@
         "icon": {
           "id": "minecraft:carrot_on_a_stick",
           "components": {
-            "minecraft:custom_model_data": 1012002
+            "item_model": "expansion:vehicles/spaceship"
           }
         },
         "frame": "task",

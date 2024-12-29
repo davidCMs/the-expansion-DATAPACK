@@ -1,4 +1,4 @@
-# extract parameters
+# extract parameters (oxygen_max is still know from init)
 execute store result score #source exp.oxygen_max run data get entity @s SelectedItem.components."minecraft:custom_data".oxygen_max
 scoreboard players operation #target exp.oxygen_lvl = @s exp.oxygen_lvl
 scoreboard players operation #target exp.oxygen_max = @s exp.oxygen_max
@@ -7,9 +7,7 @@ scoreboard players operation #target exp.oxygen_max = @s exp.oxygen_max
 function expansion:mechanics/oxygen/refill_calculation
 
 # change the sources custom model data based on the oxygen percentage
-scoreboard players operation #temp exp.math = #source exp.oxygen_percent
-execute store result score #tier exp.value run data get entity @s SelectedItem.components."minecraft:custom_data".tier
-function expansion:mechanics/oxygen/find_tank_cmd
+execute store result storage expansion:oxygen_calc data.tank_cmd int 1 run scoreboard players get #source exp.oxygen_percent
 item modify entity @s weapon.mainhand expansion:oxygen_tank/merge_cmd_from_data
 
 # merge new oxygen values with the source

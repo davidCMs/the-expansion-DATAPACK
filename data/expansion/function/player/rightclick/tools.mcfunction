@@ -1,7 +1,7 @@
 # space equipment
 execute if predicate expansion:nbt_checks/selected_item/space_equipment/equipment run return run function expansion:items/space_equipment/equip
 # oxygen system
-execute if predicate expansion:nbt_checks/armor/space_equipment/equipment if predicate expansion:nbt_checks/selected_item/items/oxygen_tank run return run function expansion:mechanics/oxygen/refill_check
+execute if predicate expansion:nbt_checks/armor/space_equipment/equipment if predicate expansion:nbt_checks/selected_item/items/oxygen_tank run return run function expansion:items/oxygen_tank/init
 # cryoblaster
 execute if predicate expansion:nbt_checks/selected_item/items/cryoblaster unless entity @s[tag=exp.inside_vehicle] run return run function expansion:items/cryoblaster/cryoblaster
 # fleet finder

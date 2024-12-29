@@ -11,8 +11,8 @@ execute if score @s exp.ammo matches 5.. if score @s exp.hold_value_alt matches 
 
 # reload functions
 title @s subtitle {"text":" "}
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:water"}}]}] run title @s[tag=!exp.used_ammo] title {"text":"Gather more water","color":"red","bold":true}
-execute if entity @s[tag=!exp.used_ammo,nbt={Inventory:[{id:"minecraft:potion",tag:{Potion:"minecraft:water"}}]}] run function expansion:items/cryoblaster/reload
+execute unless entity @s[nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}]}] run title @s[tag=!exp.used_ammo] title {"text":"Gather more water","color":"red","bold":true}
+execute if entity @s[tag=!exp.used_ammo,nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}]}] run function expansion:items/cryoblaster/reload
 
 execute store result storage expansion:ammo data.ammo byte 1 run scoreboard players get @s exp.ammo
 item modify entity @s weapon.mainhand expansion:cryoblaster/ammo

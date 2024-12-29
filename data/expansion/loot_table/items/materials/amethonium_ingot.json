@@ -16,8 +16,11 @@
                 "entity": "this"
               },
               {
-                "function": "minecraft:set_custom_model_data",
-                "value": 123601
+                "function": "minecraft:set_components",
+                "components": 
+                {
+                  "item_model": "expansion:crafting/amethonium_ingot"
+                }
               },
               {
                 "function": "minecraft:set_components",

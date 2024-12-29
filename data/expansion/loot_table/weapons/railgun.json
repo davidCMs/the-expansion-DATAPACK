@@ -16,12 +16,9 @@
               "entity": "this"
             },
             {
-              "function": "minecraft:set_custom_model_data",
-              "value": 1012500
-            },
-            {
               "function": "minecraft:set_components",
                   "components": {
+                    "item_model": "expansion:railgun",
                     "minecraft:max_stack_size": 1,
                   "!minecraft:max_damage": {},
                   "minecraft:unbreakable": {

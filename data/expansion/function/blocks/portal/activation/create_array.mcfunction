@@ -47,11 +47,11 @@ execute store result storage expansion:portal init.portal_array[0].core5 byte 1 
 
 # Store the position in the array.
 execute store result score @s exp.dy run data get entity @s Pos[1] 100
-execute store result storage expansion:portal init.portal_array[0].y double 0.01 run scoreboard players get @s exp.dy
+execute store result storage expansion:portal init.portal_array[0].Pos.y double 0.01 run scoreboard players get @s exp.dy
 scoreboard players add @s exp.dy 115
-execute store result storage expansion:portal init.portal_array[0].dy double 0.01 run scoreboard players get @s exp.dy
-execute store result storage expansion:portal init.portal_array[0].x double 0.01 run data get entity @s Pos[0] 100
-execute store result storage expansion:portal init.portal_array[0].z double 0.01 run data get entity @s Pos[2] 100
+execute store result storage expansion:portal init.portal_array[0].Pos.dy double 0.01 run scoreboard players get @s exp.dy
+execute store result storage expansion:portal init.portal_array[0].Pos.x double 0.01 run data get entity @s Pos[0] 100
+execute store result storage expansion:portal init.portal_array[0].Pos.z double 0.01 run data get entity @s Pos[2] 100
 
 # copy the storage to the entity
 data modify entity @s item.components.minecraft:custom_data.portal_array set from storage expansion:portal init.portal_array

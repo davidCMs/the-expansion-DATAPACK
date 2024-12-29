@@ -16,8 +16,17 @@
                 "entity": "this"
               },
               {
-                "function": "minecraft:set_custom_model_data",
-                "value": 124428
+                "function": "minecraft:set_components",
+                "components": 
+                {
+                  "item_model": "expansion:blocks/modstation",
+                  "custom_model_data": {
+                    "strings": [
+                      "gui",
+                      "buggy"
+                    ]
+                  }
+                }
               },
               {
                 "function": "minecraft:set_custom_data",

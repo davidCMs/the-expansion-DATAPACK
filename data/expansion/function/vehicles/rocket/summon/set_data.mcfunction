@@ -1,5 +1,5 @@
 # add the custom model to the item display
-execute on passengers if entity @s[type=minecraft:item_display,tag=exp.rocket_display] run item replace entity @s container.0 with minecraft:carrot_on_a_stick[minecraft:custom_model_data=1012000] 1
+execute on passengers if entity @s[type=minecraft:item_display,tag=exp.rocket_display] run loot replace entity @s container.0 loot expansion:vehicles/rocket
 # set the transformations for the item display
 execute on passengers if entity @s[type=minecraft:item_display,tag=exp.rocket_display] run data merge entity @s {transformation:{translation:[0.0f,-0.31f,0.0f],scale:[0.62f,0.62f,0.62f]}}
 

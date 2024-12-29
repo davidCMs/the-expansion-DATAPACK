@@ -16,10 +16,7 @@ data merge entity @s[tag=exp.mini_mars] {item:{id:"minecraft:player_head",count:
 data merge entity @s[tag=exp.mini_venus] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;863215294,-1780921430,-1773460256,1982824210],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMGVmMTQ3ZGRjOTA4ZTY4MjVjMjI5OTk3YWE1Mjk3NjFmNTE2OTFhMTFjOTU1MTI5YTIzMzYzMmQ1NTQ4NzVlIn19fQ=="}]}}}}
 data merge entity @s[tag=exp.mini_jupiter] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;863215294,-1780921430,-1773460256,1982824210],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjhhYWE4YTM1NjFlODBlZjFmOTU2MWYxNzIxMWU3NzBkZTE4YTlmOThjMjY5MWVjZjlkNjk2NTU5YTFiOTE4YyJ9fX0="}]}}}}
 data merge entity @s[tag=exp.mini_europa] {item:{id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;863215294,-1780921430,-1773460256,1982824210],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjJiZjFlNDVlMzEwMTE1NjZjMDY1MWY0ZjNlMDI3YjU4M2M3NmVhNTE4ODBkNTRlNWQ3NDdjMzFiZDA3OTgwMSJ9fX0="}]}}}}
-data merge entity @s[tag=exp.mini_ship] {item:{id:"minecraft:carrot_on_a_stick",count:1,components:{custom_model_data:1012002}}}
-data merge entity @s[tag=exp.mini_drone1] {item:{id:"minecraft:carrot_on_a_stick",count:1,components:{custom_model_data:1012410}}}
-data merge entity @s[tag=exp.mini_drone2] {item:{id:"minecraft:carrot_on_a_stick",count:1,components:{custom_model_data:1012411}}}
-
+data merge entity @s[tag=exp.mini_ship] {item:{id:"minecraft:carrot_on_a_stick",count:1,components:{item_model:"expansion:vehicles/spaceship"}}}
 # set size
 scoreboard players set @s[tag=exp.mini_sun] exp.size 3500
 scoreboard players set @s[tag=exp.mini_earth] exp.size 1100

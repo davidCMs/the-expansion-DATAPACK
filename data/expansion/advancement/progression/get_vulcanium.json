@@ -10,7 +10,7 @@
         "icon": {
           "id": "minecraft:waxed_exposed_cut_copper_slab",
           "components": {
-            "minecraft:custom_model_data": 123456
+            "item_model": "expansion:blocks/vulcanium_ore"
           }
         },
         "frame": "task",

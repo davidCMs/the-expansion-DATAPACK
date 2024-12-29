@@ -1,5 +1,6 @@
 # give the drone the same id as the player
 scoreboard players operation @s exp.unique_id = #temp exp.unique_id
+execute on passengers run scoreboard players operation @s exp.unique_id = #temp exp.unique_id
 scoreboard players reset #temp exp.unique_id
 
 # copy model to drone
