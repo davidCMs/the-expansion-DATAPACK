@@ -6,6 +6,5 @@ execute if entity @s[tag=aj.buggy.animation.steer_left.playing] run function ani
 execute if entity @s[tag=aj.buggy.animation.steer_right.playing] run function animated_java:buggy/animations/steer_right/zzz/on_tick
 execute if entity @s[tag=aj.buggy.animation.drive.playing] run function animated_java:buggy/animations/drive/zzz/on_tick
 execute if entity @s[tag=aj.buggy.animation.drive_back.playing] run function animated_java:buggy/animations/drive_back/zzz/on_tick
-execute on passengers if entity @s[tag=aj.buggy.data] run function animated_java:buggy/root/zzz/1
 execute at @s on passengers run rotate @s ~ ~
 function #animated_java:buggy/as_root/post_tick

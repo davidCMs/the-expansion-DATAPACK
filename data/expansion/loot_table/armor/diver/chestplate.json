@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:carrot_on_a_stick",
+            "name": "minecraft:jigsaw",
             "functions": [
               {
                 "function": "minecraft:set_name",
@@ -18,77 +18,21 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "item_model": "expansion:armor/equipment",
+                  "item_model": "minecraft:iron_chestplate",
                   "minecraft:max_stack_size": 1,
                   "!minecraft:max_damage": {},
                   "minecraft:unbreakable": {
                     "show_in_tooltip": false
+                  },
+                  "equippable": {
+                    "slot": "chest",
+                    "asset_id": "expansion:diver"
                   }
                 }
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{Unbreakable:1b,exp_tool:1b,space_equipment:1b,ModStorage:{},expansion_coas:1b,crafting_count:1,max_stack_size:1}"
-              },
-              {
-                "function": "minecraft:set_lore",
-                "lore": [
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "translate": "exp_armor_equipment_notank",
-                      "color": "aqua",
-                      "bold": true,
-                      "italic": false
-                    }
-                  ],
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "translate": "exp_armor_equipment_protmod"
-                    },
-                    {
-                      "text": "None",
-                      "color": "red",
-                      "bold": true,
-                      "italic": false
-                    }
-                  ],
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "translate": "exp_armor_equipment_utilmod"
-                    },
-                    {
-                      "text": "None",
-                      "color": "red",
-                      "bold": true,
-                      "italic": false
-                    }
-                  ],
-                  {
-                    "text": ""
-                  },
-                  {
-                    "translate": "exp_lore_tooltips"
-                  },
-                  {
-                    "translate": "exp_armor_equipment_tip1"
-                  },
-                  {
-                    "translate": "exp_armor_equipment_tip2"
-                  },
-                  {
-                    "translate": "exp_armor_equipment_tip3"
-                  }
-                ],
-                "mode": "replace_all"
+                "tag": "{}"
               },
               {
                 "function": "minecraft:set_attributes",

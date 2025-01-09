@@ -5,10 +5,7 @@
     "vehicle": {
       "nbt": "{Tags:[\"exp.mech_seat\"]}",
       "vehicle": {
-        "nbt": "{Tags:[\"exp.AI_resetter\"]}",
-        "vehicle": {
-          "nbt": "{Tags:[\"exp.mech\"]}"
-        }
+        "nbt": "{Tags:[\"exp.mech\"]}"
       }
     }
   }
