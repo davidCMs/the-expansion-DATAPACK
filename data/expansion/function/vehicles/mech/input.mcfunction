@@ -1,13 +1,20 @@
-scoreboard players reset #controlled exp.bool
+# signal to the mech that there is any input
+execute on vehicle on vehicle run scoreboard players set @s exp.warmup 1
+
+# signal to the mech that jump is pressed
+# other inputs can't be given when jump is pressed
+execute if predicate expansion:input/jump on vehicle on vehicle run scoreboard players set @s exp.jump 1
+
+# signal horizontal input
 scoreboard players reset #angle exp.offset
 execute if predicate expansion:input/forward run scoreboard players set #angle exp.offset 0
-execute if predicate expansion:input/left run scoreboard players set #angle exp.offset -90
-execute if predicate expansion:input/right run scoreboard players set #angle exp.offset 90
+execute if predicate expansion:input/left run scoreboard players set #angle exp.offset -89
+execute if predicate expansion:input/right run scoreboard players set #angle exp.offset 89
 execute if predicate expansion:input/forward if predicate expansion:input/left run scoreboard players set #angle exp.offset -45
 execute if predicate expansion:input/forward if predicate expansion:input/right run scoreboard players set #angle exp.offset 45
 execute if predicate expansion:input/backward run scoreboard players set #angle exp.offset 180
 execute if predicate expansion:input/backward if predicate expansion:input/left run scoreboard players set #angle exp.offset -135
 execute if predicate expansion:input/backward if predicate expansion:input/right run scoreboard players set #angle exp.offset 135
 
-# signal that there is any player input
-execute if score #angle exp.offset matches -180..180 run scoreboard players set #controlled exp.bool 1
+execute on vehicle on vehicle run scoreboard players operation @s exp.yaw = #angle exp.offset
+scoreboard players reset #angle exp.offset

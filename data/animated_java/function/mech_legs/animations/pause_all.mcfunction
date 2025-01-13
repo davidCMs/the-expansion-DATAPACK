@@ -3,3 +3,5 @@ execute unless entity @s[type=item_display,tag=aj.mech_legs.root] run return run
 tag @s remove aj.mech_legs.animation.walking.playing
 tag @s remove aj.mech_legs.animation.walking_backwards.playing
 tag @s remove aj.mech_legs.animation.idle.playing
+tag @s remove aj.mech_legs.animation.falling.playing
+tag @s remove aj.mech_legs.animation.landing.playing

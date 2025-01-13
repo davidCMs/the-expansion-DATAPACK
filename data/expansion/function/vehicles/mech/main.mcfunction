@@ -7,17 +7,13 @@ execute unless entity @s[type=player] run return run function expansion:mobs/mec
 # give the player speed to increase the FOV
 effect give @s speed 1 5 true
 # teleport items to the pilots inventory
-execute on vehicle on vehicle at @s on passengers on passengers run tp @e[type=item,distance=..4,limit=5] @s[type=player]
+execute if predicate expansion:periodic/10 on vehicle on vehicle at @s on passengers on passengers run tp @e[type=item,distance=..4,limit=5] @s[type=player]
 
 # make the player exit the mech when it is no longer mounted
 execute unless predicate expansion:nbt_checks/root_vehicle/mech run function expansion:vehicles/mech/exit/init
 
 # determine the movement direction based on the inputs
-function expansion:vehicles/mech/input
-
-# signal a walking mech to stop walking if no input is given
-# wait until the legs are the closest to the idle position
-execute unless predicate expansion:input/any on vehicle on vehicle if entity @s[tag=exp.mech_walking] run function expansion:vehicles/mech/anim_control/signal_stop
+execute if predicate expansion:input/mech run function expansion:vehicles/mech/input
 
 # runs as the base entity while the player is inside
 execute on vehicle on vehicle at @s run function expansion:vehicles/mech/inside

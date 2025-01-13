@@ -103,6 +103,7 @@ scoreboard players set #8 exp.const 8
 scoreboard players set #10 exp.const 10
 scoreboard players set #14 exp.const 14
 scoreboard players set #20 exp.const 20
+scoreboard players set #30 exp.const 30
 scoreboard players set #36 exp.const 36
 scoreboard players set #40 exp.const 40
 scoreboard players set #50 exp.const 50

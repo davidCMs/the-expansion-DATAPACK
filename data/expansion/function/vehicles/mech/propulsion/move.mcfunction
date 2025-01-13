@@ -1,3 +1,6 @@
+# find the rotation in which motion has to be applied
+function expansion:vehicles/mech/propulsion/find_motion_angle
+
 # calculate sin of the angle
 function expansion:utilities/math/sin
 execute if score #angle exp.math matches -180..0 run scoreboard players operation #num exp.math *= #-1 exp.const

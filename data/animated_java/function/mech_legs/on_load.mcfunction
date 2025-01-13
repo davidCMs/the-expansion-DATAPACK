@@ -2,3 +2,5 @@
 scoreboard objectives add aj.walking.frame dummy
 scoreboard objectives add aj.walking_backwards.frame dummy
 scoreboard objectives add aj.idle.frame dummy
+scoreboard objectives add aj.falling.frame dummy
+scoreboard objectives add aj.landing.frame dummy
