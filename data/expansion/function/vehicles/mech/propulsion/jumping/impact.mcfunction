@@ -1,7 +1,7 @@
 tag @s remove exp.mech_jumping
 tag @s remove exp.mech_jumped
 
-scoreboard players add @s exp.cooldown 10
+scoreboard players add @s exp.cooldown 12
 
 scoreboard players set @s exp.size_mod -10
 

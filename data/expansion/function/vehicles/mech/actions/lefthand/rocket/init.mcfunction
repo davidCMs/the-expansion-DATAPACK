@@ -3,6 +3,9 @@ execute on passengers if entity @s[type=minecraft:item_display,tag=aj.mech_torso
 # set this equal to the number of frames in the animation
 scoreboard players set @s exp.mech_left_anim 40
 
-scoreboard players reset #temp exp.unique_id
-execute on passengers on passengers on passengers if entity @s[tag=exp.mech_pilot] at @s anchored eyes positioned ^ ^ ^4 summon marker run function expansion:vehicles/mech/actions/righthand/rocket/target/cast
-execute store result entity @s ArmorItems[3].components.minecraft:custom_data.rocket_left_target long 1 run scoreboard players get #temp exp.unique_id
+# find a target for the rocket and store it inside the mech
+execute on passengers on passengers if entity @s[tag=exp.mech_pilot] at @s anchored eyes positioned ^ ^ ^4 summon marker run function expansion:vehicles/mech/actions/righthand/rocket/target/cast
+
+# store the target UUID for later reference
+data modify entity @s ArmorItems[3].components."minecraft:custom_data".rocket_target append from storage expansion:temp rocket_target
+data remove storage expansion:temp rocket_target

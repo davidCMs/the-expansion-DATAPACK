@@ -1,11 +1,5 @@
-# prepare id search
-scoreboard players operation #search exp.unique_id = @s exp.unique_id
-
 # rotate towards the target
-execute at @s anchored feet facing entity @n[type=!#expansion:ignore,tag=!exp.block,tag=!exp.vehicle,tag=!exp.ignore,predicate=expansion:compare_score/unique_id] eyes positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
-
-# fly forwards with the current rotation
-execute at @s run tp @s ^ ^ ^1.5
+execute at @s anchored feet on passengers if entity @s[type=snowball] on origin facing entity @s eyes as @e[type=item_display,tag=exp.homing_rocket,distance=..0.1] positioned ^ ^ ^2 rotated as @s positioned ^ ^ ^10 facing entity @s feet facing ^ ^ ^-1 positioned as @s run rotate @s ~ ~
 
 # add rome random patterns
 execute at @s if predicate expansion:chance/025_chance run tp @s ^ ^ ^ ~2 ~
@@ -18,6 +12,9 @@ execute at @s unless block ^ ^-1 ^ #expansion:air run rotate @s ~ ~-10
 execute at @s unless block ^ ^1 ^ #expansion:air run rotate @s ~ ~10
 execute at @s unless block ^-1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~-10 ~
 execute at @s unless block ^1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~10 ~
+
+# fly forwards with the current rotation
+execute at @s run tp @s ^ ^ ^1.5
 
 # explode when hitting a block or when an entity is nearby
 execute if score @s exp.cooldown matches 0 positioned ~-.5 ~-.5 ~-.5 if entity @n[type=!#expansion:ignore,dx=0,dy=0,dz=0] run function expansion:vehicles/mech/actions/righthand/rocket/explode
