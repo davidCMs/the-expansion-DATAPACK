@@ -1,7 +1,6 @@
 # animation control
 execute if entity @s[tag=exp.mech_action_stop] run return run function expansion:vehicles/mech/actions/shoot/stop
 execute if score @s exp.mech_action_dur matches 1 run function expansion:vehicles/mech/actions/shoot/init
-execute if score @s exp.mech_action_anim matches 0 run function expansion:vehicles/mech/actions/shoot/start_loop
 
 # cast rays
 execute if entity @s[tag=exp.left_arm_control] if predicate expansion:periodic/2 if score @s exp.mech_action_dur matches 20.. on vehicle on passengers if entity @s[tag=aj.mech_torso.root] at @s positioned ^1.3 ^ ^3 rotated as @s summon marker run function expansion:vehicles/mech/actions/shoot/raycast/cast

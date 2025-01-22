@@ -1,7 +1,7 @@
 scoreboard players add @s exp.mech_action_dur 1
 
 # stop the walking animation if an action starts
-#execute if score @s exp.mech_action_dur matches 1 run function expansion:vehicles/mech/anim_control/stop_walking_body
+execute if score @s exp.mech_action_dur matches 1 run function expansion:vehicles/mech/anim_control/body/stop_walking
 
 # runs during any actions
 execute if score @s exp.mech_action_id matches 0 run function expansion:vehicles/mech/actions/punch/main
