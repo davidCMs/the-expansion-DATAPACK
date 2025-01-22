@@ -1,0 +1,2 @@
+data modify storage expansion:owner data.current_UUID set from entity @s ArmorItems[3].components."minecraft:custom_data".rocket_target[0]
+data remove entity @s ArmorItems[3].components."minecraft:custom_data".rocket_target[0]

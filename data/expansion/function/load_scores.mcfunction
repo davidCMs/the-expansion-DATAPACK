@@ -39,6 +39,10 @@ scoreboard objectives add exp.mech_left_dur dummy
 scoreboard objectives add exp.mech_right_dur dummy
 scoreboard objectives add exp.mech_left_anim dummy
 scoreboard objectives add exp.mech_right_anim dummy
+
+scoreboard objectives add exp.mech_action_id dummy
+scoreboard objectives add exp.mech_action_dur dummy
+scoreboard objectives add exp.mech_action_anim dummy
 # timers
 scoreboard objectives add exp.timer_1 dummy
 scoreboard objectives add exp.timer_2 dummy
