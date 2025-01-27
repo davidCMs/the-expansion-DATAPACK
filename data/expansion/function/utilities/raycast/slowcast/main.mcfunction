@@ -6,4 +6,4 @@ execute if entity @s[tag=exp.ship_gatlingblast] run return run function expansio
 
 execute if entity @s[tag=exp.drone_laser] run return run function expansion:mobs/evil_drone/ranged_drone/laser
 
-execute if entity @s[tag=exp.homing_rocket] run return run function expansion:vehicles/mech/actions/righthand/rocket/loop
+execute if entity @s[tag=exp.homing_rocket] run return run function expansion:vehicles/mech/actions/rocket/loop

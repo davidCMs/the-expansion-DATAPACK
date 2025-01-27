@@ -6,8 +6,8 @@ tag @s remove aj.mech_torso.animation.walking_body.playing
 tag @s remove aj.mech_torso.animation.walking_left.playing
 tag @s remove aj.mech_torso.animation.walking_right.playing
 tag @s remove aj.mech_torso.animation.walking_backwards_body.playing
-tag @s remove aj.mech_torso.animation.walking_backwards_left.playing
 tag @s remove aj.mech_torso.animation.walking_backwards_right.playing
+tag @s remove aj.mech_torso.animation.walking_backwards_left.playing
 tag @s remove aj.mech_torso.animation.rocket_shoot_r.playing
 tag @s remove aj.mech_torso.animation.rocket_shoot_l.playing
 tag @s remove aj.mech_torso.animation.sword_swing_r.playing

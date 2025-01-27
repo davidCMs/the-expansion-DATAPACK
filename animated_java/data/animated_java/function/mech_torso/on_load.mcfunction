@@ -5,8 +5,8 @@ scoreboard objectives add aj.walking_body.frame dummy
 scoreboard objectives add aj.walking_left.frame dummy
 scoreboard objectives add aj.walking_right.frame dummy
 scoreboard objectives add aj.walking_backwards_body.frame dummy
-scoreboard objectives add aj.walking_backwards_left.frame dummy
 scoreboard objectives add aj.walking_backwards_right.frame dummy
+scoreboard objectives add aj.walking_backwards_left.frame dummy
 scoreboard objectives add aj.rocket_shoot_r.frame dummy
 scoreboard objectives add aj.rocket_shoot_l.frame dummy
 scoreboard objectives add aj.sword_swing_r.frame dummy

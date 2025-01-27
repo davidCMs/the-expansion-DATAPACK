@@ -4,8 +4,6 @@ execute anchored eyes rotated as @s on vehicle on vehicle positioned as @s on pa
 # non-player AI
 execute unless entity @s[type=player] run return run function expansion:mobs/mech/behavior/main
 
-# give the player speed to increase the FOV
-effect give @s speed 1 5 true
 # teleport items to the pilots inventory
 execute if predicate expansion:periodic/10 on vehicle on vehicle at @s on passengers on passengers run tp @e[type=item,distance=..4,limit=5] @s[type=player]
 

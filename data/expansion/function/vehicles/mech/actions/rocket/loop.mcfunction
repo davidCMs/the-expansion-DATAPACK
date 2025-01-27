@@ -17,8 +17,8 @@ execute at @s unless block ^1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~10 ~
 execute at @s run tp @s ^ ^ ^1.5
 
 # explode when hitting a block or when an entity is nearby
-execute if score @s exp.cooldown matches 0 positioned ~-.5 ~-.5 ~-.5 if entity @n[type=!#expansion:ignore,dx=0,dy=0,dz=0] run function expansion:vehicles/mech/actions/righthand/rocket/explode
-execute unless block ~ ~ ~ #expansion:air run function expansion:vehicles/mech/actions/righthand/rocket/explode
+execute if score @s exp.cooldown matches 0 positioned ~-.5 ~-.5 ~-.5 if entity @n[type=!#expansion:ignore,dx=0,dy=0,dz=0] run function expansion:vehicles/mech/actions/rocket/explode
+execute unless block ~ ~ ~ #expansion:air run function expansion:vehicles/mech/actions/rocket/explode
 
 particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0 1 force
 particle flame ^ ^ ^-0.5 0 0 0 0.01 2 force
@@ -28,6 +28,6 @@ particle flame ^ ^ ^-1 0 0 0 0.01 2 force
 scoreboard players remove @s exp.max_range 1
 scoreboard players remove @s[scores={exp.cooldown=1..}] exp.cooldown 1
 
-execute if score @s exp.max_range matches ..0 run function expansion:vehicles/mech/actions/righthand/rocket/explode
+execute if score @s exp.max_range matches ..0 run function expansion:vehicles/mech/actions/rocket/explode
 
 

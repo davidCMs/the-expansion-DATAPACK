@@ -5,5 +5,5 @@ execute if score @s aj.tween_duration matches 0 on passengers run data modify en
 execute if score @s aj.gatling_shooting_r.frame matches -1 run function animated_java:mech_torso/animations/gatling_shooting_r/zzz/zzz/0
 execute store result storage aj:temp frame int 1 run scoreboard players get @s aj.gatling_shooting_r.frame
 function animated_java:mech_torso/animations/gatling_shooting_r/zzz/apply_frame with storage aj:temp
-execute if score @s aj.gatling_shooting_r.frame matches 8.. run return run function animated_java:mech_torso/animations/gatling_shooting_r/zzz/zzz/1
+execute if score @s aj.gatling_shooting_r.frame matches 13.. run return run function animated_java:mech_torso/animations/gatling_shooting_r/zzz/zzz/1
 scoreboard players add @s aj.gatling_shooting_r.frame 1
