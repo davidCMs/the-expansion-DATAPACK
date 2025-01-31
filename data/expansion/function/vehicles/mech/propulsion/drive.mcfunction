@@ -5,14 +5,14 @@ scoreboard players set @s exp.speed 6
 execute if function expansion:vehicles/mech/propulsion/jumping/allowed run tag @s add exp.mech_jumping
 execute unless entity @s[tag=!exp.mech_jumping,tag=!exp.mech_jumped] run function expansion:vehicles/mech/propulsion/jumping/main
 
-# calculate the motion vector
+# calculate the motion vector, every two ticks for performance
 function expansion:vehicles/mech/propulsion/move
 
 # rotate the root of the mech slowly with the player view
 execute at @s on passengers on passengers if entity @s[type=player] anchored eyes rotated as @s on vehicle on vehicle run function expansion:vehicles/mech/propulsion/rotate_root
 
 # face the legs to the direction of the motion, as saved inside a marker
-execute on passengers if entity @s[type=marker] run function expansion:vehicles/mech/propulsion/rotate_legs
+execute on passengers if entity @s[tag=exp.movedir] run function expansion:vehicles/mech/propulsion/rotate_legs
 
 # make the mech go uphill and prevent it from clipping inside walls
 function expansion:vehicles/mech/reinforce_fake_hitbox

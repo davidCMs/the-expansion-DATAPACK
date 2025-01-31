@@ -1,0 +1,55 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "entity": "this",
+                "name": {
+                  "translate": "exp_armor_equipment_name",
+                  "italic": false
+                }
+              },
+              {
+                "function": "minecraft:set_components",
+                "components": {
+                  "item_model": "minecraft:iron_leggings",
+                  "minecraft:max_stack_size": 1,
+                  "!minecraft:max_damage": {},
+                  "minecraft:unbreakable": {
+                    "show_in_tooltip": false
+                  },
+                  "equippable": {
+                    "slot": "legs",
+                    "asset_id": "expansion:golem"
+                  }
+                }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{}"
+              },
+              {
+                "function": "minecraft:set_attributes",
+                "modifiers": [
+                  {
+                    "attribute": "minecraft:armor",
+                    "id": "armor",
+                    "amount": 2,
+                    "operation": "add_value",
+                    "slot": "head"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

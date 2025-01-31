@@ -1,9 +1,8 @@
-particle mycelium ~ ~ ~ 0 0 0 0 1 force
+# tp 5 blocks ahead while checking intersecting blocks, a raycast inside a slowcast if you will
+# speed is the amount of blocks checked per tick
+scoreboard players set @s exp.speed 8
+scoreboard players reset #temp exp.bool
 
-scoreboard players remove @s exp.max_range 1
+function expansion:vehicles/mech/actions/shoot/raycast/loop_loop
 
-execute positioned ^ ^ ^.25 unless block ~ ~ ~ air run function expansion:vehicles/mech/actions/shoot/raycast/hit_block
-
-execute positioned ~-.5 ~-.5 ~-.5 as @e[type=!#expansion:ignore,dx=0,dy=0,dz=0,limit=1] run function expansion:vehicles/mech/actions/shoot/raycast/hit
-
-execute if score @s exp.max_range matches 1.. positioned ^ ^ ^.25 if block ~ ~ ~ air run function expansion:vehicles/mech/actions/shoot/raycast/loop
+execute unless score @s exp.max_range matches 1.. run kill @s

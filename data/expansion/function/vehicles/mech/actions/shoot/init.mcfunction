@@ -1,12 +1,15 @@
-# start animations
-execute if entity @s[tag=exp.left_arm_control] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] run function animated_java:mech_torso/animations/gatling_start_l/play
-execute if entity @s[tag=exp.right_arm_control] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] run function animated_java:mech_torso/animations/gatling_start_r/play
+# get players pitch
+execute store result score #temp exp.pitch on vehicle on passengers if entity @s[tag=exp.mech_seat] on passengers run data get entity @s Rotation[1] 1000
 
-# adds the functionality to be able to stop this loop
-tag @s add exp.mech_action_toggle
+# left
+execute if entity @s[tag=exp.left_arm_control,tag=exp.shoot_right] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] at @s positioned ^1.2 ^.4 ^3.5 rotated as @s rotated ~ ~ summon item_display run function expansion:vehicles/mech/actions/shoot/raycast/cast
+execute if entity @s[tag=exp.left_arm_control,tag=exp.shoot_left] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] at @s positioned ^1.55 ^.5 ^3.5 rotated as @s rotated ~ ~ summon item_display run function expansion:vehicles/mech/actions/shoot/raycast/cast
 
-# set this equal to the number of frames in the animation
-scoreboard players set @s exp.mech_action_anim 20
+# right, not symmetric for some reason
+execute if entity @s[tag=exp.right_arm_control,tag=exp.shoot_left] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] at @s positioned ^-1.0 ^.4 ^3.5 rotated as @s rotated ~ ~ summon item_display run function expansion:vehicles/mech/actions/shoot/raycast/cast
+execute if entity @s[tag=exp.right_arm_control,tag=exp.shoot_right] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] at @s positioned ^-1.35 ^.5 ^3.5 rotated as @s rotated ~ ~ summon item_display run function expansion:vehicles/mech/actions/shoot/raycast/cast
 
-# play sound
-playsound expansion:mech.minigun.warmup ambient @a ~ ~ ~ 0.5
+# remove tags
+tag @s remove exp.shoot
+tag @s remove exp.shoot_left
+tag @s remove exp.shoot_right

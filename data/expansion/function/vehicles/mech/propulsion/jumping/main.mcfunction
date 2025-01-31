@@ -4,8 +4,8 @@ execute if entity @s[tag=exp.mech_jumped] run return run execute if entity @s[nb
 scoreboard players set @s exp.yaw 0
 
 # particles
-execute positioned ^-.5 ^2 ^-2 run function expansion:vehicles/mech/propulsion/jumping/particles
-execute positioned ^.5 ^2 ^-2 run function expansion:vehicles/mech/propulsion/jumping/particles
+execute positioned ^-.4 ^2.5 ^-1 run function expansion:vehicles/mech/propulsion/jumping/particles
+execute positioned ^.4 ^2.5 ^-1 run function expansion:vehicles/mech/propulsion/jumping/particles
 
 
 # consume fuel while jumping

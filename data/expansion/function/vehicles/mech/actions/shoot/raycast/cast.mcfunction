@@ -1,21 +1,21 @@
-tag @s add exp.gatling_bullet
+tag @s add exp.autocannon_bullet
+tag @s add exp.slowcast
+
+scoreboard players set @s exp.max_range 100
+
+item replace entity @s container.0 with stone
+
+data merge entity @s {transformation:{scale:[0.2,0.2,0.2]},teleport_duration:1}
 
 execute positioned ^ ^ ^ run rotate @s ~ ~
 
+# give the player minor freedom for vertical aiming
+execute if score #temp exp.pitch matches 5000.. run scoreboard players set #temp exp.pitch 5000
+execute if score #temp exp.pitch matches ..-5000 run scoreboard players set #temp exp.pitch -5000
+execute store result entity @s Rotation[1] float 0.001 run scoreboard players get #temp exp.pitch
+
+# particles
+particle gust ~ ~ ~ 0 0 0 0 1 force
+particle poof ~ ~ ~ 0 0 0 0 1 force
+particle smoke ~ ~ ~ 0 0 0 0 1 force
 particle flame ~ ~ ~ 0 0 0 0.01 1 force
-particle minecraft:dust_plume ~ ~ ~ 0 0 0 0.01 1 force
-
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~1 ~
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~1 ~
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~-1 ~
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~-1 ~
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~ ~1
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~ ~1
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~ ~-1
-execute at @s if predicate expansion:chance/050_chance run rotate @s ~ ~-1
-
-scoreboard players set @s exp.max_range 300
-
-execute positioned as @s rotated as @s run function expansion:vehicles/mech/actions/shoot/raycast/loop
-
-kill @s

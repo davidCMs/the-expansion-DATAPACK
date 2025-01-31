@@ -18,6 +18,3 @@ execute unless score @s exp.fuel_level matches 40.. unless score @s exp.jump mat
 scoreboard players remove @s[scores={exp.cooldown=1..}] exp.cooldown 1
 scoreboard players reset @s[scores={exp.warmup=1}] exp.warmup
 scoreboard players reset @s[scores={exp.jump=1..}] exp.jump
-
-
-#title @p actionbar {"score":{"name":"@s","objective":"exp.fuel_level"}}

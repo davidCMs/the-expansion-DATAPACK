@@ -8,6 +8,6 @@ execute if entity @s[tag=exp.right_arm_control] on vehicle on passengers if enti
 scoreboard players set @s exp.mech_action_anim 16
 
 # sounds
-playsound expansion:mech.minigun.spinoff ambient @a ~ ~ ~ 0.5
-stopsound @a ambient expansion:mech.minigun.loop
-stopsound @a ambient expansion:mech.minigun.warmup
+tag @s remove exp.shoot
+tag @s remove exp.shoot_left
+tag @s remove exp.shoot_right
