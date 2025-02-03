@@ -14,4 +14,4 @@ execute at @s positioned ~-.5 ~-.5 ~-.5 as @e[type=!#expansion:ignore,dx=0,dy=0,
 execute if score #temp exp.bool matches 1 run return run scoreboard players set @s exp.max_range 0
 
 # repeat
-execute if score #temp exp.speed matches 1.. at @s run function expansion:vehicles/mech/actions/shoot/raycast/loop_loop
+execute if score #temp exp.speed matches 1.. if score @s exp.max_range matches 1.. at @s run function expansion:vehicles/mech/actions/shoot/raycast/loop_loop

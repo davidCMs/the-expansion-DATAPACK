@@ -4,6 +4,7 @@ data modify entity @s ArmorItems[0] set from entity @p[tag=exp.tick_player] Sele
 # make the buggy weightless if it is in a zero gravity environment
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
 
+# align the player with the buggy
 execute rotated as @s on passengers if entity @s[tag=exp.buggy_turn] positioned as @s run rotate @s ~ ~
 
 # extract the oxygen data from the item

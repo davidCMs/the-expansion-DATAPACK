@@ -1,1 +1,0 @@
-execute anchored eyes positioned ^ ^ ^ summon minecraft:marker run function expansion:utilities/raycast/placement/cast

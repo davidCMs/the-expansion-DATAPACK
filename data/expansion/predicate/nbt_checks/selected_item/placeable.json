@@ -1,0 +1,14 @@
+{
+    "condition": "any_of",
+    "terms": 
+    [
+        {
+            "condition": "reference",
+            "name": "expansion:nbt_checks/selected_item/blocks/block"
+        },
+        {
+            "condition": "reference",
+            "name": "expansion:nbt_checks/selected_item/vehicles/vehicle"
+        }
+    ]
+}
