@@ -3,6 +3,7 @@
 	"values": [
 		"minecraft:armor_stand",
 		"minecraft:item_display",
-		"minecraft:wandering_trader"
+		"minecraft:wandering_trader",
+		"minecraft:skeleton"
 	]
 }

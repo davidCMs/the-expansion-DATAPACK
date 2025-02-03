@@ -3,3 +3,7 @@ execute if entity @s[tag=exp.right_arm_control] on vehicle on passengers if enti
 
 # set this equal to the number of frames in the animation
 scoreboard players set @s exp.mech_action_anim 20
+
+# set a cooldown (duration + cooldown) for using this arm again
+# not used for a player controlled mech, but for the bossfight
+scoreboard players add @s exp.cooldown 30

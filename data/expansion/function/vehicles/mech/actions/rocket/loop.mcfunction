@@ -14,7 +14,7 @@ execute at @s unless block ^-1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~-10 ~
 execute at @s unless block ^1 ^ ^ #expansion:air run tp @s ^ ^ ^ ~10 ~
 
 # fly forwards with the current rotation
-execute at @s run tp @s ^ ^ ^1.5
+execute at @s run tp @s ^ ^ ^1.2
 
 # explode when hitting a block or when an entity is nearby
 execute if score @s exp.cooldown matches 0 positioned ~-.5 ~-.5 ~-.5 if entity @n[type=!#expansion:ignore,dx=0,dy=0,dz=0] run function expansion:vehicles/mech/actions/rocket/explode

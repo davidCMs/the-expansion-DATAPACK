@@ -11,6 +11,6 @@
     }
   },
   "rewards": {
-    "function": "expansion:vehicles/mech/actions/righthand/rocket/deflect/hit"
+    "function": "expansion:vehicles/mech/actions/rocket/deflect/hit"
   }
 }

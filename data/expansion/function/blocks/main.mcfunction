@@ -32,6 +32,8 @@ execute if entity @s[tag=exp.tesla_coil] if entity @p[distance=..50] run return 
 execute if entity @s[tag=exp.modstation] if entity @p[distance=..50] run return run function expansion:blocks/modification_station/main
 # modification station
 execute if entity @s[tag=exp.planetarium] if entity @p[distance=..50] run return run function expansion:blocks/planetarium/main
-
 # drone home
 execute if entity @s[tag=exp.drone_home] at @s run return run function expansion:mobs/evil_drone/drone_home/main
+
+# tag blocks that are not an expansion entity so they're not checked again
+tag @s add exp.ignore.blocks

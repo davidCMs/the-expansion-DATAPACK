@@ -1,7 +1,7 @@
 tp @s ^ ^ ^1
 
 scoreboard players remove @s exp.max_range 1
-scoreboard players remove @s exp.speed 1
+scoreboard players remove #temp exp.speed 1
 
 # random chance for some particle
 execute if predicate expansion:chance/020_chance run particle white_smoke
@@ -14,4 +14,4 @@ execute at @s positioned ~-.5 ~-.5 ~-.5 as @e[type=!#expansion:ignore,dx=0,dy=0,
 execute if score #temp exp.bool matches 1 run return run scoreboard players set @s exp.max_range 0
 
 # repeat
-execute if score @s exp.speed matches 1.. at @s run function expansion:vehicles/mech/actions/shoot/raycast/loop_loop
+execute if score #temp exp.speed matches 1.. at @s run function expansion:vehicles/mech/actions/shoot/raycast/loop_loop

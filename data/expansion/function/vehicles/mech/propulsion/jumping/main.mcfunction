@@ -1,7 +1,7 @@
 execute if entity @s[tag=exp.mech_jumped] run return run execute if entity @s[nbt={OnGround:1b}] run function expansion:vehicles/mech/propulsion/jumping/impact
 
 # make sure the mech only jumps in the players direction
-scoreboard players set @s exp.yaw 0
+#scoreboard players set @s exp.yaw 0
 
 # particles
 execute positioned ^-.4 ^2.5 ^-1 run function expansion:vehicles/mech/propulsion/jumping/particles

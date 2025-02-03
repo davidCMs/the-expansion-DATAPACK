@@ -9,7 +9,7 @@ execute unless entity @s[tag=!exp.mech_jumping,tag=!exp.mech_jumped] run functio
 function expansion:vehicles/mech/propulsion/move
 
 # rotate the root of the mech slowly with the player view
-execute at @s on passengers on passengers if entity @s[type=player] anchored eyes rotated as @s on vehicle on vehicle run function expansion:vehicles/mech/propulsion/rotate_root
+execute at @s on passengers on passengers if entity @s[tag=exp.mech_pilot] anchored eyes rotated as @s on vehicle on vehicle run function expansion:vehicles/mech/propulsion/rotate_root
 
 # face the legs to the direction of the motion, as saved inside a marker
 execute on passengers if entity @s[tag=exp.movedir] run function expansion:vehicles/mech/propulsion/rotate_legs

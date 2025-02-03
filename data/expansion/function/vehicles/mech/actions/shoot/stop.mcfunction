@@ -7,6 +7,10 @@ execute if entity @s[tag=exp.left_arm_control] on vehicle on passengers if entit
 execute if entity @s[tag=exp.right_arm_control] on vehicle on passengers if entity @s[tag=aj.mech_torso.root] run function animated_java:mech_torso/animations/gatling_stop_r/play
 scoreboard players set @s exp.mech_action_anim 16
 
+# set a cooldown (duration + cooldown) for using this arm again
+# not used for a player controlled mech, but for the bossfight
+scoreboard players add @s exp.cooldown 40
+
 # sounds
 tag @s remove exp.shoot
 tag @s remove exp.shoot_left

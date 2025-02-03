@@ -1,12 +1,15 @@
 tag @s add exp.autocannon_bullet
 tag @s add exp.slowcast
 
+# set parameters
 scoreboard players set @s exp.max_range 100
+scoreboard players set @s exp.speed 7
 
+# render the bullet
 item replace entity @s container.0 with stone
-
 data merge entity @s {transformation:{scale:[0.2,0.2,0.2]},teleport_duration:1}
 
+# align the bullet
 execute positioned ^ ^ ^ run rotate @s ~ ~
 
 # give the player minor freedom for vertical aiming

@@ -6,7 +6,7 @@ execute unless block ~ ~ ~ #expansion:air run scoreboard players set @s exp.max_
 execute if score @s exp.max_range matches 0 summon marker run function expansion:vehicles/mech/actions/rocket/target/lock
 
 # lock a target if a suitable target is found
-execute as @e[type=!#expansion:ignore,tag=!exp.block,tag=!exp.vehicle,tag=!exp.ignore,distance=..5,limit=1,sort=nearest] run return run function expansion:vehicles/mech/actions/rocket/target/lock
+execute as @e[type=!#expansion:ignore,tag=!exp.block,tag=!exp.vehicle,tag=!exp.ignore_as_target,distance=..5,limit=1,sort=nearest] run return run function expansion:vehicles/mech/actions/rocket/target/lock
 
 # loop
 execute if score @s exp.max_range matches 1.. positioned ^ ^ ^.5 run function expansion:vehicles/mech/actions/rocket/target/loop

@@ -1,20 +1,13 @@
-# summon the ray
-summon minecraft:marker ~ ~1.75 ~ {Tags:[exp.railgun_ray]}
-tp @e[type=minecraft:marker,tag=exp.railgun_ray,limit=1,sort=nearest] @s
-execute at @s anchored eyes run tp @e[type=minecraft:marker,tag=exp.railgun_ray,limit=1,sort=nearest] ^ ^ ^2
-
-# shoot the ray and make sure you can't hit yourself
-tag @s add exp.shooting
-execute as @e[type=minecraft:marker,tag=exp.railgun_ray,limit=1,sort=nearest] at @s run function expansion:items/railgun/loop
-tag @s remove exp.shooting
+# cast the ray
+execute rotated as @s anchored eyes positioned ^ ^ ^2 summon minecraft:item_display run function expansion:items/railgun/raycast/cast
 
 # create particle effect
-execute at @s anchored eyes positioned ^ ^ ^9 run function expansion:items/railgun/shoot_particles1
-execute at @s anchored eyes positioned ^ ^ ^6 run function expansion:items/railgun/shoot_particles2
-execute at @s anchored eyes positioned ^ ^ ^3 run function expansion:items/railgun/shoot_particles3
+execute at @s anchored eyes positioned ^ ^ ^9 run function expansion:items/railgun/particles/inner
+execute at @s anchored eyes positioned ^ ^ ^6 run function expansion:items/railgun/particles/middle
+execute at @s anchored eyes positioned ^ ^ ^3 run function expansion:items/railgun/particles/outer
 
 # rotate the player a bit to simulate knockback from the gun
-rotate @s ~ ~-2
+rotate @s ~ ~-4
 
 # technical details
 scoreboard players set @s exp.cooldown 15
