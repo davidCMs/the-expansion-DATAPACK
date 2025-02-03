@@ -1,6 +1,3 @@
-tag @s add exp.landing_moon
-execute on vehicle on vehicle on passengers on passengers on passengers run tag @s[type=player] add exp.landing_moon
-
 # disable weather
 function expansion:utilities/weather/disable_weather
 

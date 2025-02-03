@@ -1,5 +1,5 @@
 # teleport the player in front of the mech
-execute at @s positioned ^ ^ ^2 if block ~ ~ ~ #expansion:air if block ~ ~1 ~ #expansion:air run tp @p[tag=exp.exit_mech] ~ ~ ~
+execute at @s positioned ^ ^ ^2 if block ~ ~ ~ #expansion:air if block ~ ~1 ~ #expansion:air run tp @p[tag=exp.tick_player] ~ ~ ~
 
 # reset scores
 scoreboard players reset @s exp.timer_2
@@ -14,9 +14,9 @@ function expansion:vehicles/mech/anim_control/stop_walking
 
 execute on passengers if entity @s[type=minecraft:item_display,tag=aj.mech_torso.root] run function animated_java:mech_torso/animations/pause_all
 
-effect clear @p[tag=exp.exit_mech] speed
+effect clear @p[tag=exp.tick_player] speed
 
 # remove tags from the player
-tag @p[tag=exp.exit_mech] remove exp.inside_mech
-tag @p[tag=exp.exit_mech] remove exp.inside_vehicle
-tag @p[tag=exp.exit_mech] remove exp.mech_pilot
+tag @p[tag=exp.tick_player] remove exp.inside_mech
+tag @p[tag=exp.tick_player] remove exp.inside_vehicle
+tag @p[tag=exp.tick_player] remove exp.mech_pilot

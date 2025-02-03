@@ -6,6 +6,3 @@ execute if predicate expansion:dimension/moon on vehicle on vehicle run function
 
 # moon landing
 execute if entity @s[tag=exp.landing_moon] run function expansion:vehicles/lunar_module/landing
-
-# exit the vehicle if the rootvehicle is no longer the lander but the tag is still active
-execute unless predicate expansion:nbt_checks/root_vehicle/lunar_module as @n[type=minecraft:armor_stand,tag=exp.lunar_module,distance=..10] run function expansion:vehicles/lunar_module/exit

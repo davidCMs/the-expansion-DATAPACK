@@ -1,6 +1,3 @@
-tag @s add exp.landing_earth
-execute on vehicle on passengers run tag @s add exp.landing_earth
-
 # disable weather
 function expansion:utilities/weather/disable_weather
 

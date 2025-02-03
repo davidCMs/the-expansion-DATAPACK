@@ -6,9 +6,6 @@ execute if entity @s[tag=!exp.rocket_pilot] unless predicate expansion:nbt_check
 execute if entity @s[tag=exp.rocket_pilot] on vehicle on vehicle run function expansion:vehicles/rocket/inside
 execute if entity @s[tag=!exp.rocket_pilot] on vehicle on vehicle on vehicle run function expansion:vehicles/rocket/inside
 
-# exit
-execute unless predicate expansion:nbt_checks/root_vehicle/rocket unless entity @s[tag=exp.landing_moon] run function expansion:vehicles/rocket/exit_rocket
-
 # store players position
 function expansion:player/store_position
 

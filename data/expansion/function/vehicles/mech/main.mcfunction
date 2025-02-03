@@ -7,9 +7,6 @@ execute unless entity @s[type=player] run function expansion:mobs/mech/behavior/
 # teleport items to the pilots inventory
 execute if entity @s[type=player] if predicate expansion:periodic/10 on vehicle on vehicle at @s on passengers on passengers run tp @e[type=item,distance=..4,limit=5] @s[type=player]
 
-# make the player exit the mech when it is no longer mounted
-execute if entity @s[type=player] unless predicate expansion:nbt_checks/root_vehicle/mech run function expansion:vehicles/mech/exit/init
-
 # determine the movement direction based on the inputs
 execute if entity @s[type=player] if predicate expansion:input/mech run function expansion:vehicles/mech/input
 
