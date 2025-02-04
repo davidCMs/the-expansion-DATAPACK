@@ -5,7 +5,7 @@ scoreboard players set @s exp.speed 6
 execute if function expansion:vehicles/mech/propulsion/jumping/allowed run tag @s add exp.mech_jumping
 execute unless entity @s[tag=!exp.mech_jumping,tag=!exp.mech_jumped] run function expansion:vehicles/mech/propulsion/jumping/main
 
-# calculate the motion vector, every two ticks for performance
+# calculate the motion vector
 function expansion:vehicles/mech/propulsion/move
 
 # rotate the root of the mech slowly with the player view

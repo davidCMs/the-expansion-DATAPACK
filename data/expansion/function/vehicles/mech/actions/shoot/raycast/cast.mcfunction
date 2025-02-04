@@ -13,8 +13,8 @@ data merge entity @s {transformation:{scale:[0.2,0.2,0.2]},teleport_duration:1}
 execute positioned ^ ^ ^ run rotate @s ~ ~
 
 # give the player minor freedom for vertical aiming
-execute if score #temp exp.pitch matches 5000.. run scoreboard players set #temp exp.pitch 5000
-execute if score #temp exp.pitch matches ..-5000 run scoreboard players set #temp exp.pitch -5000
+execute if score #temp exp.pitch matches 10000.. run scoreboard players set #temp exp.pitch 10000
+execute if score #temp exp.pitch matches ..-10000 run scoreboard players set #temp exp.pitch -10000
 execute store result entity @s Rotation[1] float 0.001 run scoreboard players get #temp exp.pitch
 
 # particles

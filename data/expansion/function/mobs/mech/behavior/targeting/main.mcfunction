@@ -1,7 +1,6 @@
-# stop walking if tha target is really close
-scoreboard players reset #temp exp.bool
-execute on origin if entity @s[distance=..5] run scoreboard players set #temp exp.bool 1
-execute if score #temp exp.bool matches 1 on vehicle run scoreboard players set @s exp.warmup 0
+# periodically check if the target is still visible and within range
+# find a new target if not
+execute if predicate expansion:periodic/20 unless function expansion:mobs/mech/behavior/targeting/target_visible run function expansion:mobs/mech/behavior/targeting/find_new
 
-#  select a new target periodically
-execute unless predicate expansion:periodic/40 run function expansion:mobs/mech/behavior/targeting/init
+# periodically have a random chance to find a new target even if the previous target was still visible. (unless the current target is very close)
+execute if predicate expansion:periodic/30 if predicate expansion:chance/020_chance unless function expansion:mobs/mech/behavior/targeting/target_nearby run function expansion:mobs/mech/behavior/targeting/find_new

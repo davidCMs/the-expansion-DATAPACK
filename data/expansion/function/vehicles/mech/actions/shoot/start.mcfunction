@@ -10,7 +10,7 @@ scoreboard players set @s exp.mech_action_anim 20
 
 # set a minimum duration for this ability
 # not used for a player controlled mech, but for the bossfight
-scoreboard players add @s exp.cooldown 100
+scoreboard players add @s exp.cooldown 200
 
 # play sound
 playsound expansion:mech.minigun.warmup ambient @a ~ ~ ~ 0.5

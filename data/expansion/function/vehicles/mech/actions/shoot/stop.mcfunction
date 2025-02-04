@@ -9,7 +9,7 @@ scoreboard players set @s exp.mech_action_anim 16
 
 # set a cooldown (duration + cooldown) for using this arm again
 # not used for a player controlled mech, but for the bossfight
-scoreboard players add @s exp.cooldown 40
+scoreboard players add @s exp.cooldown 80
 
 # sounds
 tag @s remove exp.shoot

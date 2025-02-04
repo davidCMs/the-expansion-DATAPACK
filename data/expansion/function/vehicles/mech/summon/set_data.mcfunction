@@ -15,4 +15,7 @@ execute on passengers if entity @s[tag=exp.mech_arm_controller] run function exp
 execute on passengers if entity @s[tag=aj.mech_legs.root] run function animated_java:mech_legs/animations/idle/play
 execute on passengers if entity @s[tag=aj.mech_torso.root] run function animated_java:mech_torso/animations/idle/play
 
+# set max jetpack fuel
+scoreboard players set @s exp.fuel_max 40
+
 tag @s remove exp.new_vehicle

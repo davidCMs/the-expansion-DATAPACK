@@ -12,7 +12,7 @@ execute on passengers if entity @s[tag=exp.left_arm_control,tag=exp.mech_action]
 execute on passengers if entity @s[tag=exp.right_arm_control,tag=exp.mech_action] run function expansion:vehicles/mech/actions/main
 
 # replenish jetpack fuel when on the ground, not maxed, and not jumping
-execute unless score @s exp.fuel_level matches 40.. unless score @s exp.jump matches 1 if entity @s[nbt={OnGround:1b}] if predicate expansion:periodic/2 run scoreboard players add @s exp.fuel_level 1
+execute unless score @s exp.fuel_level >= @s exp.fuel_max unless score @s exp.jump matches 1 if entity @s[nbt={OnGround:1b}] if predicate expansion:periodic/2 run scoreboard players add @s exp.fuel_level 1
 
 # reset scores
 scoreboard players remove @s[scores={exp.cooldown=1..}] exp.cooldown 1
