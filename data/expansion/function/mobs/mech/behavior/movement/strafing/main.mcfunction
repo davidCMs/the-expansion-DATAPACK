@@ -8,4 +8,4 @@ execute if predicate expansion:periodic/10 if predicate expansion:chance/010_cha
 scoreboard players set @s exp.warmup 1
 
 ## SWITCH CONDITIONS
-execute if predicate expansion:periodic/20 run function expansion:mobs/mech/behavior/movement/strafing/switch_rules
+execute if predicate expansion:periodic/10 run function expansion:mobs/mech/behavior/movement/strafing/switch_rules

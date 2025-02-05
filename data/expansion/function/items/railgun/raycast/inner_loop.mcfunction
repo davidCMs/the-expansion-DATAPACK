@@ -11,7 +11,7 @@ particle white_ash ^ ^ ^ 0 0 0 0 1 force
 execute at @s unless block ^ ^ ^1 #expansion:air run function expansion:items/railgun/raycast/quickcast
 
 # hit entities
-execute at @s positioned ~-.5 ~-.5 ~-.5 as @e[type=!#expansion:ignore,dx=0,limit=1] run function expansion:items/railgun/damage
+execute at @s positioned ~-.5 ~-.5 ~-.5 as @e[type=!#expansion:ignore,tag=!exp.ignore_for_damage,dx=0,limit=1] run function expansion:items/railgun/damage
 
 # kill the projectile if it has reached its max range
 execute unless score @s exp.max_range matches 1.. run kill @s

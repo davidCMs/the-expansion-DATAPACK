@@ -1,5 +1,8 @@
-# if the target is not in range, switch states to either backing away or approaching
-execute on passengers if entity @s[tag=exp.mech_arm_controller] unless function expansion:mobs/mech/behavior/targeting/target_in_range on vehicle run scoreboard players set @s exp.rotation 1
+# switch to backing up if the target is too close
+execute unless score @s exp.delay matches 1.. if function expansion:mobs/mech/behavior/targeting/target_too_close run return run function expansion:mobs/mech/behavior/movement/backing_away/activate
+
+# switch to approaching if the target is too far
+execute unless score @s exp.delay matches 1.. if function expansion:mobs/mech/behavior/targeting/target_too_far run return run function expansion:mobs/mech/behavior/movement/approaching/activate
 
 # switch to wandering if no target is found
-execute unless function expansion:mobs/mech/behavior/targeting/has_target run return run scoreboard players set @s exp.rotation 4
+execute unless function expansion:mobs/mech/behavior/targeting/has_target run return run function expansion:mobs/mech/behavior/movement/wandering/activate

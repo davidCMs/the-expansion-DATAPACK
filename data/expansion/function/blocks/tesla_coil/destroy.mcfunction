@@ -1,4 +1,4 @@
-kill @n[type=item,nbt={Age:0s},distance=..2]
+kill @e[type=item,nbt={Age:0s},distance=..2]
 execute as @p unless entity @s[gamemode=creative] run loot spawn ~ ~ ~ loot expansion:blocks/tesla_coil
 
 stopsound @a[distance=..16] block expansion:teslacoil.charge

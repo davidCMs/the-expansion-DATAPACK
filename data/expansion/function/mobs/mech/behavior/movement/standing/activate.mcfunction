@@ -1,0 +1,1 @@
+scoreboard players set @s exp.rotation 0

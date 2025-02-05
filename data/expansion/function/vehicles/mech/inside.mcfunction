@@ -4,6 +4,9 @@ execute if function expansion:vehicles/mech/propulsion/should_stop_walking run f
 # size changes
 execute unless score @s exp.size_mod matches 0 run function expansion:vehicles/mech/size_change
 
+# health
+function expansion:vehicles/mech/health/main
+
 # movement
 execute if function expansion:vehicles/mech/propulsion/allowed rotated ~ 0 align y run function expansion:vehicles/mech/propulsion/drive
 

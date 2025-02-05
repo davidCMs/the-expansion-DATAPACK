@@ -5,7 +5,7 @@ execute on passengers run data remove entity @s[type=interaction] attack
 execute as @p store result score @s exp.dy run data get entity @s Motion[1] 10
 
 # critical hit detection 
-execute as @p if score @s exp.dy matches ..-1 unless entity @s[nbt={OnGround:1b}] unless entity @s[nbt={RootVehicle:{}}] if block ~ ~ ~ #expansion:air if block ~ ~1 ~ #expansion:air if predicate exp_hitbox:crit_ready run function exp_hitbox:add_crit
+execute as @p if function exp_hitbox:cando_crit run function exp_hitbox:add_crit
 
-# set the boss damage equal to the player damage
+# set the interaction vehicle damage score for further processing
 scoreboard players operation @s exp.damage = @p exp.player_attack

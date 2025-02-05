@@ -2,6 +2,8 @@ execute positioned ~ ~2 ~ anchored eyes rotated ~ 0 facing ^ ^ ^ rotated as @s p
 
 execute if predicate expansion:chance/010_chance rotated as @s run rotate @s ~10 ~
 execute if predicate expansion:chance/010_chance rotated as @s run rotate @s ~-10 ~
+execute if predicate expansion:chance/010_chance rotated as @s run rotate @s ~ ~10
+execute if predicate expansion:chance/010_chance rotated as @s run rotate @s ~ ~-10
 
 execute at @s run particle end_rod
 execute at @s run particle campfire_cosy_smoke ~ ~ ~ 0 0 0 0.01 2

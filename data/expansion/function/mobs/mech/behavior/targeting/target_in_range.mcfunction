@@ -1,10 +1,8 @@
-# checks if a target is inside the desired range
+# stop if no target exists
+execute unless entity @s[tag=exp.mech_arm_controller] unless function expansion:mobs/mech/behavior/targeting/has_target run return fail
 
-# check for each possible weapon if the target is in range
-execute if score @s exp.mech_action_id matches 0 on vehicle on passengers if entity @s[tag=exp.mech_targeter] on origin if entity @s[distance=..5] run return 0
-execute if score @s exp.mech_action_id matches 1 on vehicle on passengers if entity @s[tag=exp.mech_targeter] on origin if entity @s[distance=2..5] run return 1
-execute if score @s exp.mech_action_id matches 2 on vehicle on passengers if entity @s[tag=exp.mech_targeter] on origin if entity @s[distance=10..50] run return 2
-execute if score @s exp.mech_action_id matches 3 on vehicle on passengers if entity @s[tag=exp.mech_targeter] on origin if entity @s[distance=10..50] run return 3
-execute if score @s exp.mech_action_id matches 4 on vehicle on passengers if entity @s[tag=exp.mech_targeter] on origin if entity @s[distance=..5] run return 4
+# randomly check the desired range for the left or right arm
+function expansion:mobs/mech/behavior/targeting/check_target_range
 
+execute if score #temp exp.distance matches 2 run return run say target in range
 return fail

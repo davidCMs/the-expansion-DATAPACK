@@ -8,4 +8,4 @@ execute rotated as @s anchored eyes positioned ^ ^ ^ positioned ~ ~1 ~ as @e[typ
 function expansion:utilities/snowball_link/link_from_storage
 
 # if no new target was found, do a desperate jump in an attempt to get a vantage point to spot players behind cover 
-execute unless function expansion:mobs/mech/behavior/targeting/has_target on vehicle unless score @s exp.counter_1 matches 1.. run scoreboard players set @s exp.counter_1 20
+execute unless function expansion:mobs/mech/behavior/targeting/has_target on vehicle unless score @s exp.counter_1 matches 1.. unless score @s exp.rotation matches 4 unless score @s exp.rotation matches 0 run scoreboard players set @s exp.counter_1 20

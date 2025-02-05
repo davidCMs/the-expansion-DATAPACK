@@ -20,4 +20,4 @@ item replace block ~ ~ ~ container.20 with air
 item replace block ~ ~ ~ container.21 with air
 item replace block ~ ~ ~ container.22 with air
 
-execute on passengers if entity @s[tag=aj.rig_root] run function animated_java:assembler/animations/ring_loop/play
+execute on passengers if entity @s[tag=aj.assembler.root] run function animated_java:assembler/animations/ring_loop/play

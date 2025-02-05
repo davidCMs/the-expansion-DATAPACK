@@ -11,6 +11,9 @@ data modify storage expansion:temp rocket_owner set from entity @s item.componen
 execute on passengers if entity @s[type=snowball] run data modify entity @s[type=minecraft:snowball] Owner set from storage expansion:temp rocket_owner
 data remove storage expansion:temp rocket_owner
 
+# make the parryer the new owner so the rocket can be parried back (lol)
+data modify entity @s item.components."minecraft:custom_data".rocket_owner set from entity @n[tag=exp.deflected_rocket,distance=..5] UUID
+
 # make sure the rocket doesn't explode in the next few frames
 scoreboard players add @s exp.cooldown 10
 

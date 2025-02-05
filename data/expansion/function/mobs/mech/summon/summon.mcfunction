@@ -10,4 +10,4 @@ execute as @e[type=armor_stand,tag=exp.mech,distance=..0.1,limit=1] on passenger
 execute as @e[type=armor_stand,tag=exp.mech,distance=..0.1,limit=1] on passengers if entity @s[tag=exp.right_arm_control] run function expansion:vehicles/mech/actions/swing/equip
 
 # bossbar
-function expansion:mobs/mech/summon/bossbar
+execute as @e[type=armor_stand,tag=exp.mech,distance=..0.1,limit=1] run function expansion:mobs/mech/summon/bossbar
