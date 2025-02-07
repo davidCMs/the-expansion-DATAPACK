@@ -1,5 +1,5 @@
 # cast the ray
-execute rotated as @s anchored eyes positioned ^ ^ ^2 summon minecraft:item_display run function expansion:items/railgun/raycast/cast
+execute rotated as @s anchored eyes positioned ^ ^ ^2 summon minecraft:item_display run function expansion:projectiles/railgun_bullet/cast
 
 # create particle effect
 execute at @s anchored eyes positioned ^ ^ ^9 run function expansion:items/railgun/particles/inner

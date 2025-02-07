@@ -1,7 +1,9 @@
-tag @s add exp.shooting_ice
-function expansion:utilities/raycast/gun_cast
-execute as @e[type=#expansion:sentient,tag=exp.freeze] at @s run function expansion:items/cryoblaster/freeze
-scoreboard players remove @s exp.ammo 2
-tag @s add exp.used_ammo
-tag @s remove exp.shooting_ice
+# set parameters (can be set externally thanks to the fakeplayer)
+scoreboard players set #temp exp.max_range 100
+scoreboard players set #temp exp.speed 3
 
+execute anchored eyes positioned ^ ^ ^2 summon marker run function expansion:projectiles/freeze_ray/cast
+
+scoreboard players remove @s exp.ammo 2
+
+tag @s add exp.used_ammo
