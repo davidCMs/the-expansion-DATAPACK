@@ -5,11 +5,8 @@ execute if predicate expansion:nbt_checks/selected_item/vehicles/lunar_module ru
 execute if predicate expansion:nbt_checks/selected_item/vehicles/return_capsule run function expansion:vehicles/return_capsule/summon/init
 execute if predicate expansion:nbt_checks/selected_item/vehicles/mech run function expansion:vehicles/mech/summon/init
 
-# remove the tag given to newly spawned vehicles
-tag @e[type=minecraft:armor_stand,tag=exp.new_vehicle,distance=..5,limit=1,sort=nearest] remove exp.new_vehicle
-
-# remove the hand item for non-creative players
-item replace entity @s[gamemode=!creative] weapon.mainhand with minecraft:air
+# remove one from the held item count
+item modify entity @s[gamemode=!creative] weapon.mainhand expansion:utility/reduce_count
 
 # sound
 playsound block.metal.place block @s ~ ~ ~

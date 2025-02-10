@@ -7,5 +7,5 @@ execute if entity @s[tag=exp.rocket_pilot] on vehicle on vehicle run function ex
 execute if entity @s[tag=!exp.rocket_pilot] on vehicle on vehicle on vehicle run function expansion:vehicles/rocket/inside
 
 # store players position
-function expansion:player/store_position
+function expansion:utilities/store_pos_in_score
 

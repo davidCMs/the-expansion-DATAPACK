@@ -1,9 +1,16 @@
-execute store result score @s exp.distance run locate structure #expansion:jupiter_fleet
-scoreboard players set @s exp.max_range 256
-execute if score @s exp.distance <= @s exp.max_range if predicate expansion:dimension/jupiter unless score @s exp.distance matches 0 run tellraw @s ["",{"text":"Jupiter Fleet located! Current distance: ", "color":"aqua"},{"score":{"name":"@s","objective":"exp.distance"}, "bold":true, "color":"aqua"},{"text":" blocks", "color":"aqua"}]
+# locate the jupiter fleet
+execute store result score #temp exp.distance run locate structure #expansion:jupiter_fleet
 
-execute if score @s exp.distance > @s exp.max_range run tellraw @s [{"text":"Jupiter Fleet detected! Coordinates out of bounds... Approach the Fleet for more information...", "color":"aqua"}]
-
-execute if score @s exp.distance matches 0 unless predicate expansion:dimension/jupiter run tellraw @s [{"text":"Unable to locate the Jupiter Fleet", "color":"aqua"}]
-
+# radar sound
 playsound expansion:fleet_finder.ping player @a ~ ~ ~ 0.5
+
+# If the jupiter fleet is within range
+execute if score #temp exp.distance <= #256 exp.const if predicate expansion:dimension/jupiter unless score #temp exp.distance matches 0 run tellraw @s ["",{"text":"Fleet located! Current distance: ", "color":"aqua"},{"score":{"name":"#temp","objective":"exp.distance"}, "bold":true, "color":"aqua"},{"text":" blocks", "color":"aqua"}]
+
+# If the jupiter fleet is out of range
+execute if score #temp exp.distance > #256 exp.const run tellraw @s [{"text":"Fleet detected! Coordinates out of bounds... Approach the Fleet for more information...", "color":"aqua"}]
+
+# If the jupiter fleet is not found at all
+execute if score #temp exp.distance matches 0 unless predicate expansion:dimension/jupiter run tellraw @s [{"text":"Unable to locate the Fleet", "color":"aqua"}]
+
+scoreboard players reset #temp exp.distance

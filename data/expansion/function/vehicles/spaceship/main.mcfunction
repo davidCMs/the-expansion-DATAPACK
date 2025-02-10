@@ -2,4 +2,4 @@
 execute on vehicle on vehicle run function expansion:vehicles/spaceship/inside
 
 # store players position
-function expansion:player/store_position
+function expansion:utilities/store_pos_in_score

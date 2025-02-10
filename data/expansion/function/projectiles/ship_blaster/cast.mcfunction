@@ -1,4 +1,4 @@
-execute unless entity @s[type=#expansion:slowcasters] run return run say Run this function as a slowcaster (masker, item display, snowball, armor stand)
+execute unless function expansion:projectiles/slowcaster_debug run return fail
 
 tag @s add exp.ship_blaster
 tag @s add exp.slowcast

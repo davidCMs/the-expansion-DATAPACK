@@ -1,6 +1,6 @@
-execute rotated as @s run tp @p[tag=exp.interacting_buggy] ^ ^ ^ ~ ~
-
 ride @p[tag=exp.interacting_buggy] mount @s
+
+execute rotated as @s on passengers run rotate @s ~ ~
 
 execute if predicate expansion:dimension/zero_gravity at @s unless block ~ ~-1 ~ #expansion:air run data merge entity @s {NoGravity:0b}
 

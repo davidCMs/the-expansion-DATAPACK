@@ -4,4 +4,4 @@ summon item_display ~ ~ ~ {Tags:["exp.homing_rocket","exp.slowcast","exp.ignore_
 data modify storage expansion:temp rocket_owner set from entity @s UUID
 
 # merge rocket data
-execute as @e[type=item_display,tag=exp.homing_rocket,distance=..0.1,limit=1] run function expansion:projectiles/homing_rocket/summon/set_data
+execute as @e[type=item_display,tag=exp.homing_rocket,distance=..0.1,limit=1] run function expansion:projectiles/homing_rocket/summon/setup

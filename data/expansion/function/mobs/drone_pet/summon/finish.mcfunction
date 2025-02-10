@@ -4,7 +4,7 @@ execute on passengers run scoreboard players operation @s exp.unique_id = #temp 
 scoreboard players reset #temp exp.unique_id
 
 # copy model to drone
-item replace entity @s container.0 from entity @p[tag=exp.summoning_drone] weapon.mainhand
+item replace entity @s container.0 from entity @p[tag=exp.tick_player] weapon.mainhand
 
 # sound
 playsound expansion:drone.error neutral @a[distance=..16] ~ ~ ~

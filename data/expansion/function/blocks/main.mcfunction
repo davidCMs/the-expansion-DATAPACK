@@ -15,7 +15,7 @@ execute if entity @s[tag=exp.oxygenator] run return run function expansion:block
 execute if entity @s[tag=exp.terraformer] run return run function expansion:blocks/terraformer/main
 execute if entity @s[tag=exp.drone_home] run return run function expansion:mobs/evil_drone/drone_home/main
 
-## blocks that only function when a player is nearby
+## blocks that only function when a player is within 50 blocks
 execute unless entity @s[tag=exp.loaded] run return fail
 execute if entity @s[tag=exp.lacrymae_extractor] run return run function expansion:blocks/lacrymae_extractor/main
 execute if entity @s[tag=exp.planetarium] run return run function expansion:blocks/planetarium/main
@@ -27,4 +27,3 @@ execute if entity @s[tag=exp.assembler] run return run function expansion:blocks
 execute if entity @s[tag=exp.portal] run return run function expansion:blocks/portal/main
 execute if entity @s[tag=exp.tesla_coil] run return run function expansion:blocks/tesla_coil/main
 execute if entity @s[tag=exp.modstation] run return run function expansion:blocks/modification_station/main
-execute if entity @s[tag=exp.planetarium] run return run function expansion:blocks/planetarium/main

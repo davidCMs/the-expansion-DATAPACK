@@ -1,12 +1,16 @@
-# add a chance that this branch is also able to branch
-execute if predicate expansion:chance/050_chance run scoreboard players operation #temp exp.unique_id = @s exp.unique_id
+# consume a branch charge
+scoreboard players remove @s exp.counter_1 1
 
-# copy other parameters but decrease the max range
+# copy other parameters of the current branch
 scoreboard players operation #temp exp.speed = @s exp.speed
 scoreboard players operation #temp exp.max_range = @s exp.max_range
 scoreboard players operation #temp exp.size_mod = @s exp.size_mod
 scoreboard players operation #temp exp.size = @s exp.size
 scoreboard players operation #temp exp.damage = @s exp.damage
+scoreboard players operation #temp exp.unique_id = @s exp.unique_id
+
+# restrict the number of times that the child branch can branch to 1
+scoreboard players set #temp exp.counter_1 1
 
 # restrict the size of new branches
 scoreboard players operation #temp exp.max_range /= #temp exp.size_mod

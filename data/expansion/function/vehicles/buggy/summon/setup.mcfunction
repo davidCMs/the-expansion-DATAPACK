@@ -1,3 +1,12 @@
+tag @s remove exp.new_vehicle
+
+# set the rotation equal to the saved player rotation
+function expansion:blocks/set_rotation
+
+# summon and mount the animated model 
+function animated_java:buggy/summon {args: {}}
+ride @e[type=item_display,tag=aj.buggy.root,distance=..0.01,limit=1] mount @s
+
 # copy the buggy item to a storage
 data modify entity @s ArmorItems[0] set from entity @p[tag=exp.tick_player] SelectedItem
 

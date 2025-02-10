@@ -1,3 +1,5 @@
+function expansion:blocks/set_rotation
+
 # set the model from the players hand item
 execute on passengers if entity @s[type=minecraft:item_display,tag=exp.spaceship_display] run item replace entity @s container.0 from entity @p[tag=exp.tick_player] weapon.mainhand
 
@@ -24,3 +26,5 @@ function expansion:vehicles/spaceship/markers/deactivate_markers
 # set scores
 scoreboard players set @s exp.fuel_max 256
 scoreboard players set @s exp.speed 10
+
+tag @s remove exp.new_vehicle

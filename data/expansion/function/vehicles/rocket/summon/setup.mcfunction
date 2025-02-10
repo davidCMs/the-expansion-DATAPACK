@@ -8,3 +8,5 @@ execute store result score @s exp.fuel_level run data get entity @p[tag=exp.tick
 
 # set the max fuel
 scoreboard players set @s exp.fuel_max 640
+
+tag @s remove exp.new_vehicle

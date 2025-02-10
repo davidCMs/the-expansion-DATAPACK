@@ -115,6 +115,7 @@ scoreboard players set #50 exp.const 50
 scoreboard players set #-90 exp.const -90
 scoreboard players set #90 exp.const 90
 scoreboard players set #180 exp.const 180
+scoreboard players set #256 exp.const 256
 scoreboard players set #360 exp.const 360
 scoreboard players set #400 exp.const 400
 scoreboard players set #100 exp.const 100
