@@ -20,3 +20,4 @@ effect clear @p[tag=exp.tick_player] speed
 tag @p[tag=exp.tick_player] remove exp.inside_mech
 tag @p[tag=exp.tick_player] remove exp.inside_vehicle
 tag @p[tag=exp.tick_player] remove exp.mech_pilot
+tag @p[tag=exp.ignore_hitbox_hits] remove exp.ignore_hitbox_hits

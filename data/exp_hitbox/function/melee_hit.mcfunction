@@ -1,6 +1,9 @@
 # revoke the advancement so it can be triggered again
 advancement revoke @s only exp_hitbox:attack_on_hitbox
 
+# ignore some hits
+execute if entity @s[tag=exp.ignore_hitbox_hits] run return fail
+
 # store some info about the attack
 execute store result score @s exp.player_attack run attribute @s minecraft:attack_damage get
 execute store result score @s exp.player_attack_speed run attribute @s minecraft:attack_speed get 100

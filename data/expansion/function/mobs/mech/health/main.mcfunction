@@ -1,8 +1,7 @@
 # uses the same health system as the vehicle
 
-# we can detect damage if the iframes are 1..
-#execute if score @s exp.iframes matches 1 if predicate expansion:chance
+# every time the health reaches one quarter, switch weapons
 
 execute if score @s exp.health matches ..170 unless entity @s[tag=exp.mech_summoned_drones] run function expansion:mobs/mech/bots/summon
 
-execute unless score @s exp.health matches 1.. run function expansion:mobs/mech/health/die
+execute unless score @s exp.health matches 1.. run function expansion:mobs/mech/health/die/init

@@ -36,7 +36,7 @@
       }
     },
     "rewards": {
-      "function": "expansion:items/expansion_guides/guide1/guide1_check"
+      "function": "expansion:items/guidebook/check"
     }
   }
   

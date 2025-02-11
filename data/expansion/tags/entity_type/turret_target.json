@@ -74,6 +74,7 @@
 		"minecraft:zombie",
 		"minecraft:zombie_villager",
 		"minecraft:zombified_piglin",
+		"minecraft:iron_golem",
 		
 		"minecraft:player",
 		"minecraft:interaction"

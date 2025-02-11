@@ -1,5 +1,5 @@
-# extract the current mode from the item
-execute store result score #temp exp.hold_value run data get entity @s SelectedItem.components.minecraft:custom_data.mode
+function expansion:items/cryoblaster/get_mode
+
 # increment and loop its value between 1 and 3
 scoreboard players add #temp exp.hold_value 1
 execute if score #temp exp.hold_value matches 3 run scoreboard players set #temp exp.hold_value 0

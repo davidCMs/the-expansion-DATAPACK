@@ -1,7 +1,8 @@
 execute positioned ^ ^ ^ rotated ~ ~ run tp @s ^ ^ ^10.5 ~ ~
 
-scoreboard players set @s exp.max_range 300
+scoreboard players set #temp exp.max_range 300
+scoreboard players set #temp exp.cooldown 5
 
-execute positioned as @s rotated as @s run function expansion:projectiles/homing_rocket/target/loop
+tag @s add exp.target_marker
 
-kill @s
+execute positioned as @s rotated as @s run function expansion:utilities/raycast/target/loop

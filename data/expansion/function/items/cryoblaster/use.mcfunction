@@ -1,19 +1,16 @@
-# get the current ammo of the cryoblaster and store it inside exp.ammo
-execute store result score @s exp.ammo run data get entity @s SelectedItem.components.minecraft:custom_data.ammo
-execute unless score @s exp.ammo matches 0.. run scoreboard players set @s exp.ammo 0
+# mode chooser
+execute if predicate expansion:utility/sneak run return run function expansion:items/cryoblaster/switch_modes
 
-# placing block
-execute if score @s exp.ammo matches 1.. unless score @s exp.hold_value_alt matches 1..2 run function expansion:items/cryoblaster/place_block
-# shooting ice
-execute if score @s exp.ammo matches 2.. if score @s exp.hold_value_alt matches 1 run function expansion:items/cryoblaster/shoot
-# place wall
-execute if score @s exp.ammo matches 5.. if score @s exp.hold_value_alt matches 2 run function expansion:items/cryoblaster/place_wall
+# shoot or reload
+function expansion:items/cryoblaster/get_ammo
+function expansion:items/cryoblaster/get_mode
 
-# reload functions
-title @s subtitle {"text":" "}
-execute unless entity @s[nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}]}] run title @s[tag=!exp.used_ammo] title {"text":"Gather more water","color":"red","bold":true}
-execute if entity @s[tag=!exp.used_ammo,nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:potion_contents":{potion:"minecraft:water"}}}]}] run function expansion:items/cryoblaster/reload
+# if the gun has insufficient ammo, attempt to reload
+execute if score #temp exp.ammo < #temp exp.hold_value_alt run function expansion:items/cryoblaster/reload/check
 
-execute store result storage expansion:ammo data.ammo byte 1 run scoreboard players get @s exp.ammo
-item modify entity @s weapon.mainhand expansion:cryoblaster/ammo
-tag @s remove exp.used_ammo
+# if the ammo is more than the required ammo, use an action
+execute if score #temp exp.ammo >= #temp exp.hold_value_alt run function expansion:items/cryoblaster/action
+
+# in any case, store the current ammo in the gun
+function expansion:items/cryoblaster/store_ammo
+scoreboard players reset #temp exp.hold_value_alt
