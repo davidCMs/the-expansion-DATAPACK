@@ -1,3 +1,6 @@
+# prevent the action if the ammo is insufficient
+execute if function expansion:vehicles/mech/actions/reload/check run return run function expansion:vehicles/mech/actions/reload/no_ammo
+
 scoreboard players add @s exp.mech_action_dur 1
 
 # stop the walking animation if an action starts

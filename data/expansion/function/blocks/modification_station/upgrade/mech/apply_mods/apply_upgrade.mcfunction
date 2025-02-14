@@ -1,4 +1,4 @@
-# merge the mod array with the spaceship
+# merge the mod array with the mech
 data modify entity @s ArmorItems[3].components.minecraft:custom_data.ModStorage merge from storage expansion:temp ModStorage
 
 # set tags and stuff

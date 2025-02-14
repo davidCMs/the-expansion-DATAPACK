@@ -4,7 +4,7 @@
     "predicate": {
       "passenger": {
           "passenger": {
-            "type": "minecraft:player"
+            "type": "#expansion:mech_pilots"
           }
       }
     }

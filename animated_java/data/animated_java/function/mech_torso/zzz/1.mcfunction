@@ -3,6 +3,12 @@ function animated_java:global/internal/gu/convert_uuid_array_to_string with enti
 data modify entity @s data.bones.data_data set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.mech_torso.node.jetpack2] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
 data modify entity @s data.bones.bone_jetpack2 set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.mech_torso.node.ammo_left] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
+data modify entity @s data.bones.text_display_ammo_left set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.mech_torso.node.ammo_right] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
+data modify entity @s data.bones.text_display_ammo_right set from storage aj:uuid main.out
+execute on vehicle on passengers if entity @s[tag=aj.mech_torso.node.health] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
+data modify entity @s data.bones.text_display_health set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.mech_torso.node.barrel1] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s
 data modify entity @s data.bones.bone_barrel1 set from storage aj:uuid main.out
 execute on vehicle on passengers if entity @s[tag=aj.mech_torso.node.barrel2] run function animated_java:global/internal/gu/convert_uuid_array_to_string with entity @s

@@ -161,6 +161,8 @@
                     "minecraft:white_tulip",
                     "minecraft:yellow_banner",
                     "minecraft:yellow_carpet",
-                    "minecraft:zombie_head"
+                    "minecraft:zombie_head",
+                    "minecraft:end_portal",
+                    "minecraft:end_gateway"
           ]
 }

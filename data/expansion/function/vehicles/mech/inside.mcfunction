@@ -7,6 +7,9 @@ execute unless score @s exp.size_mod matches 0 run function expansion:vehicles/m
 # health
 function expansion:vehicles/mech/health/main
 
+# stats
+function expansion:vehicles/mech/actionbar
+
 # movement
 execute if function expansion:vehicles/mech/propulsion/allowed rotated ~ 0 align y run function expansion:vehicles/mech/propulsion/drive
 

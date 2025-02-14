@@ -10,8 +10,5 @@ execute as @e[type=#expansion:mob_template,tag=exp.mob] at @s run function expan
 # blocks
 execute as @e[type=#expansion:block_base,tag=exp.block] at @s positioned ~ ~-1 ~ run function expansion:blocks/main
 
-# test
-execute as @e[type=armor_stand,tag=exp.test] at @s run function expansion:mechanics/events/lightning/init
-
 # slowcasters
 execute as @e[type=#expansion:slowcasters,tag=exp.slowcast] at @s run function expansion:projectiles/main

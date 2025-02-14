@@ -17,6 +17,7 @@ scoreboard objectives add exp.value dummy
 scoreboard objectives add exp.hold_value dummy
 scoreboard objectives add exp.hold_value_alt dummy
 scoreboard objectives add exp.sneak_delay dummy
+scoreboard objectives add exp.percentage dummy
 # gravity
 scoreboard objectives add exp.gravity dummy
 scoreboard objectives add exp.gravity_modifier dummy
@@ -76,10 +77,12 @@ scoreboard objectives add exp.unique_id dummy
 scoreboard objectives add exp.arc_id dummy
 # weapons/damage
 scoreboard objectives add exp.ammo dummy
+scoreboard objectives add exp.max_ammo dummy
 scoreboard objectives add exp.max_range dummy
 
 # mobs
 scoreboard objectives add exp.health dummy
+scoreboard objectives add exp.max_health dummy
 # dimension checks
 scoreboard objectives add exp.dim_test dummy
 # solar system generation

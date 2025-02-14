@@ -17,4 +17,4 @@ scoreboard players set #temp exp.damage 0
 # determined which particles are displayed
 scoreboard players set #temp exp.unique_id 3
 
-execute at @s positioned ~ ~20 ~ positioned ^ ^ ^1 summon marker run function expansion:projectiles/electric_arc/cast
+execute at @s positioned ~ ~ ~ positioned ^ ^ ^1 summon marker run function expansion:projectiles/electric_arc/cast

@@ -20,6 +20,8 @@ execute on passengers if entity @s[tag=aj.mech_torso.root] run function animated
 # set max jetpack fuel
 scoreboard players set @s exp.fuel_max 40
 
+# set health values
 scoreboard players set @s exp.health 200
+scoreboard players operation @s exp.max_health = @s exp.health
 
 tag @s remove exp.new_vehicle

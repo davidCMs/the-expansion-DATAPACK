@@ -1,6 +1,6 @@
 # detect button presses
-execute if score @s exp.hold_value matches 1.. unless items block ~ ~ ~ container.16 * run function expansion:blocks/modification_station/gui/buttons/upgrade_button
-execute if score @s exp.hold_value matches 1.. unless items block ~ ~ ~ container.23 * run function expansion:blocks/modification_station/gui/buttons/remove_button
+execute if score @s exp.hold_value matches 1.. unless items block ~ ~ ~ container.17 * run function expansion:blocks/modification_station/gui/buttons/upgrade_button
+execute if score @s exp.hold_value matches 1.. unless items block ~ ~ ~ container.26 * run function expansion:blocks/modification_station/gui/buttons/remove_button
 
 # gui depending on selected vehicle
 function expansion:blocks/modification_station/gui/main
