@@ -1,7 +1,7 @@
 # timer
 scoreboard players remove @s exp.timer_1 1
 
-# link the bots to teh vehicle
+# link the bots to the vehicle
 execute if score @s exp.timer_1 matches 199 run function expansion:blocks/modification_station/upgrade/init
 
 # move the bots towards the vehicle

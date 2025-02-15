@@ -27,7 +27,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{mech_mod:1b,hand_mod:1b,blaster:1b,crafting_count:1,max_stack_size:64}"
+                "tag": "{mech_mod:1b,hand_mod:1b,blaster:1b,ammo:0,max_ammo:200,crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",

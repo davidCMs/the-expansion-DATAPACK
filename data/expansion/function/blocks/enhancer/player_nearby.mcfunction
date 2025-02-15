@@ -6,6 +6,7 @@ execute if items block ~ ~ ~ container.5 carrot_on_a_stick[minecraft:custom_data
 execute unless items block ~ ~ ~ container.5 carrot_on_a_stick[minecraft:custom_data~{space_equipment:1b}] if items entity @s container.0 * run function expansion:blocks/enhancer/remove_helmet
 
 # rotate the display if an equipment is active
-execute if items entity @s container.0 * run rotate @s ~-2 ~
+execute if items entity @s container.10 * run rotate @s ~-2 ~
 
+execute unless items block ~ ~ ~ container.10 * run return run function expansion:blocks/enhancer/gui/none
 function expansion:blocks/enhancer/gui/main
