@@ -4,24 +4,22 @@
     "entity": "this",
     "lore": [
       [
-        [
-          {
-            "translate": "exp_tools_oxygentank_pressure"
+        {
+          "translate": "exp_tools_oxygentank_pressure"
+        },
+        {
+          "score": {
+            "name": "#output",
+            "objective": "exp.percentage"
           },
-          {
-            "score": {
-              "name": "#temp",
-              "objective": "exp.oxygen_percent"
-            },
-            "color": "aqua",
-            "bold": true
-          },
-          {
-            "text": "%",
-            "color": "aqua",
-            "bold": true
-          }
-        ]
+          "color": "aqua",
+          "bold": true
+        },
+        {
+          "text": "%",
+          "color": "aqua",
+          "bold": true
+        }
       ]
     ],
     "mode": "replace_section",

@@ -1,3 +1,3 @@
-item replace entity @p weapon.mainhand from entity @s container.0
+item replace entity @p weapon.mainhand from entity @s contents
 
-item replace block ~ ~-1 ~ container.5 with air
+item replace block ~ ~-1 ~ container.10 with air

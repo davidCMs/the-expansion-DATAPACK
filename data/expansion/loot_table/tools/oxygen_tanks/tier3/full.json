@@ -20,7 +20,7 @@
                   "components": {
                     "item_model": "expansion:oxygen_tank",
                     "custom_model_data": {
-                      "floats": [3,9]
+                      "floats": [3,100]
                     },
                     "minecraft:max_stack_size": 1,
                     "!minecraft:max_damage": {},

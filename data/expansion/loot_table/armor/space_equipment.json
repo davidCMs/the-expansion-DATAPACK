@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_tool:1b,space_equipment:1b,ModStorage:{},expansion_coas:1b,crafting_count:1,max_stack_size:1}"
+              "tag": "{Unbreakable:1b,exp_tool:1b,space_equipment:1b,enhanceable:1b,ModStorage:[{},{},{},{}],expansion_coas:1b,crafting_count:1,max_stack_size:1}"
             },
             {
               "function": "minecraft:set_lore",
@@ -47,31 +47,14 @@
                 {
                   "text": ""
                 },
-                [
-                  {
-                    "translate": "exp_armor_equipment_protmod"
-                  },
-                  {
-                    "text": "None",
-                    "color": "red",
-                    "bold": true,
-                    "italic": false
-                  }
-                ],
+                {
+                  "text": "Modules:",
+                  "color": "aqua",
+                  "italic": false
+                },
                 {
                   "text": ""
                 },
-                [
-                  {
-                    "translate": "exp_armor_equipment_utilmod"
-                  },
-                  {
-                    "text": "None",
-                    "color": "red",
-                    "bold": true,
-                    "italic": false
-                  }
-                ],
                 {
                   "text": ""
                 },

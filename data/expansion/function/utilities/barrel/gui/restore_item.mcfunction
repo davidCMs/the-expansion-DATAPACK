@@ -1,5 +1,4 @@
+# copies item data from a storage onto an item entity
 loot spawn ~ ~ ~ loot expansion:items/gui/filler
-
-$data modify entity @e[type=item,distance=..0.01,limit=1] Item set from block ~ ~ ~ Items[{Slot:$(Slot)b}]
-
-$item replace entity @s container.$(Slot) with air
+execute as @e[type=item,distance=..0.01,limit=1,nbt={Item:{components:{"minecraft:custom_data":{gui_item:1b}}}}] run function expansion:utilities/barrel/gui/copy_item
+data remove storage expansion:temp Item

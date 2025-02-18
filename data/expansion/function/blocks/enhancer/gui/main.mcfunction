@@ -3,14 +3,17 @@ execute unless items block ~ ~ ~ container.1 *[custom_data~{gui_item:1b}] run fu
 execute unless items block ~ ~ ~ container.2 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:2, Type:"filler"}
 execute unless items block ~ ~ ~ container.3 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:3, Type:"filler"}
 execute unless items block ~ ~ ~ container.4 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:4, Type:"filler"}
-execute unless items block ~ ~ ~ container.5 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:5, Type:"enhancer"}
+execute unless items block ~ ~ ~ container.5 *[custom_data~{enhancer_main:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:5, Type:"enhancer"}
 execute unless items block ~ ~ ~ container.6 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:6, Type:"filler"}
 execute unless items block ~ ~ ~ container.7 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:7, Type:"filler"}
 execute unless items block ~ ~ ~ container.8 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:8, Type:"tips/enhancer"}
 execute unless items block ~ ~ ~ container.9 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:9, Type:"filler"}
 
 execute unless items block ~ ~ ~ container.11 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:11, Type:"filler"}
-
+execute if items block ~ ~ ~ container.12 *[custom_data~{gui_item:1b}] run item replace block ~ ~ ~ container.12 with air
+execute if items block ~ ~ ~ container.13 *[custom_data~{gui_item:1b}] run item replace block ~ ~ ~ container.13 with air
+execute if items block ~ ~ ~ container.14 *[custom_data~{gui_item:1b}] run item replace block ~ ~ ~ container.14 with air
+execute if items block ~ ~ ~ container.15 *[custom_data~{gui_item:1b}] run item replace block ~ ~ ~ container.15 with air
 execute unless items block ~ ~ ~ container.16 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:16, Type:"filler"}
 execute unless items block ~ ~ ~ container.17 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:17, Type:"icons/upgrade"}
 execute unless items block ~ ~ ~ container.18 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:18, Type:"filler"}

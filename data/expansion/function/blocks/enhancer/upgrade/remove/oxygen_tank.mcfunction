@@ -1,22 +1,23 @@
-loot replace block ~ ~ ~ container.0 loot expansion:tools/oxygen_tanks/tier1/empty
-data modify block ~ ~ ~ Items[{Slot:0b}] set from block ~ ~ ~ Items[{Slot:5b}].components."minecraft:custom_data".ModStorage.oxygen_tank
+# calculate the current oxygen percentage
+execute store result score #input exp.math run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen_lvl
+execute store result score #max exp.math run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen_max
+function expansion:utilities/percentage
+
+# The slot is a pain in the ass to handle
+# store the original slot
+execute store result score #temp exp.value run data get storage expansion:temp ModStorage[0].Slot
+# set the slot to 0, where the item modification happens
+data modify storage expansion:temp ModStorage[0].Slot set value 0
+# copy the item from storage to the slot
+data modify block ~ ~ ~ Items[{Slot:0b}] set from storage expansion:temp ModStorage[0]
+# merge the percentage to lore
+item modify block ~ ~ ~ container.0 expansion:oxygen_tank/merge_oxygen_percent_from_score
+# copy the item back to the storage
+data modify storage expansion:temp ModStorage[0] set from block ~ ~ ~ Items[{Slot:0b}]
+# restore the original slot
+execute store result storage expansion:temp ModStorage[0].Slot byte 1 run scoreboard players get #temp exp.value
+# replace the item in the slot with gui filler (DONT REMOVE THE ITEM)
+loot replace block ~ ~ ~ container.0 loot expansion:items/gui/filler
 
 # remove oxygen tank lore from equipment
-item modify block ~ ~ ~ container.5 expansion:oxygen_tank/remove_from_equipment
-
-# export extracted oxygen tank data
-execute store result score #input exp.oxygen_lvl run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".oxygen_lvl
-execute store result score #input exp.oxygen_max run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".oxygen_max
-execute store result score #temp exp.oxygen_percent run function expansion:mechanics/oxygen/oxygen_percentage
-
-# change the sources custom model data based on the oxygen percentage
-scoreboard players operation #temp exp.math = #temp exp.oxygen_percent
-execute store result score #tier exp.value run data get block ~ ~ ~ Items[{Slot:0b}].components."minecraft:custom_data".tier
-function expansion:mechanics/oxygen/find_tank_cmd
-item modify block ~ ~ ~ container.0 expansion:oxygen_tank/merge_cmd_from_data
-
-# merge new oxygen values with the source
-item modify block ~ ~ ~ container.0 expansion:oxygen_tank/merge_oxygen_percent_from_score
-
-# remove the oxygen tank data from the equipment
-data remove block ~ ~ ~ Items[{Slot:5b}].components."minecraft:custom_data".ModStorage.oxygen_tank
+item modify block ~ ~ ~ container.10 expansion:oxygen_tank/remove_from_equipment
