@@ -14,7 +14,7 @@ execute unless score #input exp.oxygen_lvl matches 0.. run scoreboard players se
 # merge the new oxygen value with this tank
 execute store result storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen_lvl int 1 run scoreboard players get #temp exp.oxygen_lvl
 
-# calculate the percentage and merge it with the custom model data
+# calculate the percentage and merge it with the custom model data of the tank
 scoreboard players operation #input exp.math = #temp exp.oxygen_lvl
 scoreboard players operation #max exp.math = #temp exp.oxygen_max
 execute store result storage expansion:temp ModStorage[0].components."minecraft:custom_model_data".floats[1] float 1 run function expansion:utilities/percentage

@@ -1,8 +1,8 @@
 # calculate oxygen percentage and check if it changed
-scoreboard players operation #input exp.oxygen_lvl = @s exp.oxygen_lvl
-scoreboard players operation #input exp.oxygen_max = @s exp.oxygen_max
-function expansion:mechanics/oxygen/oxygen_percentage
-execute unless score @s exp.oxygen_percent = #output exp.oxygen_percent run function expansion:items/space_equipment/merge_oxygen
+scoreboard players operation #input exp.math = @s exp.oxygen_lvl
+scoreboard players operation #max exp.math = @s exp.oxygen_max
+function expansion:utilities/percentage
+execute unless score @s exp.oxygen_percent = #output exp.percentage run function expansion:items/space_equipment/merge_oxygen
 
 # suffocate players if their oxygen runs out
 execute unless score @s exp.oxygen_lvl matches 1.. if entity @s[gamemode=!creative,gamemode=!spectator,tag=!exp.has_oxygen,tag=!exp.generator,tag=!exp.inside_vehicle] run function expansion:mechanics/oxygen/suffocate

@@ -1,0 +1,19 @@
+{
+    "function":"set_lore",
+    "entity":"this",
+    "lore":
+    [
+        {
+            "storage":"expansion:temp",
+            "nbt":"IconList",
+            "interpret":true,
+            "font":"expansion:oxygen_tank",
+            "color":"white",
+            "italic":false,
+            "separator":{"text":""}
+        }
+    ],
+    "mode":"replace_section",
+    "offset":4,
+    "size":1
+}

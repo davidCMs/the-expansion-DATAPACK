@@ -1,0 +1,39 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          [
+            {
+              "translate": "exp_tools_oxygentank_name",
+              "color": "aqua",
+              "bold": true,
+              "italic": false
+            },
+            {
+              "text": ": ",
+              "color": "aqua",
+              "bold": true
+            },
+            {
+              "score": {
+                "name": "#output",
+                "objective": "exp.percentage"
+              },
+              "color": "aqua",
+              "bold": true
+            },
+            {
+              "text": "%",
+              "color": "aqua",
+              "bold": true
+            }
+          ]
+        ]
+      ],
+      "mode": "replace_section",
+      "offset": 1,
+      "size": 1
+    }
+  ]
