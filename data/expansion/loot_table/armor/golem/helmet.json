@@ -20,7 +20,8 @@
                 "components": {
                   "item_model": "expansion:armor/helmets/golem",
                   "minecraft:max_stack_size": 1,
-                  "!minecraft:max_damage": {},
+                  "!minecraft:consumable": {},
+                  "!minecraft:food": {},
                   "minecraft:unbreakable": {
                     "show_in_tooltip": false
                   },

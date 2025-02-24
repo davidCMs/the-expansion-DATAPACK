@@ -1,7 +1,7 @@
 # extract parameters
 scoreboard players operation #source exp.oxygen_lvl = @s exp.oxygen_lvl
-execute store result score #target exp.oxygen_lvl run data get entity @p[tag=exp.interacting_buggy] SelectedItem.components."minecraft:custom_data".oxygen_lvl
-execute store result score #target exp.oxygen_max run data get entity @p[tag=exp.interacting_buggy] SelectedItem.components."minecraft:custom_data".oxygen_max
+execute store result score #target exp.oxygen_lvl run data get entity @p[tag=exp.interacting_buggy] SelectedItem.components."minecraft:custom_data".oxygen.lvl
+execute store result score #target exp.oxygen_max run data get entity @p[tag=exp.interacting_buggy] SelectedItem.components."minecraft:custom_data".oxygen.max
 
 # refill calculation, returns the targets and sources' new oxygen level and percentage in scores
 function expansion:mechanics/oxygen/refill_calculation

@@ -30,6 +30,9 @@ scoreboard objectives add exp.fuel_percentage dummy
 scoreboard objectives add exp.oxygen_lvl dummy
 scoreboard objectives add exp.oxygen_max dummy
 scoreboard objectives add exp.oxygen_percent dummy
+# temperature
+scoreboard objectives add exp.heat_resist dummy
+scoreboard objectives add exp.cold_resist dummy
 # vehicles
 scoreboard objectives add exp.speed dummy
 scoreboard objectives add exp.speed_mod dummy

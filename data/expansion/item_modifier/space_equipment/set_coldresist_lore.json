@@ -1,0 +1,17 @@
+{
+  "function":"set_lore",
+  "entity":"this",
+  "lore":
+  [
+      {
+          "storage":"expansion:temp",
+          "nbt":"cold_resist",
+          "interpret":true,
+          "italic":false,
+          "separator":{"text":""}
+      }
+  ],
+  "mode":"replace_section",
+  "offset":5,
+  "size":1
+}

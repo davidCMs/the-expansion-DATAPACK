@@ -5,15 +5,15 @@
     [
         {
             "storage":"expansion:temp",
-            "nbt":"IconList",
+            "nbt":"icons",
             "interpret":true,
-            "font":"expansion:oxygen_tank",
+            "font":"expansion:module_icons",
             "color":"white",
             "italic":false,
             "separator":{"text":""}
         }
     ],
     "mode":"replace_section",
-    "offset":4,
+    "offset":2,
     "size":1
 }

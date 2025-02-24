@@ -54,7 +54,7 @@ execute store result storage expansion:portal init.portal_array[0].Pos.x double 
 execute store result storage expansion:portal init.portal_array[0].Pos.z double 0.01 run data get entity @s Pos[2] 100
 
 # copy the storage to the entity
-data modify entity @s item.components.minecraft:custom_data.portal_array set from storage expansion:portal init.portal_array
+data modify entity @s item.components."minecraft:custom_data".portal_array set from storage expansion:portal init.portal_array
 
 # copy the temp array to a permanent one
 data modify storage expansion:portal portal_array append from storage expansion:portal init.portal_array[]

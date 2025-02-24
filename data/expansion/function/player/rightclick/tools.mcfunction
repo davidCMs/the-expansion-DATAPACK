@@ -1,7 +1,5 @@
-# space equipment
-execute if predicate expansion:nbt_checks/selected_item/space_equipment/equipment run return run function expansion:items/space_equipment/equip
 # oxygen system
-execute if predicate expansion:nbt_checks/armor/space_equipment/equipment if predicate expansion:nbt_checks/selected_item/items/oxygen_tank run return run function expansion:items/oxygen_tank/init
+execute if predicate expansion:nbt_checks/selected_item/items/oxygen_tank if predicate expansion:armor/all if items entity @s armor.* *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{oxygen_tank:1b}}}]}] run return run function expansion:items/oxygen_tank/init
 # cryoblaster
 execute if predicate expansion:nbt_checks/selected_item/items/cryoblaster unless entity @s[tag=exp.inside_vehicle] run return run function expansion:items/cryoblaster/use
 # fleet finder

@@ -5,7 +5,7 @@
         "entries": [
           {
             "type": "minecraft:item",
-            "name": "minecraft:jigsaw",
+            "name": "minecraft:poisonous_potato",
             "functions": [
               {
                 "function": "minecraft:set_name",
@@ -20,7 +20,8 @@
                 "components": {
                   "item_model": "minecraft:iron_leggings",
                   "minecraft:max_stack_size": 1,
-                  "!minecraft:max_damage": {},
+                  "!minecraft:consumable": {},
+                  "!minecraft:food": {},
                   "minecraft:unbreakable": {
                     "show_in_tooltip": false
                   },
@@ -29,10 +30,6 @@
                     "asset_id": "expansion:diver"
                   }
                 }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{}"
               },
               {
                 "function": "minecraft:set_attributes",
@@ -45,6 +42,50 @@
                     "slot": "head"
                   }
                 ]
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{exp_armor:1b,exp_armor.leggings:1b,exp.enhanceable:1b,heat_resist:{base:0,modifier:0},cold_resist:{base:0,modifier:0},ModStorage:[{}],exp.equipmentID:101b,equipped:0b,crafting_count:1,max_stack_size:1}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "lore": [
+                  {
+                    "text": "切",
+                    "font": "expansion:module_icons",
+                    "color": "white",
+                    "italic": false 
+                  },
+                  {
+                    "text": "Modules:",
+                    "color": "aqua",
+                    "italic": false,
+                    "bold": true
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Cold Resistance: 0",
+                    "color": "aqua",
+                    "italic": false
+                  },
+                  {
+                    "text": "Heat Resistance: 0",
+                    "color": "gold",
+                    "italic": false
+                  },
+                  {
+                    "text": ""
+                  }
+                ],
+                "mode": "replace_all"
               }
             ]
           }

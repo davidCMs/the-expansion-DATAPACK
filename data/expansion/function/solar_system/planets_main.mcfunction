@@ -9,7 +9,7 @@ execute if predicate expansion:dimension/hot_planet run function expansion:mecha
 # effects specific for the pocket space dimension
 execute if predicate expansion:dimension/storage run function expansion:items/transporter/storage_tick
 
-# oxygen
+# oxygen on planets without air
 execute if predicate expansion:dimension/oxygen_absent run function expansion:mechanics/oxygen/main
 
 # detect if the player is close to planets if they're in space

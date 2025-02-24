@@ -1,5 +1,5 @@
 # extract parameters (oxygen_max is still know from init)
-execute store result score #source exp.oxygen_max run data get entity @s SelectedItem.components."minecraft:custom_data".oxygen_max
+execute store result score #source exp.oxygen_max run data get entity @s SelectedItem.components."minecraft:custom_data".oxygen.max
 scoreboard players operation #target exp.oxygen_lvl = @s exp.oxygen_lvl
 scoreboard players operation #target exp.oxygen_max = @s exp.oxygen_max
 

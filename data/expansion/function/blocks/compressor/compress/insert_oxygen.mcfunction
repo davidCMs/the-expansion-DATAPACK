@@ -11,15 +11,12 @@ execute store result score #target exp.oxygen_percent run function expansion:mec
 execute store result storage expansion:oxygen_calc data.oxygen_lvl int 1 run scoreboard players get #target exp.oxygen_lvl
 # tank
 scoreboard players operation #temp exp.oxygen_percent = #target exp.oxygen_percent
-execute unless items entity @s container.0 carrot_on_a_stick[custom_data~{space_equipment:1b}] run item modify entity @s container.0 expansion:oxygen_tank/merge_oxygen_level_from_data
-# equipment
-execute if items entity @s container.0 carrot_on_a_stick[custom_data~{space_equipment:1b}] store result score #temp exp.hold_value run data get entity @s item.components."minecraft:custom_data".ModStorage.oxygen_tank.components.minecraft:custom_data.tier
-execute if items entity @s container.0 carrot_on_a_stick[custom_data~{space_equipment:1b}] run item modify entity @s container.0 expansion:oxygen_tank/merge_with_equipment
+item modify entity @s container.0 expansion:oxygen_tank/merge_oxygen_level_from_data
 
 # set the custom model data equal to the equipment data
 # change the sources custom model data based on the oxygen percentage
 execute store result storage expansion:oxygen_calc data.tank_cmd int 1 run scoreboard players get #target exp.oxygen_percent
-execute if items entity @s container.0 carrot_on_a_stick[custom_data~{oxygen_tank:1b}] run item modify entity @s container.0 expansion:oxygen_tank/merge_cmd_from_data
+item modify entity @s container.0 expansion:oxygen_tank/merge_cmd_from_data
 
 # signal the compressor to stop the compressing if the tank is 100%
 execute if score #target exp.oxygen_lvl = #target exp.oxygen_max run scoreboard players set #temp exp.bool 1

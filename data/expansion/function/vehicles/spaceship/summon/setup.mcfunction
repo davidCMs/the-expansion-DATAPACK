@@ -18,7 +18,7 @@ execute on passengers run attribute @s[type=minecraft:armor_stand,tag=exp.spaces
 data merge entity @s[predicate=expansion:dimension/zero_gravity] {NoGravity:1b}
 
 # copy the fuel level from the players hand item
-execute store result score @s exp.fuel_level run data get entity @p[tag=exp.tick_player] SelectedItem.components.minecraft:custom_data.fuel_lvl
+execute store result score @s exp.fuel_level run data get entity @p[tag=exp.tick_player] SelectedItem.components."minecraft:custom_data".fuel_lvl
 
 # deactivate the markers
 function expansion:vehicles/spaceship/markers/deactivate_markers

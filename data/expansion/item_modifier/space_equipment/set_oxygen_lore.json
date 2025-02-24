@@ -6,15 +6,9 @@
         [
           [
             {
-              "translate": "exp_tools_oxygentank_name",
+              "translate": "exp_screentxt_oxygen_level",
               "color": "aqua",
-              "bold": true,
               "italic": false
-            },
-            {
-              "text": ": ",
-              "color": "aqua",
-              "bold": true
             },
             {
               "score": {
@@ -33,7 +27,7 @@
         ]
       ],
       "mode": "replace_section",
-      "offset": 1,
+      "offset": 8,
       "size": 1
     }
   ]

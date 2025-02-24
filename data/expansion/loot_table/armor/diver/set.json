@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:armor/diver/helmet"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:armor/diver/chestplate"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:armor/diver/leggings"
+          }
+        ]
+      },
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 1,
+            "value": "expansion:armor/diver/boots"
+          }
+        ]
+      }
+    ]
+}

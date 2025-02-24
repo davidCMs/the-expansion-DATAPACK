@@ -31,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{equipment_mod:1b,cooling_module:1b,protection_mod:1b,upgrade_module:1b,icon:\"\uff39\",cold:1b,crafting_count:1,max_stack_size:64}"
+                "tag": "{equipment_mod:1b,cooling_module:1b,protection_mod:1b,upgrade_module:1b,allowedIDs:[103b,102b,101b,100b],icon:\"\uff39\",cold:1b,crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",

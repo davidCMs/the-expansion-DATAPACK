@@ -22,13 +22,11 @@
           {
             "translate": "exp_tools_oxygentank_name",
             "color": "aqua",
-            "bold": true,
             "italic": false
           },
           {
             "text": ": ",
-            "color": "aqua",
-            "bold": true
+            "color": "aqua"
           },
           {
             "score": {
@@ -47,7 +45,7 @@
       ]
     ],
     "mode": "replace_section",
-    "offset": 1,
+    "offset": 8,
     "size": 1
   }
 ]

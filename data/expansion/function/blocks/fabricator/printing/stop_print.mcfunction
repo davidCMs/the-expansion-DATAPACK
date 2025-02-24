@@ -1,5 +1,5 @@
 # if there is already an item(the same item as checked previously) then increment its count.
-execute store result score @s exp.hold_count run data get entity @s item.components.minecraft:custom_data.crafting_count
+execute store result score @s exp.hold_count run data get entity @s item.components."minecraft:custom_data".crafting_count
 
 # either increment the count of a matching item or insert the new item
 execute if items block ~ ~ ~ container.15 * if function expansion:blocks/fabricator/printing/compare_output run item modify block ~ ~ ~ container.15 expansion:utility/add_count_from_score

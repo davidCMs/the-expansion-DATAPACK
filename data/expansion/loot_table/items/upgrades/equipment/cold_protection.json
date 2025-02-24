@@ -31,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{equipment_mod:1b,warming_module:1b,protection_mod:1b,upgrade_module:1b,icon:\"\uff40\",heat:1b,crafting_count:1,max_stack_size:64}"
+                "tag": "{equipment_mod:1b,warming_module:1b,protection_mod:1b,upgrade_module:1b,allowedIDs:[103,102,101,100],icon:\"\uff40\",heat:1b,crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",

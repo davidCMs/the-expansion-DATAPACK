@@ -1,8 +1,8 @@
-# copy the equipment item to a storage for easier access and better performance
-data modify storage expansion:temp ModStorage set from block ~ ~ ~ Items[{Slot:10b}].components.minecraft:custom_data.ModStorage
+## Removes any modules from the Equipment in slot 10 and adds them to the block
+# Performance takes quite a hit but I chose ease of use over performance
 
-# remove module effects
-function expansion:blocks/enhancer/upgrade/remove/init_loop
+# copy the equipment item to a storage for easier access and better performance
+data modify storage expansion:temp ModStorage set from entity @s item.components."minecraft:custom_data".ModStorage
 
 # Unless there is an item in the block slot, if there is a module in the equipment slot, remove the module from the equipment slot into the item slot
 execute unless items block ~ ~ ~ container.12 * if data storage expansion:temp ModStorage[0].id run function expansion:blocks/enhancer/upgrade/remove/slot_1
@@ -10,11 +10,14 @@ execute unless items block ~ ~ ~ container.13 * if data storage expansion:temp M
 execute unless items block ~ ~ ~ container.14 * if data storage expansion:temp ModStorage[2].id run function expansion:blocks/enhancer/upgrade/remove/slot_3
 execute unless items block ~ ~ ~ container.15 * if data storage expansion:temp ModStorage[3].id run function expansion:blocks/enhancer/upgrade/remove/slot_4
 
-# display the remainding module icons
-function expansion:items/space_equipment/module_icons/init_loop
-item modify block ~ ~ ~ container.10 expansion:space_equipment/display_module_icons
+# Re-apply any remaining module parameters
+function expansion:blocks/enhancer/upgrade/apply/effects/init_loop
 
-# copy data back to the equipment
-item modify block ~ ~ ~ container.10 {"function": "minecraft:copy_custom_data","source": {"type": "minecraft:storage","source": "expansion:temp"},"ops": [{"source": "ModStorage","target": "ModStorage","op": "replace"}]}
-# update the display item
-item replace entity @s contents from block ~ ~ ~ container.10
+# display the module icons
+function expansion:spacesuits/module_icons/init_loop
+item modify entity @s contents expansion:space_equipment/display_module_icons
+
+# Copy the modstorage from storage back to the equipment
+item modify entity @s contents {"function": "minecraft:copy_custom_data","source": {"type": "minecraft:storage","source": "expansion:temp"},"ops": [{"source": "ModStorage","target": "ModStorage","op": "replace"}]}
+# Also refresh the display item
+item replace block ~ ~ ~ container.10 from entity @s contents
