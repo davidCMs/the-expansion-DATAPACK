@@ -16,12 +16,10 @@ scoreboard objectives add exp.delay dummy
 scoreboard objectives add exp.value dummy
 scoreboard objectives add exp.hold_value dummy
 scoreboard objectives add exp.hold_value_alt dummy
-scoreboard objectives add exp.sneak_delay dummy
 scoreboard objectives add exp.percentage dummy
 # gravity
 scoreboard objectives add exp.gravity dummy
 scoreboard objectives add exp.gravity_modifier dummy
-scoreboard objectives add exp.gravity_delay dummy
 # fuel
 scoreboard objectives add exp.fuel_level dummy
 scoreboard objectives add exp.fuel_max dummy
@@ -33,17 +31,13 @@ scoreboard objectives add exp.oxygen_percent dummy
 # temperature
 scoreboard objectives add exp.heat_resist dummy
 scoreboard objectives add exp.cold_resist dummy
+scoreboard objectives add exp.temperature dummy
+# suits
+scoreboard objectives add exp.suit_integrity dummy
 # vehicles
 scoreboard objectives add exp.speed dummy
 scoreboard objectives add exp.speed_mod dummy
 scoreboard objectives add exp.passenger_count dummy
-scoreboard objectives add exp.mech_left_id dummy
-scoreboard objectives add exp.mech_right_id dummy
-scoreboard objectives add exp.mech_left_dur dummy
-scoreboard objectives add exp.mech_right_dur dummy
-scoreboard objectives add exp.mech_left_anim dummy
-scoreboard objectives add exp.mech_right_anim dummy
-
 scoreboard objectives add exp.mech_action_id dummy
 scoreboard objectives add exp.mech_action_dur dummy
 scoreboard objectives add exp.mech_action_anim dummy
@@ -139,4 +133,5 @@ scoreboard players set #57295 exp.const 57295
 scoreboard players set #-90000 exp.const -90000
 scoreboard players set #100000 exp.const 100000
 scoreboard players set #1000000 exp.const 1000000
+scoreboard players set #10000000 exp.const 10000000
 scoreboard players set #13700000 exp.const 13700000

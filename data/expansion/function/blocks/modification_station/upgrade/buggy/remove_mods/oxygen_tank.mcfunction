@@ -11,12 +11,9 @@ data modify block ~ ~ ~ Items[{Slot:9b}] set from entity @s ArmorItems[0].compon
 data remove entity @s ArmorItems[0].components."minecraft:custom_data".ModStorage.oxygen_tank
 
 # calculate tanks new percentage and find the new tank cmd
-scoreboard players operation #input exp.oxygen_lvl = @s exp.oxygen_lvl
-scoreboard players operation #input exp.oxygen_max = @s exp.oxygen_max
-execute store result score #temp exp.oxygen_percent run function expansion:mechanics/oxygen/oxygen_percentage
-scoreboard players operation #temp exp.math = #temp exp.oxygen_percent
-execute store result score #tier exp.value run data get block ~ ~ ~ Items[{Slot:9b}].components."minecraft:custom_data".tier
-function expansion:mechanics/oxygen/find_tank_cmd
+scoreboard players operation #input exp.math = @s exp.oxygen_lvl
+scoreboard players operation #max exp.math = @s exp.oxygen_max
+execute store result score #temp exp.oxygen_percent run function expansion:utilities/percentage
 execute store result storage expansion:oxygen_calc data.oxygen_lvl int 1 run scoreboard players get @s exp.oxygen_lvl
 
 # merge the new values with the item

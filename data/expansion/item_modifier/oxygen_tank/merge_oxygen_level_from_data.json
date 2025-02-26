@@ -8,7 +8,7 @@
     "ops": [
       {
         "source": "data.oxygen_lvl",
-        "target": "oxygen_lvl",
+        "target": "oxygen.lvl",
         "op": "replace"
       }
     ]

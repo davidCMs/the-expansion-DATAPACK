@@ -18,7 +18,7 @@ execute store result entity @s Pos[0] double 0.0001 run scoreboard players get #
 execute store result entity @s Pos[1] double 0.01 run data get storage expansion:portal portal_out[0].Pos.y 100
 execute store result entity @s Pos[2] double 0.0001 run scoreboard players get #dest exp.z
 
-execute at @s as @p[tag=exp.teleported] run function expansion:blocks/portal/teleport/teleport
+execute at @s as @e[type=#expansion:teleportable,tag=exp.teleported,limit=1] run function expansion:blocks/portal/teleport/teleport
 
 kill @s
 scoreboard players reset #temp exp.dim_test

@@ -17,6 +17,6 @@
       }
     },
     "rewards": {
-      "function": "exp_hitbox:rightclick"
+      "function": "expansion:player/rightclick/tools"
     }
   }

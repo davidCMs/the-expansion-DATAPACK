@@ -23,9 +23,9 @@ execute if block ~ ~ ~ #expansion:liquid run function expansion:vehicles/buggy/l
 execute if score @s exp.oxygen_lvl matches 1.. on passengers if entity @s[tag=exp.inside_buggy] unless score @s exp.oxygen_lvl >= @s exp.oxygen_max run function expansion:vehicles/buggy/oxygen/give
 
 # display info
-scoreboard players operation #input exp.oxygen_lvl = @s exp.oxygen_lvl
-scoreboard players operation #input exp.oxygen_max = @s exp.oxygen_max
-function expansion:mechanics/oxygen/oxygen_percentage
+scoreboard players operation #input exp.math = @s exp.oxygen_lvl
+scoreboard players operation #max exp.math = @s exp.oxygen_max
+function expansion:utilities/percentage
 title @p[tag=exp.tick_player] actionbar [{"translate":"exp_screentxt_speed_actionbar"},{"text":"\u25c0","color":"aqua"},{"score":{"name":"#temp","objective":"exp.speed"},"color":"aqua"},{"text":"%\u25b6     ","color":"aqua"},{"translate":"exp_screentxt_oxygen_level"},{"text":"\u25c0","color":"aqua"},{"score":{"name":"@p[tag=exp.tick_player]","objective":"exp.oxygen_percent"},"color":"aqua"},{"text":"%\u25b6     ","color":"aqua"},{"translate":"exp_screentxt_buggyoxygen_level"},{"text":"\u25c0","color":"aqua"},{"score":{"name":"#output","objective":"exp.oxygen_percent"},"color":"aqua"},{"text":"%\u25b6","color":"aqua"}]
 #execute if score @s exp.speed matches -10..10 run title @p actionbar [{"translate":"exp_screentxt_speed_actionbar"},{"text":"\u25c0"},{"text":"0%"},{"text":"\u25b6"}]
 execute if score @s exp.speed matches -10..10 run title @p[tag=exp.tick_player] actionbar [{"translate":"exp_screentxt_speed_actionbar"},{"text":"\u25c0","color":"aqua"},{"text":"0%","color":"aqua"},{"text":"%\u25b6     ","color":"aqua"},{"translate":"exp_screentxt_oxygen_level"},{"text":"\u25c0","color":"aqua"},{"score":{"name":"@p[tag=exp.tick_player]","objective":"exp.oxygen_percent"},"color":"aqua"},{"text":"%\u25b6     ","color":"aqua"},{"translate":"exp_screentxt_buggyoxygen_level"},{"text":"\u25c0","color":"aqua"},{"score":{"name":"#output","objective":"exp.oxygen_percent"},"color":"aqua"},{"text":"%\u25b6","color":"aqua"}]

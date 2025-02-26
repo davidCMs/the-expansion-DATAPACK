@@ -31,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{equipment_mod:1b,warming_module:1b,protection_mod:1b,upgrade_module:1b,cold_resist:{modifier:-2},heat_resist:{modifier:1},allowedIDs:[103,102,101,100],icon:\"\uff40\",heat:1b,crafting_count:1,max_stack_size:64}"
+                "tag": "{equipment_mod:1b,warming_module:1b,protection_mod:1b,upgrade_module:1b,cold_resist:{modifier:-2},heat_resist:{modifier:1},allowedIDs:[103,102,101,100],icon:\"\uff39\",heat:1b,crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -47,19 +47,6 @@
                   },
                   [
                     {
-                      "text": "Heat Resistance: ",
-                      "color": "aqua",
-                      "italic": false
-                    },
-                    {
-                      "text": "+1",
-                      "color": "green",
-                      "bold": true,
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
                       "text": "Cold Resistance: ",
                       "color": "gold",
                       "italic": false
@@ -67,6 +54,19 @@
                     {
                       "text": "-2",
                       "color": "red",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Heat Resistance: ",
+                      "color": "aqua",
+                      "italic": false
+                    },
+                    {
+                      "text": "+1",
+                      "color": "green",
                       "bold": true,
                       "italic": false
                     }

@@ -16,3 +16,7 @@ function expansion:blocks/enhancer/upgrade/apply/effects/init_loop
 item modify entity @s contents {"function": "minecraft:copy_custom_data","source": {"type": "minecraft:storage","source": "expansion:temp"},"ops": [{"source": "ModStorage","target": "ModStorage","op": "replace"}]}
 # Also refresh the display item
 item replace block ~ ~ ~ container.10 from entity @s contents
+# reset storage
+data remove storage expansion:temp ModStorage
+# reset scores
+scoreboard players reset #temp exp.unique_id

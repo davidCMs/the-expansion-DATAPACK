@@ -18,16 +18,16 @@
               {
                 "function": "minecraft:set_components",
                 "components": {
-                  "item_model": "minecraft:iron_boots",
-                  "minecraft:max_stack_size": 1,
                   "!minecraft:consumable": {},
                   "!minecraft:food": {},
-                  "minecraft:unbreakable": {
-                    "show_in_tooltip": false
-                  },
-                  "equippable": {
+                  "minecraft:item_model": "minecraft:iron_boots",
+                  "minecraft:max_stack_size": 1,
+                  "minecraft:max_damage": 200,
+                  "minecraft:damage": 0,
+                  "minecraft:equippable": {
                     "slot": "feet",
-                    "asset_id": "expansion:diver"
+                    "asset_id": "expansion:diver",
+                    "equip_sound": "minecraft:intentionally_empty"
                   }
                 }
               },
@@ -45,7 +45,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_armor:1b,exp_armor.boots:1b,exp.enhanceable:1b,heat_resist:{base:0,modifier:0},cold_resist:{base:0,modifier:0},ModStorage:[{}],exp.equipmentID:100b,equipped:0b,crafting_count:1,max_stack_size:1}"
+                "tag": "{exp_armor:1b,exp_armor.boots:1b,exp.enhanceable:1b,heat_resist:{base:1,modifier:0},cold_resist:{base:1,modifier:0},ModStorage:[{}],exp.equipmentID:100b,equipped:0b,crafting_count:1,max_stack_size:1}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -71,16 +71,32 @@
                   {
                     "text": ""
                   },
-                  {
-                    "text": "Cold Resistance: 0",
-                    "color": "aqua",
-                    "italic": false
-                  },
-                  {
-                    "text": "Heat Resistance: 0",
-                    "color": "gold",
-                    "italic": false
-                  },
+                  [
+                    {
+                      "text": "Cold Resistance: ",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": "+1",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Heat Resistance: ",
+                      "color": "aqua",
+                      "italic": false
+                    },
+                    {
+                      "text": "+1",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
                   {
                     "text": ""
                   }

@@ -1,6 +1,5 @@
-data modify storage expansion:temp ModStorage[0].count set value 1
-
 # check the values for this entry
+data remove storage expansion:temp allowed
 scoreboard players add #temp exp.counter_1 1
 execute if score #temp exp.counter_1 matches 1 if function expansion:blocks/enhancer/upgrade/apply/check_allowed/allowed run function expansion:blocks/enhancer/upgrade/apply/slot_1
 execute if score #temp exp.counter_1 matches 2 if function expansion:blocks/enhancer/upgrade/apply/check_allowed/allowed run function expansion:blocks/enhancer/upgrade/apply/slot_2

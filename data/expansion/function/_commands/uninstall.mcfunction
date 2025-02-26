@@ -9,8 +9,6 @@ scoreboard objectives remove exp.delay
 scoreboard objectives remove exp.value
 scoreboard objectives remove exp.hold_value
 scoreboard objectives remove exp.hold_value_alt
-scoreboard objectives remove exp.sneak_delay
-scoreboard objectives remove exp.gravity_delay
 scoreboard objectives remove exp.fuel_level
 scoreboard objectives remove exp.fuel_max
 scoreboard objectives remove exp.fuel_percentage
@@ -19,8 +17,6 @@ scoreboard objectives remove exp.oxygen_max
 scoreboard objectives remove exp.oxygen_percent
 scoreboard objectives remove exp.speed
 scoreboard objectives remove exp.passenger_count
-scoreboard objectives remove exp.mech_left_id
-scoreboard objectives remove exp.mech_right_id
 scoreboard objectives remove exp.timer_1
 scoreboard objectives remove exp.timer_2
 scoreboard objectives remove exp.cooldown

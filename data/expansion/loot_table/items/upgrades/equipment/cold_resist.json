@@ -38,11 +38,53 @@
                 "mode": "replace_all",
                 "lore": [
                   {
-                    "translate": "exp_modules_all_tip1"
+                    "text": ""
                   },
                   {
-                    "translate": "exp_modules_warming_tip2"
-                  }
+                    "text": "Provides:",
+                    "color": "white",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": "Cold Resistance: ",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": "+1",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "text": "Heat Resistance: ",
+                      "color": "aqua",
+                      "italic": false
+                    },
+                    {
+                      "text": "-2",
+                      "color": "red",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "When applied to a spacesuit piece in the ",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": "Enhancer",
+                      "underlined": true
+                    }
+                  ]
                 ]
               }
             ]

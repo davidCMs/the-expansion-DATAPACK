@@ -3,9 +3,9 @@ scoreboard players add #target exp.oxygen_lvl 2000
 execute if score #target exp.oxygen_lvl > #target exp.oxygen_max run scoreboard players operation #target exp.oxygen_lvl = #target exp.oxygen_max
 
 # calculate containers new percentage
-scoreboard players operation #input exp.oxygen_lvl = #target exp.oxygen_lvl
-scoreboard players operation #input exp.oxygen_max = #target exp.oxygen_max
-execute store result score #target exp.oxygen_percent run function expansion:mechanics/oxygen/oxygen_percentage
+scoreboard players operation #input exp.math = #target exp.oxygen_lvl
+scoreboard players operation #max exp.math = #target exp.oxygen_max
+execute store result score #target exp.oxygen_percent run function expansion:utilities/percentage
 
 # merge the new oxygen level with the tank
 execute store result storage expansion:oxygen_calc data.oxygen_lvl int 1 run scoreboard players get #target exp.oxygen_lvl
