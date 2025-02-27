@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": 
+    [
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/pilot/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/pilot/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/pilot/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/pilot/feet"
+        }
+    ]
+  }

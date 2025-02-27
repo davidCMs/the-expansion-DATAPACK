@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": 
+    [
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/hazmat/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/hazmat/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/hazmat/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/hazmat/feet"
+        }
+    ]
+  }

@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": 
+    [
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/trooper/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/trooper/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/trooper/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/trooper/feet"
+        }
+    ]
+  }

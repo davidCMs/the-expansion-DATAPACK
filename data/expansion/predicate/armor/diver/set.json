@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": 
+    [
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/diver/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/diver/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/diver/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/diver/feet"
+        }
+    ]
+  }

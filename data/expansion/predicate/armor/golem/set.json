@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": 
+    [
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/golem/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/golem/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/golem/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/golem/feet"
+        }
+    ]
+  }

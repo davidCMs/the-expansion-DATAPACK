@@ -1,0 +1,22 @@
+{
+    "condition": "minecraft:all_of",
+    "terms": 
+    [
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/nasa/head"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/nasa/chest"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/nasa/legs"
+        },
+        {
+            "condition": "minecraft:reference",
+            "name": "expansion:armor/nasa/feet"
+        }
+    ]
+  }
