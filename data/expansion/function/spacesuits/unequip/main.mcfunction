@@ -10,6 +10,9 @@ execute if items entity @s armor.feet *[minecraft:custom_data~{equipped:1b}] run
 data modify storage expansion:temp equipment set from entity @s Inventory[{components:{"minecraft:custom_data":{exp_armor:1b,equipped:1b}}}]
 execute if data storage expansion:temp equipment run function expansion:spacesuits/unequip/restore_item with storage expansion:temp equipment
 
+# if there is an item in the player cursor (only works in survival for some reason), also unequip it
+execute if items entity @s player.cursor *[minecraft:custom_data~{equipped:1b}] run item modify entity @s player.cursor {"function": "minecraft:set_custom_data",tag:{equipped:0b}}
+
 # restore the other armor items
 execute if items entity @s armor.head *[minecraft:custom_data~{equipped:2b}] run item modify entity @s armor.head {"function": "minecraft:set_custom_data",tag:{equipped:1b}}
 execute if items entity @s armor.chest *[minecraft:custom_data~{equipped:2b}] run item modify entity @s armor.chest {"function": "minecraft:set_custom_data",tag:{equipped:1b}}

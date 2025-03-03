@@ -11,8 +11,8 @@ execute unless score @s exp.oxygen_max matches 1.. run data modify storage expan
 execute if score @s exp.suit_integrity matches 21..49 run data modify storage expansion:temp actionbar.integrity[0].color set value "gold"
 execute if score @s exp.suit_integrity matches 11..20 run data modify storage expansion:temp actionbar.integrity[0].color set value "red"
 execute if score @s exp.suit_integrity matches 0..10 run data modify storage expansion:temp actionbar.integrity[0].color set value "dark_red"
-execute if score #temp exp.counter_2 matches 1.. run data modify storage expansion:temp actionbar.integrity[0] set value {text:"Compromised ◀",color:"red"}
 execute if score @s exp.suit_integrity matches -1 run data modify storage expansion:temp actionbar.integrity set value {text:"Incomplete",color:"red"}
+execute if score #temp exp.counter_2 matches 1.. run data modify storage expansion:temp actionbar.integrity[0] set value {text:"Compromised ◀",color:"red"}
 scoreboard players reset #temp exp.counter_2
 
 # display the title

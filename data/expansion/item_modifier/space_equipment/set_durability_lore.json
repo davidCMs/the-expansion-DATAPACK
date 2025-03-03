@@ -5,13 +5,13 @@
   [
     {
       "storage":"expansion:temp",
-      "nbt":"heat_resist",
+      "nbt":"durability",
       "interpret":true,
       "italic":false,
       "separator":{"text":""}
     }
   ],
   "mode":"replace_section",
-  "offset":6,
+  "offset":7,
   "size":1
 }

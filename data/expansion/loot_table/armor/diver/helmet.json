@@ -44,7 +44,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_armor:1b,exp_armor.helmet:1b,exp.enhanceable:1b,heat_resist:{base:1,modifier:0},cold_resist:{base:1,modifier:0},ModStorage:[{}],exp.equipmentID:103b,equipped:0b,crafting_count:1,max_stack_size:1}"
+                "tag": "{exp_armor:1b,exp_armor.helmet:1b,exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},max_damage:{base:200,add_percent:0},ModStorage:[{}],exp.equipmentID:103b,equipped:0b,crafting_count:1,max_stack_size:1}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -77,9 +77,8 @@
                       "italic": false
                     },
                     {
-                      "text": "+1",
+                      "text": "1",
                       "color": "green",
-                      "bold": true,
                       "italic": false
                     }
                   ],
@@ -90,9 +89,8 @@
                       "italic": false
                     },
                     {
-                      "text": "+1",
+                      "text": "1",
                       "color": "green",
-                      "bold": true,
                       "italic": false
                     }
                   ],

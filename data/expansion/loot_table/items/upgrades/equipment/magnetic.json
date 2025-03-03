@@ -1,0 +1,94 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "text": "Rocket Module",
+                  "color": "white",
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                      "item_model": "expansion:modules/equipment",
+                      "custom_model_data": {
+                        "strings": ["magnetic"]
+                      },
+                    "minecraft:max_stack_size": 64,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {
+                        "show_in_tooltip": false
+                        }
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{equipment_mod:1b,name:\"exp.magnetic_module\",upgrade_module:1b,cold_resist:{modifier:-1},allowedIDs:[100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "text": "Provides:",
+                    "color": "white",
+                    "italic": false
+                  },
+                  [
+                    {
+                      "text": "Reduced low gravity effects (not stackable)",
+                      "color": "aqua",
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "Cold Resistance: ",
+                      "color": "gold",
+                      "italic": false
+                    },
+                    {
+                      "text": "-1",
+                      "color": "red",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "text": "When applied to a spacesuit piece in the ",
+                      "color": "white",
+                      "italic": false
+                    },
+                    {
+                      "text": "Enhancer",
+                      "underlined": true
+                    }
+                  ]
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  
