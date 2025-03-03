@@ -6,12 +6,12 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/upgrades/equipment/cold_protection"
+            "value": "expansion:items/upgrades/equipment/cold_resist"
           },
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/upgrades/equipment/heat_protection"
+            "value": "expansion:items/upgrades/equipment/heat_resist"
           }
         ]
       }

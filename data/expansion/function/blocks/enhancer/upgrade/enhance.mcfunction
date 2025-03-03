@@ -6,6 +6,9 @@ data modify storage expansion:temp ModStorage set from entity @s item.components
 # Therefore, store the current equipment ID
 execute store result score #temp exp.unique_id run data get entity @s item.components."minecraft:custom_data"."exp.equipmentID"
 
+# reset the items lore
+function expansion:blocks/enhancer/upgrade/apply/reset_lore
+
 # copy the modules from the block to the ModStorage of the equipment
 function expansion:blocks/enhancer/upgrade/apply/init_loop
 

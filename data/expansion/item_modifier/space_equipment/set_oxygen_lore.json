@@ -26,8 +26,6 @@
           ]
         ]
       ],
-      "mode": "replace_section",
-      "offset": 8,
-      "size": 1
+      "mode": "append"
     }
   ]

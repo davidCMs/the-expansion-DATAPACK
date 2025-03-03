@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "text": "Rocket Module",
+                  "translate": "exp_modules_magnetic_name",
                   "color": "white",
                   "italic": false
                 },
@@ -32,7 +32,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{equipment_mod:1b,name:\"exp.magnetic_module\",upgrade_module:1b,cold_resist:{modifier:-1},allowedIDs:[100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
+                "tag": "{name:\"exp.magnetic_module\",upgrade_module:1b,allowedIDs:[100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",

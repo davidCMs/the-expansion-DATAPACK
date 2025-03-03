@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "text": "Rocket Module",
+                  "translate": "exp_modules_rocket_name",
                   "color": "white",
                   "italic": false
                 },
@@ -32,7 +32,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{equipment_mod:1b,name:\"exp.rocket_module\",upgrade_module:1b,cold_resist:{modifier:1},heat_resist:{modifier:-5},allowedIDs:[100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
+                "tag": "{name:\"exp.rocket_module\",upgrade_module:1b,cold_resist:{modifier:1},heat_resist:{modifier:-5},allowedIDs:[100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",

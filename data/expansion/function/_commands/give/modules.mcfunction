@@ -1,8 +1,7 @@
 setblock ~ ~ ~ chest{CustomName:'{"text":"Upgrades","color":"#00FFEE"}'} replace
 
-
-loot insert ~ ~ ~ loot expansion:items/upgrades/equipment/cold_protection
-loot insert ~ ~ ~ loot expansion:items/upgrades/equipment/heat_protection
+loot insert ~ ~ ~ loot expansion:items/upgrades/equipment/cold_resist
+loot insert ~ ~ ~ loot expansion:items/upgrades/equipment/heat_resist
 loot insert ~ ~ ~ loot expansion:blocks/enhancer
 loot insert ~ ~ ~ loot expansion:items/upgrades/spaceship/blaster_1
 loot insert ~ ~ ~ loot expansion:items/upgrades/spaceship/blaster_2

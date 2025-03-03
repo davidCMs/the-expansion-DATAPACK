@@ -4,7 +4,7 @@ scoreboard players reset #temp exp.oxygen_lvl
 scoreboard players reset #temp exp.oxygen_max
 
 # reset durability (needs special treatment because it actually changes the items max_damage)
-scoreboard players set #temp exp.max_health 0
+scoreboard players reset #temp exp.max_health
 execute store result entity @s item.components."minecraft:max_damage" int 1 run data get entity @s item.components."minecraft:custom_data".max_damage.base
 
 execute store result score #apply_module exp.max_range run data get storage expansion:temp ModStorage
@@ -21,4 +21,4 @@ function expansion:blocks/enhancer/upgrade/apply/effects/cold_resist
 function expansion:blocks/enhancer/upgrade/apply/effects/heat_resist
 
 # apply durability modifiers
-function expansion:blocks/enhancer/upgrade/apply/effects/durability
+execute if score #temp exp.max_health matches -100.. run function expansion:blocks/enhancer/upgrade/apply/effects/durability

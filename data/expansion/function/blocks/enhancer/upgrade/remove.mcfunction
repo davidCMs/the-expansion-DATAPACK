@@ -4,6 +4,9 @@
 # copy the equipment item to a storage for easier access and better performance
 data modify storage expansion:temp ModStorage set from entity @s item.components."minecraft:custom_data".ModStorage
 
+# reset the items lore
+function expansion:blocks/enhancer/upgrade/apply/reset_lore
+
 # Unless there is an item in the block slot, if there is a module in the equipment slot, remove the module from the equipment slot into the item slot
 execute unless items block ~ ~ ~ container.12 *[!custom_data~{gui_item:1b}] if data storage expansion:temp ModStorage[0].id run function expansion:blocks/enhancer/upgrade/remove/slot_1
 execute unless items block ~ ~ ~ container.13 *[!custom_data~{gui_item:1b}] if data storage expansion:temp ModStorage[1].id run function expansion:blocks/enhancer/upgrade/remove/slot_2

@@ -1,0 +1,58 @@
+{
+    "function":"set_lore",
+    "entity":"this",
+    "lore":
+    [
+        {
+            "storage":"expansion:temp",
+            "nbt":"icons",
+            "font": "expansion:module_icons",
+            "interpret":true,
+            "italic":false,
+            "separator":{"text":""}
+        },
+        {
+            "text": "Modules:",
+            "color": "aqua",
+            "italic": false,
+            "bold": true
+        },
+        {
+            "text": ""
+        },
+        {
+            "text": ""
+        },
+        {
+            "text": ""
+        },
+        [
+            {
+                "text": "Cold Resistance: ",
+                "color": "gold",
+                "italic": false
+            },
+            {
+                "text": "1",
+                "color": "green",
+                "italic": false
+            }
+        ],
+        [
+            {
+                "text": "Heat Resistance: ",
+                "color": "aqua",
+                "italic": false
+            },
+            {
+                "text": "1",
+                "color": "green",
+                "italic": false
+            }
+        ],
+        {
+            "text": ""
+        }
+    ],
+    "mode": "replace_all"
+  }

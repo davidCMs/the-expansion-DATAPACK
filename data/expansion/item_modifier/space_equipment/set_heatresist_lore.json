@@ -3,13 +3,23 @@
   "entity":"this",
   "lore":
   [
-    {
-      "storage":"expansion:temp",
-      "nbt":"heat_resist",
-      "interpret":true,
-      "italic":false,
-      "separator":{"text":""}
-    }
+    [
+      {
+        "storage":"expansion:temp",
+        "nbt":"heat_resist[0]",
+        "interpret":true,
+        "italic":false,
+        "separator":{"text":""}
+      },
+      {
+        "storage":"expansion:temp",
+        "nbt":"heat_resist[1]",
+        "interpret":true,
+        "italic":false,
+        "bold": true,
+        "separator":{"text":""}
+      }
+    ]
   ],
   "mode":"replace_section",
   "offset":6,
