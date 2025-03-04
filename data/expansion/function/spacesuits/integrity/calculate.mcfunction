@@ -8,7 +8,7 @@ scoreboard players operation #max exp.math = #max exp.suit_integrity
 execute store result score @s exp.suit_integrity run function expansion:utilities/percentage
 
 # set the integrity to -1 if the player misses any armor pieces
-execute unless items entity @s armor.head *[minecraft:custom_data~{exp_armor:1b}] run return run scoreboard players set @s exp.suit_integrity -1
-execute unless items entity @s armor.chest *[minecraft:custom_data~{exp_armor:1b}] run return run scoreboard players set @s exp.suit_integrity -1
-execute unless items entity @s armor.legs *[minecraft:custom_data~{exp_armor:1b}] run return run scoreboard players set @s exp.suit_integrity -1
-execute unless items entity @s armor.feet *[minecraft:custom_data~{exp_armor:1b}] run return run scoreboard players set @s exp.suit_integrity -1
+execute unless items entity @s armor.head *[minecraft:custom_data~{exp_armor:{Slot:103b}}] run return run scoreboard players set @s exp.suit_integrity -1
+execute unless items entity @s armor.chest *[minecraft:custom_data~{exp_armor:{Slot:102b}}] run return run scoreboard players set @s exp.suit_integrity -1
+execute unless items entity @s armor.legs *[minecraft:custom_data~{exp_armor:{Slot:101b}}] run return run scoreboard players set @s exp.suit_integrity -1
+execute unless items entity @s armor.feet *[minecraft:custom_data~{exp_armor:{Slot:100b}}] run return run scoreboard players set @s exp.suit_integrity -1

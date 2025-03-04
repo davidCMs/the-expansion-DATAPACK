@@ -22,6 +22,6 @@ scoreboard players reset #mod exp.math
 
 # extra durability (percentage) (can never remove 100% durability)
 execute if data storage expansion:temp ModStorage[0].components."minecraft:custom_data".max_damage.add_percent store result score #mod exp.math run data get storage expansion:temp ModStorage[0].components."minecraft:custom_data".max_damage.add_percent
-execute if score #mod exp.math matches -100.. run scoreboard players operation #temp exp.max_health += #mod exp.math
+execute if score #mod exp.math matches -1000.. run scoreboard players operation #temp exp.max_health += #mod exp.math
 execute if score #temp exp.max_health matches ..-100 run scoreboard players set #temp exp.max_health -99
 scoreboard players reset #mod exp.math

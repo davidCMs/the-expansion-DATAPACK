@@ -4,7 +4,7 @@ data modify storage expansion:temp ModStorage set from entity @s item.components
 # Not all modules can be put on all equipment (oxygen tanks, magnetic boots, rocket boots, ammo etc.)
 # Each module has a list of equipment ID's that it supports, the current equipment ID must be in that list
 # Therefore, store the current equipment ID
-execute store result score #temp exp.unique_id run data get entity @s item.components."minecraft:custom_data"."exp.equipmentID"
+execute store result score #temp exp.unique_id run data get entity @s item.components."minecraft:custom_data"."exp.enhanceID"
 
 # reset the items lore
 function expansion:blocks/enhancer/upgrade/apply/reset_lore

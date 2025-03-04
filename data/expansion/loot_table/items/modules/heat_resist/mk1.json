@@ -10,8 +10,7 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "translate": "exp_modules_rocket_name",
-                  "color": "white",
+                  "translate": "exp_modules_heatresist_name",
                   "italic": false
                 },
                 "entity": "this"
@@ -21,7 +20,7 @@
                     "components": {
                       "item_model": "expansion:modules/equipment",
                       "custom_model_data": {
-                        "strings": ["rocket"]
+                        "strings": ["cooling"]
                       },
                     "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},
@@ -32,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{name:\"exp.rocket_module\",upgrade_module:1b,cold_resist:{modifier:1},heat_resist:{modifier:-5},allowedIDs:[100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
+                "tag": "{name:\"exp.heat_resist_module\",upgrade_module:1b,cold_resist:{modifier:-4},heat_resist:{modifier:2},allowedIDs:[103,102,101,100],icon:\"\uff39\",crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -42,60 +41,39 @@
                     "text": ""
                   },
                   {
-                    "text": "Provides:",
-                    "color": "white",
-                    "italic": false
+                    "translate": "exp_modules_ifadded"
                   },
-                  [
-                    {
-                      "text": "6 seconds of vertical flight (not stackable)",
-                      "color": "aqua",
-                      "italic": false
-                    }
-                  ],
                   {
                     "text": ""
                   },
                   [
                     {
-                      "text": "Cold Resistance: ",
-                      "color": "gold",
-                      "italic": false
+                      "translate": "exp_modules_coldresist_lore"
                     },
                     {
-                      "text": "+1",
-                      "color": "green",
-                      "bold": true,
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Heat Resistance: ",
-                      "color": "aqua",
-                      "italic": false
-                    },
-                    {
-                      "text": "-5",
+                      "text": "-4",
                       "color": "red",
                       "bold": true,
                       "italic": false
                     }
                   ],
+                  [
+                    {
+                      "translate": "exp_modules_heatresist_lore"
+                    },
+                    {
+                      "text": "+2",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
                   {
                     "text": ""
                   },
-                  [
-                    {
-                      "text": "When applied to a spacesuit piece in the ",
-                      "color": "white",
-                      "italic": false
-                    },
-                    {
-                      "text": "Enhancer",
-                      "underlined": true
-                    }
-                  ]
+                  {
+                    "translate": "exp_modules_whenapplied"
+                  }
                 ]
               }
             ]

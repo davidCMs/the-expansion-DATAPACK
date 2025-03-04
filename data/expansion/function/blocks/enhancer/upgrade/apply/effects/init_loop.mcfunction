@@ -11,9 +11,6 @@ execute store result score #apply_module exp.max_range run data get storage expa
 function expansion:blocks/enhancer/upgrade/apply/effects/storage_loop
 scoreboard players reset #apply_module exp.max_range
 
-# apply the oxygen scores on chestplates (could be better but don't want to overengineer)
-execute if items entity @s contents *[custom_data~{exp_armor.chestplate:1b}] run function expansion:blocks/enhancer/upgrade/apply/effects/oxygen_percent
-
 # apply the cold resistance modifiers
 function expansion:blocks/enhancer/upgrade/apply/effects/cold_resist
 
@@ -22,3 +19,6 @@ function expansion:blocks/enhancer/upgrade/apply/effects/heat_resist
 
 # apply durability modifiers
 execute if score #temp exp.max_health matches -100.. run function expansion:blocks/enhancer/upgrade/apply/effects/durability
+
+# apply the oxygen scores on chestplates (could be better but don't want to overengineer)
+execute if items entity @s contents *[custom_data~{exp_armor.chestplate:1b}] run function expansion:blocks/enhancer/upgrade/apply/effects/oxygen_percent

@@ -1,4 +1,4 @@
-item modify entity @s armor.chest {"function": "minecraft:set_custom_data",tag:{equipped:1b}}
+item modify entity @s armor.chest {"function": "minecraft:set_custom_data",tag:{exp_armor.equipped:1b}}
 
 tag @s add exp.armor.chest
 

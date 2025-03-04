@@ -5,15 +5,11 @@
   [
     [
       {
-        "storage":"expansion:temp",
-        "nbt":"heat_resist[0]",
-        "interpret":true,
-        "italic":false,
-        "separator":{"text":""}
-      },
+        "translate": "exp_modules_heatresist_lore"
+    },
       {
         "storage":"expansion:temp",
-        "nbt":"heat_resist[1]",
+        "nbt":"heat_resist",
         "interpret":true,
         "italic":false,
         "bold": true,

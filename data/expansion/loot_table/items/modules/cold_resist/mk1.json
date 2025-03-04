@@ -1,0 +1,85 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": {
+                  "translate": "exp_modules_coldresist_name",
+                  "italic": false
+                },
+                "entity": "this"
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                      "item_model": "expansion:modules/equipment",
+                      "custom_model_data": {
+                        "strings": ["warming"]
+                      },
+                    "minecraft:max_stack_size": 64,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {
+                        "show_in_tooltip": false
+                        }
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{name:\"exp.cold_resist_module\",upgrade_module:1b,cold_resist:{modifier:1},heat_resist:{modifier:-2},allowedIDs:[103,102,101,100],icon:\"\uff40\",crafting_count:1,max_stack_size:64}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_modules_ifadded"
+                  },
+                  {
+                    "text": ""
+                  },
+                  [
+                    {
+                      "translate": "exp_modules_coldresist_lore"
+                    },
+                    {
+                      "text": "+1",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "exp_modules_heatresist_lore"
+                    },
+                    {
+                      "text": "-2",
+                      "color": "red",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_modules_whenapplied"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

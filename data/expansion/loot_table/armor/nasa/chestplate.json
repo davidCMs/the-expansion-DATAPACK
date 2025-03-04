@@ -1,56 +1,119 @@
 {
-    "pools": [
-      {
-        "rolls": 1,
-        "entries": [
-          {
-            "type": "minecraft:item",
-            "name": "minecraft:poisonous_potato",
-            "functions": [
-              {
-                "function": "minecraft:set_name",
-                "entity": "this",
-                "name": {
-                  "translate": "exp_armor_equipment_name",
-                  "italic": false
-                }
-              },
-              {
-                "function": "minecraft:set_components",
-                "components": {
-                  "item_model": "minecraft:iron_chestplate",
-                  "minecraft:max_stack_size": 1,
-                  "!minecraft:consumable": {},
-                  "!minecraft:food": {},
-                  "minecraft:unbreakable": {
-                    "show_in_tooltip": false
-                  },
-                  "equippable": {
-                    "slot": "chest",
-                    "asset_id": "expansion:nasa"
-                  }
-                }
-              },
-              {
-                "function": "minecraft:set_custom_data",
-                "tag": "{}"
-              },
-              {
-                "function": "minecraft:set_attributes",
-                "modifiers": [
-                  {
-                    "attribute": "minecraft:armor",
-                    "id": "armor",
-                    "amount": 2,
-                    "operation": "add_value",
-                    "slot": "head"
-                  }
-                ]
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:poisonous_potato",
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "entity": "this",
+              "name": {
+                "translate": "exp_armor_equipment_name",
+                "italic": false
               }
-            ]
-          }
-        ]
-      }
-    ]
-  }
-  
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "!minecraft:consumable": {},
+                "!minecraft:food": {},
+                "minecraft:item_model": "minecraft:iron_chestplate",
+                "minecraft:max_stack_size": 1,
+                "minecraft:max_damage": 1500,
+                "minecraft:damage": 0,
+                "minecraft:equippable": {
+                  "slot": "chest",
+                  "asset_id": "expansion:nasa",
+                  "equip_sound": "minecraft:intentionally_empty",
+                  "swappable": false
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_attributes",
+              "modifiers": [
+                {
+                  "attribute": "minecraft:armor",
+                  "id": "armor",
+                  "amount": 2,
+                  "operation": "add_value",
+                  "slot": "chest"
+                }
+              ]
+            },
+            {
+              "function": "minecraft:set_custom_data",
+              "tag": "{exp_armor:{Slot:102b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:4,modifier:0,total:4},cold_resist:{base:4,modifier:0,total:4},max_damage:{base:1500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b,crafting_count:1,max_stack_size:1}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "切切切",
+                  "font": "expansion:module_icons",
+                  "color": "white",
+                  "italic": false 
+                },
+                {
+                  "translate": "exp_modules_lore"
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_modules_oxygenlvl_lore"
+                  },
+                  {
+                    "text": "0%",
+                    "color": "aqua",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_modules_coldresist_lore"
+                  },
+                  {
+                    "text": "4",
+                    "color": "green",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                [
+                  {
+                    "translate": "exp_modules_heatresist_lore"
+                  },
+                  {
+                    "text": "4",
+                    "color": "green",
+                    "bold": true,
+                    "italic": false
+                  }
+                ],
+                {
+                  "text": ""
+                }
+              ],
+              "mode": "replace_all"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

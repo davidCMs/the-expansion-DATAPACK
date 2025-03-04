@@ -8,5 +8,9 @@ execute if entity @s[tag=exp.inside_capsule] run function expansion:vehicles/ret
 # dismiss the drone pet
 execute if entity @s[tag=exp.has_active_drone] run function expansion:mobs/drone_pet/force_dismiss
 
+# reset gravity
+tag @s remove exp.has_changed_gravity
+function expansion:mechanics/gravity/remove_all
+
 # reset the scoreboard
 scoreboard players set @s exp.death 0

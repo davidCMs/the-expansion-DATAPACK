@@ -22,11 +22,12 @@
                   "!minecraft:food": {},
                   "minecraft:item_model": "expansion:armor/helmets/diver",
                   "minecraft:max_stack_size": 1,
-                  "minecraft:max_damage": 200,
+                  "minecraft:max_damage": 1000,
                   "minecraft:damage": 0,
                   "minecraft:equippable": {
                     "slot": "head",
-                    "equip_sound": "minecraft:intentionally_empty"
+                    "equip_sound": "minecraft:intentionally_empty",
+                    "swappable": false
                   }
                 }
               },
@@ -44,7 +45,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_armor:1b,exp_armor.helmet:1b,exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},max_damage:{base:200,add_percent:0},ModStorage:[{}],exp.equipmentID:103b,equipped:0b,crafting_count:1,max_stack_size:1}"
+                "tag": "{exp_armor:{Slot:103b,equipped:0b,set_name:\"diver\"},exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},max_damage:{base:1000,add_percent:0},ModStorage:[{}],exp.enhanceID:103b,crafting_count:1,max_stack_size:1}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -56,10 +57,7 @@
                     "italic": false 
                   },
                   {
-                    "text": "Modules:",
-                    "color": "aqua",
-                    "italic": false,
-                    "bold": true
+                    "translate": "exp_modules_lore"
                   },
                   {
                     "text": ""
@@ -72,25 +70,23 @@
                   },
                   [
                     {
-                      "text": "Cold Resistance: ",
-                      "color": "gold",
-                      "italic": false
+                      "translate": "exp_modules_coldresist_lore"
                     },
                     {
                       "text": "1",
                       "color": "green",
+                      "bold": true,
                       "italic": false
                     }
                   ],
                   [
                     {
-                      "text": "Heat Resistance: ",
-                      "color": "aqua",
-                      "italic": false
+                      "translate": "exp_modules_heatresist_lore"
                     },
                     {
                       "text": "1",
                       "color": "green",
+                      "bold": true,
                       "italic": false
                     }
                   ],

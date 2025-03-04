@@ -20,13 +20,7 @@
       [
         [
           {
-            "translate": "exp_tools_oxygentank_name",
-            "color": "aqua",
-            "italic": false
-          },
-          {
-            "text": ": ",
-            "color": "aqua"
+            "translate": "exp_modules_oxygenlvl_lore"
           },
           {
             "score": {
@@ -34,7 +28,8 @@
               "objective": "exp.percentage"
             },
             "color": "aqua",
-            "bold": true
+            "bold": true,
+            "italic": false
           },
           {
             "text": "%",
@@ -45,7 +40,7 @@
       ]
     ],
     "mode": "replace_section",
-    "offset": 8,
+    "offset": 5,
     "size": 1
   }
 ]

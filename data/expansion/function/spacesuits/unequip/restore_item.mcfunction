@@ -1,1 +1,1 @@
-$item modify entity @s container.$(Slot) {"function": "minecraft:set_custom_data",tag:{equipped:0b}}
+$item modify entity @s container.$(Slot) {"function": "minecraft:set_custom_data",tag:{exp_armor.equipped:0b}}

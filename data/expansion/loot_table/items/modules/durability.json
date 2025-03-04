@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "translate": "exp_modules_heatresist_name",
+                  "translate": "exp_modules_durability_name",
                   "italic": false
                 },
                 "entity": "this"
@@ -31,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{name:\"exp.heat_resist_module\",upgrade_module:1b,cold_resist:{modifier:-2},heat_resist:{modifier:1},allowedIDs:[103,102,101,100],icon:\"\uff39\",crafting_count:1,max_stack_size:64}"
+                "tag": "{name:\"exp.durability_module\",upgrade_module:1b,max_damage:{add_percent:20},allowedIDs:[103,102,101,100],icon:\"\uff39\",crafting_count:1,max_stack_size:64}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -41,31 +41,17 @@
                     "text": ""
                   },
                   {
-                    "text": "Provides:",
-                    "color": "white",
-                    "italic": false
+                    "translate": "exp_modules_ifadded"
+                  },
+                  {
+                    "text": ""
                   },
                   [
                     {
-                      "text": "Cold Resistance: ",
-                      "color": "gold",
-                      "italic": false
+                      "translate": "exp_modules_durability_lore"
                     },
                     {
-                      "text": "-2",
-                      "color": "red",
-                      "bold": true,
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Heat Resistance: ",
-                      "color": "aqua",
-                      "italic": false
-                    },
-                    {
-                      "text": "+1",
+                      "text": "+20%",
                       "color": "green",
                       "bold": true,
                       "italic": false
@@ -74,17 +60,9 @@
                   {
                     "text": ""
                   },
-                  [
-                    {
-                      "text": "When applied to a spacesuit piece in the ",
-                      "color": "white",
-                      "italic": false
-                    },
-                    {
-                      "text": "Enhancer",
-                      "underlined": true
-                    }
-                  ]
+                  {
+                    "translate": "exp_modules_whenapplied"
+                  }
                 ]
               }
             ]

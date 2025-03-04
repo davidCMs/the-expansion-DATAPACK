@@ -6,9 +6,7 @@
         [
           [
             {
-              "translate": "exp_screentxt_oxygen_level",
-              "color": "aqua",
-              "italic": false
+              "translate": "exp_modules_oxygenlvl_lore"
             },
             {
               "score": {
@@ -24,8 +22,12 @@
               "bold": true
             }
           ]
-        ]
+        ],
+        {
+          "text": ""
+        }
       ],
-      "mode": "append"
+      "mode": "insert",
+      "offset": 5
     }
   ]

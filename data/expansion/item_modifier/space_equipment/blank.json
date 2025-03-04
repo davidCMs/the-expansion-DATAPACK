@@ -12,10 +12,7 @@
             "separator":{"text":""}
         },
         {
-            "text": "Modules:",
-            "color": "aqua",
-            "italic": false,
-            "bold": true
+            "translate": "exp_modules_lore"
         },
         {
             "text": ""
@@ -28,9 +25,7 @@
         },
         [
             {
-                "text": "Cold Resistance: ",
-                "color": "gold",
-                "italic": false
+                "translate": "exp_modules_coldresist_lore"
             },
             {
                 "text": "1",
@@ -40,19 +35,14 @@
         ],
         [
             {
-                "text": "Heat Resistance: ",
-                "color": "aqua",
-                "italic": false
+                "translate": "exp_modules_heatresist_lore"
             },
             {
                 "text": "1",
                 "color": "green",
                 "italic": false
             }
-        ],
-        {
-            "text": ""
-        }
+        ]
     ],
     "mode": "replace_all"
   }

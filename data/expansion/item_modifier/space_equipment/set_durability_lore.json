@@ -5,15 +5,11 @@
   [
     [
       {
-        "storage":"expansion:temp",
-        "nbt":"durability[0]",
-        "interpret":true,
-        "italic":false,
-        "separator":{"text":""}
+        "translate": "exp_modules_durability_lore"
       },
       {
         "storage":"expansion:temp",
-        "nbt":"durability[1]",
+        "nbt":"durability",
         "interpret":true,
         "italic":false,
         "bold": true,

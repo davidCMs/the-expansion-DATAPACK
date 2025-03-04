@@ -5,7 +5,7 @@
       "equipment": {
         "chest": {
             "predicates": {
-                "minecraft:custom_data": "{exp_armor:1b}"
+                "minecraft:custom_data": "{exp_armor:{Slot:102b}}"
             }   
         }
       }

@@ -15,4 +15,4 @@ item modify entity @s armor.chest expansion:space_equipment/display_module_icons
 
 # Merge the oxygen percentage and new storage data with the equipment
 scoreboard players operation #output exp.percentage = @s exp.oxygen_percent
-function expansion:spacesuits/set_oxygen_data/update_percentage
+item modify entity @s armor.chest expansion:oxygen_tank/merge_with_equipment

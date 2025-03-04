@@ -1,6 +1,6 @@
 # Display the added percentage in the item lore
-data merge storage expansion:temp {durability:[[{text:"Durability bonus: ",color:"gray"}],[{text:"+",color:"green"},{score:{name:"#temp",objective:"exp.max_health"}},{text:"%"}]]}
-execute if score #temp exp.max_health matches ..-1 run data modify storage expansion:temp durability[1][0] set value {text:"",color:"red"}
+data merge storage expansion:temp {durability:[{text:"+",color:"green"},{score:{name:"#temp",objective:"exp.max_health"}},{text:"%"}]}
+execute if score #temp exp.max_health matches ..-1 run data modify storage expansion:temp durability[0] set value {text:"",color:"red"}
 item modify entity @s contents expansion:space_equipment/set_durability_lore
 data remove storage expansion:temp durability
 

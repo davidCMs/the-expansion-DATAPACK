@@ -22,12 +22,13 @@
                   "!minecraft:food": {},
                   "minecraft:item_model": "minecraft:iron_chestplate",
                   "minecraft:max_stack_size": 1,
-                  "minecraft:max_damage": 200,
+                  "minecraft:max_damage": 1000,
                   "minecraft:damage": 0,
                   "minecraft:equippable": {
                     "slot": "chest",
                     "asset_id": "expansion:diver",
-                    "equip_sound": "minecraft:intentionally_empty"
+                    "equip_sound": "minecraft:intentionally_empty",
+                    "swappable": false
                   }
                 }
               },
@@ -39,13 +40,13 @@
                     "id": "armor",
                     "amount": 2,
                     "operation": "add_value",
-                    "slot": "head"
+                    "slot": "chest"
                   }
                 ]
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_armor:1b,exp_armor.chestplate:1b,exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},max_damage:{base:200,add_percent:0},ModStorage:[{},{}],exp.equipmentID:102b,equipped:0b,crafting_count:1,max_stack_size:1}"
+                "tag": "{exp_armor:{Slot:102b,equipped:0b,set_name:\"diver\"},exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},max_damage:{base:1000,add_percent:0},ModStorage:[{},{}],exp.enhanceID:102b,crafting_count:1,max_stack_size:1}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -57,10 +58,7 @@
                     "italic": false 
                   },
                   {
-                    "text": "Modules:",
-                    "color": "aqua",
-                    "italic": false,
-                    "bold": true
+                    "translate": "exp_modules_lore"
                   },
                   {
                     "text": ""
@@ -73,37 +71,40 @@
                   },
                   [
                     {
-                      "text": "Cold Resistance: ",
-                      "color": "gold",
-                      "italic": false
+                      "translate": "exp_modules_oxygenlvl_lore"
                     },
                     {
-                      "text": "1",
-                      "color": "green",
-                      "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "text": "Heat Resistance: ",
+                      "text": "0%",
                       "color": "aqua",
-                      "italic": false
-                    },
-                    {
-                      "text": "1",
-                      "color": "green",
+                      "bold": true,
                       "italic": false
                     }
                   ],
                   {
                     "text": ""
                   },
-                  {
-                    "translate": "exp_armor_equipment_notank",
-                    "color": "aqua",
-                    "italic": false,
-                    "bold": false
-                  },
+                  [
+                    {
+                      "translate": "exp_modules_coldresist_lore"
+                    },
+                    {
+                      "text": "1",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  [
+                    {
+                      "translate": "exp_modules_heatresist_lore"
+                    },
+                    {
+                      "text": "1",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
                   {
                     "text": ""
                   }

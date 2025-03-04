@@ -17,4 +17,4 @@ execute if items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"m
 #execute if predicate expansion:nbt_checks/armor/magnetic_boots run function expansion:items/magnetic_boots/main
 #execute unless predicate expansion:nbt_checks/armor/magnetic_boots run tag @s[tag=exp.ignores_gravity_effects] remove exp.ignores_gravity_effects
 
-execute if items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{name:"exp.magnetic_module"}}}]}] run function expansion:items/magnetic_boots/main
+#execute if items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{name:"exp.magnetic_module"}}}]}] run function expansion:items/magnetic_boots/main
