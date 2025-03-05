@@ -20,7 +20,7 @@
                 "components": {
                   "!minecraft:consumable": {},
                   "!minecraft:food": {},
-                  "minecraft:item_model": "expansion:armor/helmets/diver",
+                  "minecraft:item_model": "expansion:armor/diver/helmet",
                   "minecraft:max_stack_size": 1,
                   "minecraft:max_damage": 1000,
                   "minecraft:damage": 0,
