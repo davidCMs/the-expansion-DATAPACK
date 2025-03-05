@@ -6,12 +6,12 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/spaceship/blaster_2"
+          "value": "expansion:items/modules/spaceship/blaster_2"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/random_tier2"
+          "value": "expansion:items/modules/random_tier2"
         },
         {
           "type": "minecraft:loot_table",
@@ -50,7 +50,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 3,
-          "value": "expansion:items/materials/cryonite_crystal",
+          "value": "expansion:items/cryonite_crystal",
           "functions": [
             {
               "function": "minecraft:set_count",

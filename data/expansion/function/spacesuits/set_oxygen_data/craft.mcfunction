@@ -1,5 +1,5 @@
 # run from the recipes of the fabricator
-loot replace entity @s contents loot expansion:armor/space_equipment
+#loot replace entity @s contents loot expansion:armor/space_equipment
 
 # merge the percentage with the equipment
 execute store result score #input exp.math run data get block ~ ~ ~ Items[{Slot:11b}].components."minecraft:custom_data".oxygen.lvl

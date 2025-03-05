@@ -11,7 +11,7 @@
               "function": "minecraft:set_name",
               "entity": "this",
               "name": {
-                "translate": "exp_armor_equipment_name",
+                "translate": "exp_suit_hazmat_helmet",
                 "italic": false
               }
             },
@@ -45,7 +45,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_armor:{Slot:103b,equipped:0b,set_name:\"hazmat\"},exp.enhanceable:1b,heat_resist:{base:16,modifier:0,total:16},cold_resist:{base:-6,modifier:0,total:-6},max_damage:{base:500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:103b,crafting_count:1,max_stack_size:1}"
+              "tag": "{exp_item:{name:\"hazmat_helmet\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:103b,equipped:0b,set_name:\"hazmat\"},exp.enhanceable:1b,heat_resist:{base:16,modifier:0,total:16},cold_resist:{base:-6,modifier:0,total:-6},max_damage:{base:500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:103b}"
             },
             {
               "function": "minecraft:set_lore",

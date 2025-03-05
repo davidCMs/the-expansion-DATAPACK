@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{fan:1b,crafting_count:2,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"fan\",crafting_count:2,max_stack_size:64}}"
               }
             ]
           }

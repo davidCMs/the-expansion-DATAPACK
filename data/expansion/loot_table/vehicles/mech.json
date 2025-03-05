@@ -18,7 +18,7 @@
             {
               "function": "minecraft:set_custom_data",
 
-              "tag": "{mech:1b,exp_vehicle:1b,fuel_lvl:1,expansion_coas:1b}"
+              "tag": "{exp_item:{name:\"mech\",exp_vehicle:1b,expansion_coas:1b},fuel_lvl:1}"
             },
             {
               "function": "minecraft:set_lore",

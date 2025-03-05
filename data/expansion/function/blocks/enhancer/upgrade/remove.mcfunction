@@ -12,6 +12,7 @@ execute unless items block ~ ~ ~ container.12 *[!custom_data~{gui_item:1b}] if d
 execute unless items block ~ ~ ~ container.13 *[!custom_data~{gui_item:1b}] if data storage expansion:temp ModStorage[1].id run function expansion:blocks/enhancer/upgrade/remove/slot_2
 execute unless items block ~ ~ ~ container.14 *[!custom_data~{gui_item:1b}] if data storage expansion:temp ModStorage[2].id run function expansion:blocks/enhancer/upgrade/remove/slot_3
 execute unless items block ~ ~ ~ container.15 *[!custom_data~{gui_item:1b}] if data storage expansion:temp ModStorage[3].id run function expansion:blocks/enhancer/upgrade/remove/slot_4
+execute unless items block ~ ~ ~ container.16 *[!custom_data~{gui_item:1b}] if data storage expansion:temp ModStorage[4].id run function expansion:blocks/enhancer/upgrade/remove/slot_5
 
 # Re-apply any remaining module parameters
 function expansion:blocks/enhancer/upgrade/apply/effects/init_loop

@@ -28,7 +28,7 @@
                         "minecraft:carrot_on_a_stick"
                     ],
                     "predicates": {
-                        "minecraft:custom_data": "{railgun:1b}"
+                        "minecraft:custom_data": "{exp_item.name:\"railgun\"}"
                     }
                 }
                 ]

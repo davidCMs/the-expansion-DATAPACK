@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{moon_buggy:1b,exp_vehicle:1b,fuel_lvl:1,ModStorage:{speed_mod:{},oxygen_tank:{}},expansion_coas:1b}"
+              "tag": "{exp_item:{name:\"moon_buggy\",exp_vehicle:1b,expansion_coas:1b},fuel_lvl:1,ModStorage:{speed_mod:{},oxygen_tank:{}}}"
             },
             {
               "function": "minecraft:set_lore",

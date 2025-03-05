@@ -8,7 +8,7 @@
           "minecraft:carrot_on_a_stick"
         ],
         "predicates": {
-          "minecraft:custom_data": "{pet_drone:1b}"
+          "minecraft:custom_data": "{exp_item.name:\"pet_drone\"}"
         }
       }
     }

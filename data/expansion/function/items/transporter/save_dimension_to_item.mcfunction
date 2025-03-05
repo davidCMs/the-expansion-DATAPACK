@@ -4,7 +4,6 @@ execute if predicate expansion:dimension/overworld run data modify entity @s Ite
 execute if predicate expansion:dimension/moon run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 1
 execute if predicate expansion:dimension/mars run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 2
 execute if predicate expansion:dimension/venus run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 3
-execute if predicate expansion:dimension/mercury run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 4
 execute if predicate expansion:dimension/jupiter run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 5
 execute if predicate expansion:dimension/europa run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 6
 execute if predicate expansion:dimension/space run data modify entity @s Item.components."minecraft:custom_data".return_dim set value 7

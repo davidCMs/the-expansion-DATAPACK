@@ -62,7 +62,7 @@
             },
             {
               "type": "minecraft:loot_table",
-              "value": "expansion:items/materials/raw_titanium",
+              "value": "expansion:items/raw_titanium",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

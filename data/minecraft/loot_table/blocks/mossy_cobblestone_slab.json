@@ -62,7 +62,7 @@
             },
             {
               "type": "minecraft:loot_table",
-              "value": "expansion:items/materials/cryonite_crystal",
+              "value": "expansion:items/cryonite_crystal",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

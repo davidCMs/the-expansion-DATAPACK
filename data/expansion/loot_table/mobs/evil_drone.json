@@ -7,7 +7,7 @@
         "entries": [
           {
             "type": "minecraft:loot_table",
-            "value": "expansion:items/steel/steel_ingot",
+            "value": "expansion:items/steel_ingot",
             "functions": [
               {
                 "function": "minecraft:set_count",

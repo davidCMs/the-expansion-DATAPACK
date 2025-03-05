@@ -48,7 +48,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/materials/cryonite_crystal",
+          "value": "expansion:items/cryonite_crystal",
           "functions": [
             {
               "function": "minecraft:set_count",

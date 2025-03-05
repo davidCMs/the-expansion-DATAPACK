@@ -62,7 +62,7 @@
             },
             {
               "type": "minecraft:loot_table",
-              "value": "expansion:items/materials/vulcanium_shard",
+              "value": "expansion:items/vulcanium_shard",
               "functions": [
                 {
                   "function": "minecraft:apply_bonus",

@@ -30,7 +30,7 @@
                             "minecraft:potion"
                         ],
                         "predicates": {
-                            "minecraft:custom_data": "{lacrymae:1b,from_extractor:1b}"
+                            "minecraft:custom_data": "{from_extractor:1b}"
                         }
                     }
                 ]

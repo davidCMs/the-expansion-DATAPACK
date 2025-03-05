@@ -6,7 +6,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/steel/steel_ingot",
+            "value": "expansion:items/steel_ingot",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -20,7 +20,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/steel/steel_plate",
+            "value": "expansion:items/steel_plate",
             "functions": [
               {
                 "function": "minecraft:set_count",
@@ -132,7 +132,7 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/materials/raw_titanium",
+            "value": "expansion:items/raw_titanium",
             "functions": [
               {
                 "function": "minecraft:set_count",

@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{copper_wire:1b,crafting_count:6,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"copper_wire\",crafting_count:6,max_stack_size:64}}"
               }
             ]
           }

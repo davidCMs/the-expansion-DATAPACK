@@ -8,7 +8,7 @@
           "minecraft:carrot_on_a_stick"
         ],
         "predicates": {
-          "minecraft:custom_data": "{lunar_module:1b}"
+          "minecraft:custom_data": "{exp_item.name:\"lunar_module\"}"
         }
       }
     }

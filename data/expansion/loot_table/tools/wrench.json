@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_tool:1b,crafting_count:1,max_stack_size:1,rocket_wrench:1b,expansion_coas:1b}"
+              "tag": "{exp_item:{name:\"wrench\",exp_tool:1b,crafting_count:1,max_stack_size:1,expansion_coas:1b}}"
             },
             {
               "function": "minecraft:set_lore",

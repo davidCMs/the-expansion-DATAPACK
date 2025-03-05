@@ -6,12 +6,12 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/spaceship/blaster_1"
+          "value": "expansion:items/modules/spaceship/blaster_1"
         },
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/upgrades/random_tier3"
+          "value": "expansion:items/modules/random_tier3"
         },
         {
           "type": "minecraft:loot_table",
@@ -45,7 +45,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/materials/vulcanium_shard",
+          "value": "expansion:items/vulcanium_shard",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -87,7 +87,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/materials/amethonium_ingot",
+          "value": "expansion:items/amethonium_ingot",
           "functions": [
             {
               "function": "minecraft:set_count",

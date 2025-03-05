@@ -28,7 +28,7 @@
                             "minecraft:jigsaw"
                         ],
                         "predicates": {
-                            "minecraft:custom_data": "{cryonite_crystal:1b}"
+                            "minecraft:custom_data": "{exp_item.name:\"cryonite_crystal\"}"
                         }
                     }
                 ]

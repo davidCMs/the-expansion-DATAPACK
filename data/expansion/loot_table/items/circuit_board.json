@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{circuit_board:1b,crafting_count:1,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"circuit_board\",crafting_count:1,max_stack_size:64}}"
               }
             ]
           }

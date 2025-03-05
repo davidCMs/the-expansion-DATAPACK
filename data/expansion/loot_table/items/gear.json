@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{gear:1b,crafting_count:3,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"gear\",crafting_count:3,max_stack_size:64}}"
               }
             ]
           }

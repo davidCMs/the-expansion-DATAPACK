@@ -31,7 +31,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{name:\"exp.durability_module\",upgrade_module:1b,max_damage:{add_percent:20},allowedIDs:[103,102,101,100],icon:\"\uff39\",crafting_count:1,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"durability_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,max_damage:{add_percent:20},allowedIDs:[103,102,101,100],icon:\"\uff39\"}"
               },
               {
                 "function": "minecraft:set_lore",

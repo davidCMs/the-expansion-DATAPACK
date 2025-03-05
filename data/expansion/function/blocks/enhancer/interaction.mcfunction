@@ -1,4 +1,5 @@
-execute unless items block ~ ~ ~ container.17 * run function expansion:blocks/enhancer/gui/buttons/enhance
+execute unless items block ~ ~ ~ container.11 * run function expansion:blocks/enhancer/gui/buttons/enhance
+execute unless items block ~ ~ ~ container.18 * run function expansion:blocks/enhancer/gui/buttons/repair
 execute unless items block ~ ~ ~ container.26 * run function expansion:blocks/enhancer/gui/buttons/remove
 
 # add the equipment to the display if there is one in the block

@@ -25,7 +25,7 @@
       },
       "minecraft:lore": ["{\"translate\": \"exp_lore_tooltips\"}","{\"translate\": \"exp_blocks_arcfurnace_tip1\"}"],
       "!minecraft:max_damage": {},
-      "minecraft:custom_data": "{crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_block:1b,arc_furnace:1b}"
+      "minecraft:custom_data": "{exp_item:{name:\"arc_furnace\",crafting_count:1,max_stack_size:64,expansion_coas:1b,exp_block:1b}}"
     }
   }
 }

@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{monochrome_monitor:1b,crafting_count:2,max_stack_size:64}"
+              "tag": "{exp_item:{name:\"monochrome_monitor\",crafting_count:2,max_stack_size:64}}"
             }
           ]
         }

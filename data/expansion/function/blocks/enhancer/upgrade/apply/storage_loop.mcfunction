@@ -5,6 +5,7 @@ execute if score #temp exp.counter_1 matches 1 if function expansion:blocks/enha
 execute if score #temp exp.counter_1 matches 2 if function expansion:blocks/enhancer/upgrade/apply/check_allowed/allowed run function expansion:blocks/enhancer/upgrade/apply/slot_2
 execute if score #temp exp.counter_1 matches 3 if function expansion:blocks/enhancer/upgrade/apply/check_allowed/allowed run function expansion:blocks/enhancer/upgrade/apply/slot_3
 execute if score #temp exp.counter_1 matches 4 if function expansion:blocks/enhancer/upgrade/apply/check_allowed/allowed run function expansion:blocks/enhancer/upgrade/apply/slot_4
+execute if score #temp exp.counter_1 matches 5 if function expansion:blocks/enhancer/upgrade/apply/check_allowed/allowed run function expansion:blocks/enhancer/upgrade/apply/slot_5
 
 # display the icon
 function expansion:spacesuits/module_icons/display_icon

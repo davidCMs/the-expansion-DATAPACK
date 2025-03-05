@@ -27,7 +27,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{crafting_count:1,max_stack_size:64,Unbreakable:1b,portal_placer:1b,exp_block:1b,expansion_coas:1b}"
+                "tag": "{exp_item:{name:\"portal\",crafting_count:1,max_stack_size:64,exp_block:1b,expansion_coas:1b}}"
               }
             ]
           }

@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_vehicle:1b,onhead:0b,can_recycle:1b,expansion_coas:1b,return_capsule:1b}"
+              "tag": "{exp_item:{name:\"return_capsule\",exp_vehicle:1b,expansion_coas:1b},can_recycle:1b}"
             },
             {
               "function": "minecraft:set_lore",

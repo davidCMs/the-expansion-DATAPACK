@@ -31,7 +31,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_vehicle:1b,module_top:1b,expansion_coas:1b,can_recycle:1b}"
+              "tag": "{exp_item:{name:\"module_top\",exp_vehicle:1b,expansion_coas:1b},can_recycle:1b}"
             },
             {
               "function": "minecraft:set_lore",

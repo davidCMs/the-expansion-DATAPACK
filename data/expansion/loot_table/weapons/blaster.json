@@ -28,7 +28,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{Unbreakable:1b,exp_tool:1b,blaster:1b,expansion_coas:1b,ammo:1b}"
+              "tag": "{exp_item:{name:\"blaster\",exp_tool:1b,expansion_coas:1b},ammo:1b}"
             },
             {
               "function": "minecraft:set_lore",

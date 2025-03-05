@@ -44,7 +44,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/materials/amethonium_ingot",
+          "value": "expansion:items/amethonium_ingot",
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -72,7 +72,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/materials/raw_titanium",
+          "value": "expansion:items/raw_titanium",
           "functions": [
             {
               "function": "minecraft:set_count",

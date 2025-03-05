@@ -36,7 +36,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{oxygen_tank:1b,tier:1b,exp_tool:1b,crafting_count:1,max_stack_size:1,oxygen:{lvl:48000,max:48000},icon:\"\ufa0a\",allowedIDs:[102b],upgrade_module:1b,expansion_coas:1b,Unbreakable:1b}"
+              "tag": "{exp_item:{name:\"oxygen_tank\",crafting_count:1,max_stack_size:1,exp_tool:1b,expansion_coas:1b},upgrade_module:1b,tier:1b,oxygen:{lvl:48000,max:48000},icon:\"\ufa0a\",allowedIDs:[102b]}"
             },
             {
               "function": "minecraft:set_lore",

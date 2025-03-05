@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{electromagnet:1b,crafting_count:2,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"electromagnet\",crafting_count:2,max_stack_size:64}}"
               }
             ]
           }

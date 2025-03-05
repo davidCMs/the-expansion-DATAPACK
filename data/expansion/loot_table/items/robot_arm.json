@@ -28,7 +28,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{robot_arm:1b,crafting_count:1,max_stack_size:64}"
+                "tag": "{exp_item:{name:\"robot_arm\",crafting_count:1,max_stack_size:64}}"
               }
             ]
           }

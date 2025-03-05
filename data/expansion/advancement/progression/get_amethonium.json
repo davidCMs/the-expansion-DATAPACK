@@ -28,7 +28,7 @@
                             "minecraft:jigsaw"
                         ],
                         "predicates": {
-                            "minecraft:custom_data": "{amethonium_ingot:1b}"
+                            "minecraft:custom_data": "{exp_item.name:\"amethonium_ingot\"}"
                         }
                     }
                 ]
