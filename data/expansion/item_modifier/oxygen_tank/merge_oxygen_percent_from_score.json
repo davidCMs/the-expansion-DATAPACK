@@ -9,7 +9,7 @@
         },
         {
           "score": {
-            "name": "#output",
+            "name": "#temp",
             "objective": "exp.percentage"
           },
           "color": "aqua",

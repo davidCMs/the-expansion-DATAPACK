@@ -24,7 +24,7 @@
                 "minecraft:potion"
                 ],
               "predicates": {
-                "minecraft:custom_data": "{exp_item.name:\"lacrymae\"}"
+                "minecraft:custom_data": "{exp_item:{name:\"lacrymae\"}}"
             }
           }
         }

@@ -1,5 +1,5 @@
 # check the values for this entry
-execute if data storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen_tank run function expansion:spacesuits/set_oxygen_data/merge_score
+execute if data storage expansion:temp ModStorage[0].components."minecraft:custom_data".oxygen run function expansion:spacesuits/set_oxygen_data/merge_score
 
 # move to the next item in the array
 function expansion:utilities/shift_modstorage_array

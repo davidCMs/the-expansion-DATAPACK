@@ -1,4 +1,4 @@
-execute on passengers on target if entity @s[nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:custom_data":{exp_item.name:"lacrymae"}}}]}] run tag @s add exp.has_lacrymae
+execute on passengers on target if entity @s[nbt={Inventory:[{id:"minecraft:potion",components:{"minecraft:custom_data":{exp_item:{name:"lacrymae"}}}}]}] run tag @s add exp.has_lacrymae
 
 execute if entity @p[tag=exp.has_lacrymae] if score @s exp.fuel_level < @s exp.fuel_max run item replace entity @p[tag=exp.has_lacrymae] weapon.mainhand with minecraft:air
 execute if entity @p[tag=exp.has_lacrymae] run scoreboard players set @s exp.fuel_level 256

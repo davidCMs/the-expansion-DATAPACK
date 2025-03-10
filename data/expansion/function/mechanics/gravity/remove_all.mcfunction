@@ -1,8 +1,4 @@
-function expansion:mechanics/gravity/moon/remove
-function expansion:mechanics/gravity/mars/remove
-function expansion:mechanics/gravity/venus/remove
-function expansion:mechanics/gravity/jupiter/remove
-function expansion:mechanics/gravity/europa/remove
-function expansion:mechanics/gravity/zero/remove
+# if the player is not in any dimensions with altered gravity, reset their gravity
+function expansion:mechanics/gravity/remove
 
 function expansion:mechanics/gravity/zero/remove_movement_modifier

@@ -9,7 +9,7 @@ execute if score #tier exp.math matches 1 run function expansion:spacesuits/modu
 execute if score #tier exp.math matches 2 run function expansion:spacesuits/module_icons/find_tank_icon/tier2
 execute if score #tier exp.math matches 3 run function expansion:spacesuits/module_icons/find_tank_icon/tier3
 
-# resert scores to be neat and tidy
+# reset scores to be neat and tidy
 scoreboard players reset #input exp.math
 scoreboard players reset #max exp.math
 scoreboard players reset #tier exp.math

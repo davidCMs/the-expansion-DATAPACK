@@ -21,4 +21,4 @@ function expansion:blocks/enhancer/upgrade/apply/effects/heat_resist
 execute if score #temp exp.max_health matches -100.. run function expansion:blocks/enhancer/upgrade/apply/effects/durability
 
 # apply the oxygen scores on chestplates (could be better but don't want to overengineer)
-execute if predicate expansion:armor/chest run function expansion:blocks/enhancer/upgrade/apply/effects/oxygen_percent
+execute if items entity @s contents *[custom_data~{exp_armor:{Slot:102b}}] run function expansion:blocks/enhancer/upgrade/apply/effects/oxygen_percent

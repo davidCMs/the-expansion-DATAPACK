@@ -8,8 +8,20 @@
           "minecraft:iron_boots"
         ],
         "predicates": {
-            "minecraft:custom_data": "{magnetic_boots:1b}"
+            "minecraft:custom_data": {
+              "ModStorage":[
+                {
+                  "components":{
+                    "minecraft:custom_data":{
+                      "exp_item":{
+                        "name":"magnetic_module"
+                    }
+                  }
+                }
+              }
+            ]
           }
+        }
       }
     }
   }

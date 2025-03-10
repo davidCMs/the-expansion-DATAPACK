@@ -1,7 +1,7 @@
 # calculate the current oxygen percentage
 execute store result score #input exp.math run data get storage expansion:temp RemovedModule.components."minecraft:custom_data".oxygen.lvl
 execute store result score #max exp.math run data get storage expansion:temp RemovedModule.components."minecraft:custom_data".oxygen.max
-function expansion:utilities/percentage
+execute store result score #temp exp.percentage run function expansion:utilities/percentage
 
 # The Slot is a pain in the ass to handle
 # store the original slot

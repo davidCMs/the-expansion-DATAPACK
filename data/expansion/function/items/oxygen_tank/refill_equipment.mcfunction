@@ -7,8 +7,8 @@ scoreboard players operation #target exp.oxygen_max = @s exp.oxygen_max
 function expansion:mechanics/oxygen/refill_calculation
 
 # change the sources custom model data based on the oxygen percentage
-execute store result storage expansion:oxygen_calc data.tank_cmd int 1 run scoreboard players get #source exp.oxygen_percent
-item modify entity @s weapon.mainhand expansion:oxygen_tank/merge_cmd_from_data
+scoreboard players operation #temp exp.oxygen_percent = #source exp.oxygen_percent
+item modify entity @s weapon.mainhand expansion:oxygen_tank/merge_cmd_from_score
 
 # merge new oxygen values with the source
 execute store result storage expansion:oxygen_calc data.oxygen_lvl int 1 run scoreboard players get #source exp.oxygen_lvl

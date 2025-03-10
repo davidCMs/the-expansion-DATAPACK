@@ -1,6 +1,6 @@
 ## Tools you can activate in vehicles
 # oxygen system
-execute if predicate expansion:nbt_checks/selected_item/items/oxygen_tank run return run execute if predicate expansion:armor/any if items entity @s armor.* *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item.name:"oxygen_tank"}}}]}] run function expansion:items/oxygen_tank/init
+execute if predicate expansion:nbt_checks/selected_item/items/oxygen_tank run return run execute if predicate expansion:armor/any if items entity @s armor.* *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item:{name:"oxygen_tank"}}}}]}] run function expansion:items/oxygen_tank/init
 # fleet finder
 execute if predicate expansion:nbt_checks/selected_item/items/fleet_finder run return run function expansion:items/fleet_finder/find
 # repair kit

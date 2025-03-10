@@ -3,9 +3,12 @@
   "floats": {
     "values": [
       {
-        "type": "minecraft:storage",
-        "storage": "expansion:oxygen_calc",
-        "path": "data.tank_cmd"
+        "type": "minecraft:score",
+        "score": "exp.oxygen_percent",
+        "target": {
+          "type": "fixed",
+          "name": "#temp"
+        }
       }
     ],
     "mode":"replace_section",

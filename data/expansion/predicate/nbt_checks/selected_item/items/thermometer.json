@@ -4,11 +4,12 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:carrot_on_a_stick"
-        ],
         "predicates": {
-          "minecraft:custom_data": "{exp_item.name:\"thermometer\"}"
+          "custom_data": {
+            "exp_item":{
+              "name":"thermometer"
+            }
+          }
         }
       }
     }

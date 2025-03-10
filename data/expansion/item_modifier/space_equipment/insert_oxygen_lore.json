@@ -1,0 +1,33 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          [
+            {
+              "translate": "exp_modules_oxygenlvl_lore"
+            },
+            {
+              "score": {
+                "name": "#output",
+                "objective": "exp.percentage"
+              },
+              "color": "aqua",
+              "bold": true
+            },
+            {
+              "text": "%",
+              "color": "aqua",
+              "bold": true
+            }
+          ]
+        ],
+        {
+          "text": ""
+        }
+      ],
+      "mode": "insert",
+      "offset": 5
+    }
+  ]

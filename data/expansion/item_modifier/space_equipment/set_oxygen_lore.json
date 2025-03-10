@@ -27,7 +27,8 @@
           "text": ""
         }
       ],
-      "mode": "insert",
+      "mode": "replace_section",
+      "size": 2,
       "offset": 5
     }
   ]

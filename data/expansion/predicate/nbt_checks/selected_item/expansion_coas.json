@@ -4,11 +4,12 @@
   "predicate": {
     "equipment": {
       "mainhand": {
-        "items": [
-          "minecraft:carrot_on_a_stick"
-        ],
         "predicates": {
-          "minecraft:custom_data": "{exp_item.expansion_coas:1b}"
+          "custom_data": {
+            "exp_item":{
+              "expansion_coas": true
+            }
+          }
         }
       }
     }

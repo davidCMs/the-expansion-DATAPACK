@@ -20,6 +20,13 @@ scoreboard objectives add exp.percentage dummy
 # gravity
 scoreboard objectives add exp.gravity dummy
 scoreboard objectives add exp.gravity_modifier dummy
+scoreboard objectives add exp.gravity_id dummy
+scoreboard players set #moon exp.gravity_id 1
+scoreboard players set #mars exp.gravity_id 2
+scoreboard players set #venus exp.gravity_id 3
+scoreboard players set #jupiter exp.gravity_id 4
+scoreboard players set #europa exp.gravity_id 5
+scoreboard players set #zero exp.gravity_id 6
 # fuel
 scoreboard objectives add exp.fuel_level dummy
 scoreboard objectives add exp.fuel_max dummy

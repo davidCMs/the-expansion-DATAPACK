@@ -17,7 +17,7 @@ execute store result score #temp exp.oxygen_percent run function expansion:utili
 execute store result storage expansion:oxygen_calc data.oxygen_lvl int 1 run scoreboard players get @s exp.oxygen_lvl
 
 # merge the new values with the item
-item modify block ~ ~ ~ container.9 expansion:oxygen_tank/merge_cmd_from_data
+item modify block ~ ~ ~ container.9 expansion:oxygen_tank/merge_cmd_from_score
 item modify block ~ ~ ~ container.9 expansion:oxygen_tank/merge_oxygen_level_from_data
 
 # reset the buggies 

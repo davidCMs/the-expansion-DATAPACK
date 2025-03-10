@@ -28,7 +28,7 @@
                             "minecraft:jigsaw"
                         ],
                         "predicates": {
-                            "minecraft:custom_data": "{exp_item.name:\"vulcanium_shard\"}"
+                            "minecraft:custom_data": "{exp_item:{name:\"vulcanium_shard\"}}"
                         }
                     }
                 ]

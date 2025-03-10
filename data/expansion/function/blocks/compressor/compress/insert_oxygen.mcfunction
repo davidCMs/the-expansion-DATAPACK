@@ -15,8 +15,8 @@ item modify entity @s container.0 expansion:oxygen_tank/merge_oxygen_level_from_
 
 # set the custom model data equal to the equipment data
 # change the sources custom model data based on the oxygen percentage
-execute store result storage expansion:oxygen_calc data.tank_cmd int 1 run scoreboard players get #target exp.oxygen_percent
-item modify entity @s container.0 expansion:oxygen_tank/merge_cmd_from_data
+scoreboard players operation #temp exp.oxygen_percent = #target exp.oxygen_percent
+item modify entity @s container.0 expansion:oxygen_tank/merge_cmd_from_score
 
 # signal the compressor to stop the compressing if the tank is 100%
 execute if score #target exp.oxygen_lvl = #target exp.oxygen_max run scoreboard players set #temp exp.bool 1

@@ -28,7 +28,7 @@
                             "minecraft:jigsaw"
                         ],
                         "predicates": {
-                            "minecraft:custom_data": "{exp_item.name:\"raw_titanium\"}"
+                            "minecraft:custom_data": "{exp_item:{name:\"raw_titanium\"}}"
                         }
                     }
                 ]
