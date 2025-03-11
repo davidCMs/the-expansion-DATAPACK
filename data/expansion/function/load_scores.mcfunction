@@ -41,6 +41,7 @@ scoreboard objectives add exp.cold_resist dummy
 scoreboard objectives add exp.temperature dummy
 # suits
 scoreboard objectives add exp.suit_integrity dummy
+scoreboard objectives add exp.armor dummy
 # vehicles
 scoreboard objectives add exp.speed dummy
 scoreboard objectives add exp.speed_mod dummy

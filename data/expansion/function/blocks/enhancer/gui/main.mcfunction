@@ -26,7 +26,6 @@ execute unless score @s exp.hold_count matches 3.. unless items block ~ ~ ~ cont
 execute unless score @s exp.hold_count matches 4.. unless items block ~ ~ ~ container.15 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:15, Type:"filler_visible"}
 execute unless score @s exp.hold_count matches 5.. unless items block ~ ~ ~ container.16 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:16, Type:"filler_visible"}
 
-execute unless items block ~ ~ ~ container.16 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:16, Type:"filler"}
 execute unless items block ~ ~ ~ container.17 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:17, Type:"filler"}
 execute unless items block ~ ~ ~ container.18 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:18, Type:"icons/repair"}
 execute unless items block ~ ~ ~ container.19 *[custom_data~{gui_item:1b}] run function expansion:utilities/barrel/gui/fill_slot {Slot:19, Type:"filler"}

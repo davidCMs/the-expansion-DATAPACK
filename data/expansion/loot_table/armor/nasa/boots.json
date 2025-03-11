@@ -41,12 +41,19 @@
                   "amount": 2,
                   "operation": "add_value",
                   "slot": "feet"
+                },
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "id": "armor",
+                  "amount": 0,
+                  "operation": "add_multiplied_base",
+                  "slot": "feet"
                 }
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"nasa_boots\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:100b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:4,modifier:0,total:4},cold_resist:{base:4,modifier:0,total:4},max_damage:{base:1500,add_percent:0},ModStorage:[{},{}],exp.enhanceID:100b}"
+              "tag": "{exp_item:{name:\"nasa_boots\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:100b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:4,modifier:0,total:4},cold_resist:{base:4,modifier:0,total:4},armor:{base:2.0,add_value:0.0d},speed:{base:0.0,add_percent:0.0},max_damage:{base:1500,add_percent:0},ModStorage:[{},{}],exp.enhanceID:100b}"
             },
             {
               "function": "minecraft:set_lore",

@@ -1,6 +1,9 @@
 # check the values for this entry
 execute if data storage expansion:temp ModStorage[0].id run function expansion:blocks/enhancer/upgrade/apply/effects/effects
 
+# add this modules icon to the icon list to be displayed
+function expansion:spacesuits/module_icons/display_icon
+
 # move to the next item in the array
 function expansion:utilities/shift_modstorage_array
 # repeat if we checked the entire array, and once more to restore it to its original state

@@ -1,0 +1,9 @@
+{
+    "replace": false,
+    "values": [
+      "expansion:venus/basalt_caves",
+      "expansion:venus/cave",
+      "expansion:venus/magma_caves",
+      "expansion:venus/quartz_caves"
+    ]
+  }

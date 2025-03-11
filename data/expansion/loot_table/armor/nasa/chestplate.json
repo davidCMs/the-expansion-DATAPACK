@@ -38,15 +38,22 @@
                 {
                   "attribute": "minecraft:armor",
                   "id": "armor",
-                  "amount": 2,
+                  "amount": 6,
                   "operation": "add_value",
+                  "slot": "chest"
+                },
+                {
+                  "attribute": "minecraft:movement_speed",
+                  "id": "armor",
+                  "amount": 0,
+                  "operation": "add_multiplied_base",
                   "slot": "chest"
                 }
               ]
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"nasa_chestplate\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:102b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:4,modifier:0,total:4},cold_resist:{base:4,modifier:0,total:4},max_damage:{base:1500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b}"
+              "tag": "{exp_item:{name:\"nasa_chestplate\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:102b,equipped:0b,set_name:\"nasa\"},exp.enhanceable:1b,heat_resist:{base:4,modifier:0,total:4},cold_resist:{base:4,modifier:0,total:4},armor:{base:6.0,add_value:0.0d},speed:{base:0.0,add_percent:0.0},max_damage:{base:1500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:102b}"
             },
             {
               "function": "minecraft:set_lore",

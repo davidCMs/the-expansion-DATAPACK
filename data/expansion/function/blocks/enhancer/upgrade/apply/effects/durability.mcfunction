@@ -5,7 +5,7 @@ item modify entity @s contents expansion:space_equipment/set_durability_lore
 data remove storage expansion:temp durability
 
 # the accumulated durability modifier is a percentage of extra durability based on the current max health of the suit
-execute store result score #max_damage exp.math run data get entity @s item.components."minecraft:max_damage"
+execute store result score #max_damage exp.math run data get entity @s item.components."minecraft:custom_data".max_damage.base
 
 # get the fraction of durability the modules should add (times 100) (make sure it stays above 1)
 scoreboard players operation #temp exp.max_health *= #max_damage exp.math

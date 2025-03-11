@@ -46,7 +46,7 @@
             },
             {
               "function": "minecraft:set_custom_data",
-              "tag": "{exp_item:{name:\"hazmat_leggings\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:101b,equipped:0b,set_name:\"hazmat\"},exp.enhanceable:1b,heat_resist:{base:16,modifier:0,total:16},cold_resist:{base:-6,modifier:0,total:-6},max_damage:{base:500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:101b}"
+              "tag": "{exp_item:{name:\"hazmat_leggings\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:101b,equipped:0b,set_name:\"hazmat\"},exp.enhanceable:1b,heat_resist:{base:16,modifier:0,total:16},cold_resist:{base:-6,modifier:0,total:-6},speed:{base:0.0,add_percent:0.0},max_damage:{base:500,add_percent:0},ModStorage:[{},{},{}],exp.enhanceID:101b}"
             },
             {
               "function": "minecraft:set_lore",

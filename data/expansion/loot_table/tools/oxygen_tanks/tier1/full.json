@@ -9,15 +9,11 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": [
+              "name": 
                 {
                   "translate": "exp_tools_oxygentank_name",
                   "italic": false
                 },
-                {
-                  "text": " (100%)"
-                }
-              ],
               "entity": "this"
             },
             {

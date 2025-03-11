@@ -38,15 +38,22 @@
                   {
                     "attribute": "minecraft:armor",
                     "id": "armor",
-                    "amount": 2,
+                    "amount": 1,
                     "operation": "add_value",
+                    "slot": "feet"
+                  },
+                  {
+                    "attribute": "minecraft:movement_speed",
+                    "id": "armor",
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
                     "slot": "feet"
                   }
                 ]
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"diver_boots\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:100b,equipped:0b,set_name:\"diver\"},exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},max_damage:{base:1000,add_percent:0},ModStorage:[{}],exp.enhanceID:100b}"
+                "tag": "{exp_item:{name:\"diver_boots\",crafting_count:1,max_stack_size:1},exp_armor:{Slot:100b,equipped:0b,set_name:\"diver\"},exp.enhanceable:1b,heat_resist:{base:1,modifier:0,total:1},cold_resist:{base:1,modifier:0,total:1},armor:{base:1.0,add_value:0.0d},speed:{base:0.0,add_percent:0.0},max_damage:{base:1000,add_percent:0},ModStorage:[{}],exp.enhanceID:100b}"
               },
               {
                 "function": "minecraft:set_lore",
