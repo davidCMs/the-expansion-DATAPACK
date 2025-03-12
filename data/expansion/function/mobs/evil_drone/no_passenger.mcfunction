@@ -1,2 +1,3 @@
-execute unless entity @s[tag=exp.new_drone] run function expansion:mobs/evil_drone/death
-execute if entity @s[tag=exp.new_drone] summon minecraft:vex run function expansion:mobs/evil_drone/add_passenger
+execute if entity @s[tag=exp.new_drone] summon minecraft:vex run return run function expansion:mobs/evil_drone/add_passenger
+
+function expansion:mobs/evil_drone/death

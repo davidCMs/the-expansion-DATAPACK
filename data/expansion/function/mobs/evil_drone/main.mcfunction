@@ -11,6 +11,9 @@ execute unless block ^ ^ ^1 #expansion:air rotated ~ 0 run function expansion:mo
 # engine particle
 particle minecraft:dust{color:[0d,1d,0.949d],scale:1.5} ^ ^.8 ^-0.7 0 0 0 0 1 force
 
+# remove the sword from the vex
+execute on passengers run loot replace entity @s weapon.mainhand loot expansion:items/gui/filler
+
 # hurt
 execute on passengers if entity @s[nbt={HurtTime:9s}] run function expansion:mobs/evil_drone/hurt
 execute unless predicate expansion:passengers/drone_hitbox run function expansion:mobs/evil_drone/no_passenger
