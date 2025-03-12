@@ -5,7 +5,16 @@
     [
         {
             "storage":"expansion:temp",
-            "nbt":"icons",
+            "nbt":"icons.layer1",
+            "interpret":true,
+            "font":"expansion:module_icons",
+            "color":"white",
+            "italic":false,
+            "separator":{"text":""}
+        },
+        {
+            "storage":"expansion:temp",
+            "nbt":"icons.layer2",
             "interpret":true,
             "font":"expansion:module_icons",
             "color":"white",
@@ -15,5 +24,5 @@
     ],
     "mode":"replace_section",
     "offset":2,
-    "size":1
+    "size":2
 }

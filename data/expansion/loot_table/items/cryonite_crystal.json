@@ -19,7 +19,7 @@
                 "function": "minecraft:set_components",
                 "components": 
                 {
-                  "item_model": "expansion:materials/cryonite_crystal"
+                  "item_model": "expansion:crafting/cryonite_crystal"
                 }
               },
               {

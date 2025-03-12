@@ -21,7 +21,8 @@
                     "components": {
                       "item_model": "expansion:modules/equipment",
                       "custom_model_data": {
-                        "strings": ["magnetic"]
+                        "strings": ["magnetic"],
+                        "floats": [1]
                       },
                     "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},
@@ -32,7 +33,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"magnetic_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,allowedIDs:[100],icon:\"\uff40\"}"
+                "tag": "{exp_item:{name:\"magnetic_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,allowedIDs:[100],icon:{layer1:\"\ufb01\",layer2:\"\uff45\"}}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -43,19 +44,6 @@
                   },
                   {
                     "translate": "exp_modules_ifadded"
-                  },
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "text": "Reduced low gravity effects (not stackable)",
-                      "color": "aqua",
-                      "italic": false
-                    }
-                  ],
-                  {
-                    "text": ""
                   },
                   [
                     {
@@ -68,11 +56,28 @@
                       "italic": false
                     }
                   ],
+                  [
+                    {
+                      "translate": "exp_modules_magnetic_lore"
+                    },
+                    {
+                      "translate": "exp_modules_unstackeable"
+                    }
+                  ],
                   {
                     "text": ""
                   },
                   {
                     "translate": "exp_modules_whenapplied"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_modules_exclusive"
+                  },
+                  {
+                    "translate": "exp_modules_exclusive_boots"
                   }
                 ]
               }

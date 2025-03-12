@@ -10,7 +10,7 @@
               {
                 "function": "minecraft:set_name",
                 "name": {
-                  "text": "Repair Kit",
+                  "translate": "Repair Kit",
                   "italic": false
                 },
                 "entity": "this"
@@ -18,7 +18,7 @@
               {
                 "function": "minecraft:set_components",
                     "components": {
-                      "item_model": "expansion:fleet_finder",
+                      "item_model": "expansion:repair_kit",
                       "minecraft:max_stack_size": 1,
                       "minecraft:max_damage": 1000,
                       "minecraft:damage": 0

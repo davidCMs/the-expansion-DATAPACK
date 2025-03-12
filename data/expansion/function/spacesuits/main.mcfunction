@@ -5,10 +5,10 @@ execute if function expansion:spacesuits/equip/check_tags run function expansion
 execute if predicate expansion:armor/all run function expansion:spacesuits/set_bonus/main
 
 # Periodically loop through the armor pieces and re-calculate the durability, while also adding any temperature damage
-execute if predicate expansion:periodic/10 run function expansion:spacesuits/integrity/main
+execute if predicate expansion:periodic/10 unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:spacesuits/integrity/main
 
-# Display oxygen level and suit integrity in the actionbar, if the player wears a helmet
-execute if predicate expansion:periodic/10 if predicate expansion:armor/head unless entity @s[tag=exp.inside_vehicle] run function expansion:spacesuits/actionbar
+# Display oxygen level and suit integrity in the actionbar
+execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] run function expansion:spacesuits/actionbar
 
 # rocket boots module
 execute if items entity @s armor.feet *[custom_data~{ModStorage:[{components:{"minecraft:custom_data":{exp_item:{name:"rocket_module"}}}}]}] run function expansion:items/rocket_boots/main

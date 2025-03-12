@@ -20,7 +20,7 @@
                   "components": {
                     "item_model": "expansion:portal_core",
                     "custom_model_data": {
-                      "strings": ["blue"]
+                      "strings": ["green"]
                     },
                     "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},

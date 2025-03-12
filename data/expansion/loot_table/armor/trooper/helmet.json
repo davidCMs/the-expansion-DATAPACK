@@ -34,20 +34,20 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "minecraft:armor",
-                  "id": "armor",
-                  "amount": 3,
-                  "operation": "add_value",
-                  "slot": "head"
-                },
-                {
-                  "attribute": "minecraft:movement_speed",
-                  "id": "armor",
-                  "amount": 0,
-                  "operation": "add_multiplied_base",
-                  "slot": "head"
-                }
+                  {
+                    "attribute": "minecraft:armor",
+                    "id": "exp.head_armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "head"
+                  },
+                  {
+                    "attribute": "minecraft:movement_speed",
+                    "id": "exp.movement_speed",
+                    "amount": 0,
+                    "operation": "add_multiplied_base",
+                    "slot": "legs"
+                  }
               ]
             },
             {

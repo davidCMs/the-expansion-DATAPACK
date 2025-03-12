@@ -5,7 +5,7 @@ function expansion:utilities/copy_armor_to_storage
 function expansion:items/thermometer/get_resist_stats
 
 # show titles
-data merge storage expansion:temp {tellraw:{temperature:[{text:"Temperature Score: ",color:"aqua"},{score:{name:"@s",objective:"exp.temperature"},color:"aqua"}],head:[{text:"Head Resistance: ",color:"aqua"},{score:{name:"#head",objective:"exp.cold_resist"},color:"green"}],chest:[{text:"Chest Resistance: ",color:"aqua"},{score:{name:"#chest",objective:"exp.cold_resist"},color:"green"}],legs:[{text:"Legs Resistance: ",color:"aqua"},{score:{name:"#legs",objective:"exp.cold_resist"},color:"green"}],feet:[{text:"Feet Resistance: ",color:"aqua"},{score:{name:"#feet",objective:"exp.cold_resist"},color:"green"}]}}
+data merge storage expansion:temp {tellraw:{temperature:[{text:"Temperature Score: ",color:"dark_aqua"},{score:{name:"@s",objective:"exp.temperature"},color:"aqua"}],head:[{text:"Head Resistance: ",color:"gray"},{score:{name:"#head",objective:"exp.cold_resist"},color:"green"}],chest:[{text:"Chest Resistance: ",color:"gray"},{score:{name:"#chest",objective:"exp.cold_resist"},color:"green"}],legs:[{text:"Legs Resistance: ",color:"gray"},{score:{name:"#legs",objective:"exp.cold_resist"},color:"green"}],feet:[{text:"Feet Resistance: ",color:"gray"},{score:{name:"#feet",objective:"exp.cold_resist"},color:"green"}]}}
 
 # change the storage based on the values
 execute if score @s exp.temperature matches 1.. run function expansion:items/thermometer/heat_resist

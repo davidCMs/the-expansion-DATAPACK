@@ -1,4 +1,5 @@
-execute if score #output exp.percentage matches 0..10 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon set value "！"
+execute if score #output exp.percentage matches 0 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon set value "＊"
+execute if score #output exp.percentage matches 1..10 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon set value "！"
 execute if score #output exp.percentage matches 10..20 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon set value "＂"
 execute if score #output exp.percentage matches 20..30 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon set value "＃"
 execute if score #output exp.percentage matches 30..40 run return run data modify storage expansion:temp ModStorage[0].components."minecraft:custom_data".icon set value "＄"

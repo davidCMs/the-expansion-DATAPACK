@@ -37,16 +37,9 @@
                 "modifiers": [
                   {
                     "attribute": "minecraft:armor",
-                    "id": "armor",
+                    "id": "exp.chest_armor",
                     "amount": 5,
                     "operation": "add_value",
-                    "slot": "chest"
-                  },
-                  {
-                    "attribute": "minecraft:movement_speed",
-                    "id": "armor",
-                    "amount": 0,
-                    "operation": "add_multiplied_base",
                     "slot": "chest"
                   }
                 ]

@@ -5,7 +5,7 @@
       "equipment": {
         "legs": {
             "predicates": {
-                "minecraft:custom_data": "{exp_armor.set_name:\"golem\"}"
+                "minecraft:custom_data": "{exp_armor:{set_name:\"golem\"}}"
             }   
         }
       }

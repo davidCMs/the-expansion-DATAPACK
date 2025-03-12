@@ -19,7 +19,7 @@
                 "function": "minecraft:set_components",
                 "components": 
                 {
-                  "item_model": "expansion:materials/raw_titanium"
+                  "item_model": "expansion:crafting/raw_titanium"
                 }
               },
               {

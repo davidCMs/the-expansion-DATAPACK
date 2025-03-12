@@ -36,16 +36,9 @@
                 "modifiers": [
                   {
                     "attribute": "minecraft:armor",
-                    "id": "armor",
+                    "id": "exp.head_armor",
                     "amount": 2,
                     "operation": "add_value",
-                    "slot": "head"
-                  },
-                  {
-                    "attribute": "minecraft:movement_speed",
-                    "id": "armor",
-                    "amount": 0,
-                    "operation": "add_multiplied_base",
                     "slot": "head"
                   }
                 ]

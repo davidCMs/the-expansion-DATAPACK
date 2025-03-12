@@ -35,13 +35,13 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "minecraft:armor",
-                  "id": "armor",
-                  "amount": 6,
-                  "operation": "add_value",
-                  "slot": "legs"
-                },
+                  {
+                    "attribute": "minecraft:armor",
+                    "id": "exp.legs_armor",
+                    "amount": 6,
+                    "operation": "add_value",
+                    "slot": "legs"
+                  },
                 {
                   "attribute": "minecraft:movement_speed",
                   "id": "armor",

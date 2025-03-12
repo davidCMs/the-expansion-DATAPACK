@@ -34,13 +34,13 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "minecraft:armor",
-                  "id": "armor",
-                  "amount": 1,
-                  "operation": "add_value",
-                  "slot": "head"
-                },
+                  {
+                    "attribute": "minecraft:armor",
+                    "id": "exp.head_armor",
+                    "amount": 1,
+                    "operation": "add_value",
+                    "slot": "head"
+                  },
                 {
                   "attribute": "minecraft:movement_speed",
                   "id": "armor",

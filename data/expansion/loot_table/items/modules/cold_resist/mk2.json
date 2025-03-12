@@ -9,18 +9,23 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": {
-                  "translate": "exp_modules_coldresist_name",
-                  "italic": false
-                },
-                "entity": "this"
+                "name": [
+                  {
+                    "translate": "exp_modules_coldresist_name",
+                    "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_mk2"
+                  }
+                ]
               },
               {
                 "function": "minecraft:set_components",
                     "components": {
                       "item_model": "expansion:modules/equipment",
                       "custom_model_data": {
-                        "strings": ["warming"]
+                        "strings": ["warming"],
+                        "floats": [2]
                       },
                     "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},
@@ -31,7 +36,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"cold_resist_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,cold_resist:{modifier:4},heat_resist:{modifier:-6},allowedIDs:[103,102,101,100],icon:\"\uff40\"}"
+                "tag": "{exp_item:{name:\"cold_resist_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,cold_resist:{modifier:4},heat_resist:{modifier:-6},allowedIDs:[103,102,101,100],icon:{layer1:\"\ufb02\",layer2:\"\uff40\"}}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -42,9 +47,6 @@
                   },
                   {
                     "translate": "exp_modules_ifadded"
-                  },
-                  {
-                    "text": ""
                   },
                   [
                     {

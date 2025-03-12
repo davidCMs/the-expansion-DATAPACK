@@ -24,7 +24,7 @@ execute if predicate expansion:periodic/10 run function expansion:mechanics/grav
 execute if score @s exp.gravity_id = #zero exp.gravity_id run function expansion:mechanics/gravity/zero/main
 
 ## Oxygen
-execute if predicate expansion:dimension/oxygen_absent run function expansion:mechanics/oxygen/main
+function expansion:mechanics/oxygen/main
 
 ## Temperature
 execute if predicate expansion:periodic/10 run function expansion:mechanics/temperature/set_biome_temp/main

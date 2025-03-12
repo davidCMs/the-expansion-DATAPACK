@@ -35,13 +35,13 @@
             {
               "function": "minecraft:set_attributes",
               "modifiers": [
-                {
-                  "attribute": "minecraft:armor",
-                  "id": "armor",
-                  "amount": 3,
-                  "operation": "add_value",
-                  "slot": "chest"
-                },
+                  {
+                    "attribute": "minecraft:armor",
+                    "id": "exp.chest_armor",
+                    "amount": 3,
+                    "operation": "add_value",
+                    "slot": "chest"
+                  },
                 {
                   "attribute": "minecraft:movement_speed",
                   "id": "armor",

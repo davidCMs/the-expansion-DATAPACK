@@ -5,7 +5,7 @@
       "equipment": {
         "feet": {
             "predicates": {
-                "minecraft:custom_data": "{exp_armor.set_name:\"nasa\"}"
+                "minecraft:custom_data": "{exp_armor:{set_name:\"nasa\"}}"
             }   
         }
       }

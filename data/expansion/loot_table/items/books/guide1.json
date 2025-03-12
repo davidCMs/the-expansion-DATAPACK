@@ -55,31 +55,34 @@
                     {
                       "translate":"exp_guide1_contents"},
                     {
-                      "translate":"exp_guide1_contents_chapter1","clickEvent":{"action":"change_page","value":"4"}
+                      "translate":"exp_guide1_contents_chapter1","clickEvent":{"action":"change_page","value":"4"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_oxygen","clickEvent":{"action":"change_page","value":"5"}
+                      "translate":"exp_guide1_contents_oxygen","clickEvent":{"action":"change_page","value":"4"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_temperature","clickEvent":{"action":"change_page","value":"6"}
+                      "translate":"exp_guide1_contents_temperature","clickEvent":{"action":"change_page","value":"5"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_chapter2","clickEvent":{"action":"change_page","value":"7"}
+                      "translate":"exp_guide1_contents_checklist","clickEvent":{"action":"change_page","value":"6"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_itemrecipes","clickEvent":{"action":"change_page","value":"8"}
+                      "translate":"exp_guide1_contents_chapter2","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_blockrecipes","clickEvent":{"action":"change_page","value":"9"}
+                      "translate":"exp_guide1_contents_itemrecipes","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_toolrecipes","clickEvent":{"action":"change_page","value":"10"}
+                      "translate":"exp_guide1_contents_blockrecipes","clickEvent":{"action":"change_page","value":"8"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"11"}
+                      "translate":"exp_guide1_contents_toolrecipes","clickEvent":{"action":"change_page","value":"9"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_vehiclerecipes","clickEvent":{"action":"change_page","value":"12"}
+                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"10"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                    },
+                    {
+                      "translate":"exp_guide1_contents_vehiclerecipes","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     }
                   ]
                 },
@@ -89,32 +92,25 @@
                       "translate":"exp_guide1_contents"
                     },
                     {
-                      "translate":"exp_guide1_contents_chapter3","clickEvent":{"action":"change_page","value":"13"}
+                      "translate":"exp_guide1_contents_chapter3","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_moon","clickEvent":{"action":"change_page","value":"14"}
+                      "translate":"exp_guide1_contents_moon","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_mars","clickEvent":{"action":"change_page","value":"15"}
+                      "translate":"exp_guide1_contents_mars","clickEvent":{"action":"change_page","value":"13"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_venus","clickEvent":{"action":"change_page","value":"16"}
+                      "translate":"exp_guide1_contents_venus","clickEvent":{"action":"change_page","value":"14"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_jupiter","clickEvent":{"action":"change_page","value":"17"}
+                      "translate":"exp_guide1_contents_jupiter","clickEvent":{"action":"change_page","value":"15"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_europa","clickEvent":{"action":"change_page","value":"18"}
+                      "translate":"exp_guide1_contents_europa","clickEvent":{"action":"change_page","value":"16"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_asteroids","clickEvent":{"action":"change_page","value":"19"}
-                    }
-                  ]
-                },
-                {
-                  "raw": [
-                    {
-                      "translate":"exp_guide1_chapter1"
+                      "translate":"exp_guide1_contents_asteroids","clickEvent":{"action":"change_page","value":"17"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     }
                   ]
                 },
@@ -141,7 +137,10 @@
                 {
                   "raw": [
                     {
-                      "translate":"exp_guide1_chapter2"
+                      "translate":"exp_guide1_checklist_title"
+                    },
+                    {
+                      "translate":"exp_guide1_checklist_body"
                     }
                   ]
                 },
@@ -779,19 +778,41 @@
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff35","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_armor_equipment_name"},{"translate":"exp_guide1_equipment_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff77"}]},{"translate":"exp_guide1_tintedglasstip"},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\uff09",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_tools_oxygentank_name"},{"translate":"exp_modules_mk1"},
+                              {"translate":"exp_guide1_oxygentank_lore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff78"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff09","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_tools_oxygentank_name"},{"translate":"exp_guide1_oxygentank_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff78"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
-                    },
-                    {
-                      "translate":"exp_guide_item_display",
-                      "color":"white",
-                      "font":"expansion:default",
-                      "with":[{"text":"\ufa11","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_tools_oxygentanktier2_name"},{"translate":"exp_guide1_oxygentanktier2_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa12"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\ufa11",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_tools_oxygentank_name"},{"translate":"exp_modules_mk2"},
+                              {"translate":"exp_guide1_oxygentankmk2_lore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa12"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide1_weapons"
@@ -800,13 +821,37 @@
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff36","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_weapons_railgun_name"},{"translate":"exp_guide1_railgun_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff79"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\uff36",
+                            "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_weapons_railgun_name"},
+                              {"translate":"exp_guide1_railgun_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff79"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff37","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_tools_cryoblaster_name"},{"translate":"exp_guide1_cryoblaster_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff80"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\uff37",
+                          "hoverEvent":{
+                            "action":"show_text","contents":[{"translate":"exp_tools_cryoblaster_name"},
+                            {"translate":"exp_guide1_cryoblaster_tip"},
+                            {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff80"}]},
+                            {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide1_othertools"
@@ -815,25 +860,116 @@
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff38","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_tools_wrench_name"},{"translate":"exp_guide1_wrench_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff81"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\uff38",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_tools_wrench_name"},
+                              {"translate":"exp_guide1_wrench_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff81"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\ufb09","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_drone_name"},{"translate":"exp_guide1_drone_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb04"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\ufa35",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_tools_repairkit_name"},
+                              {"translate":"exp_guide1_repairkit_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa36"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\ufb11","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_fuelmod_name"},{"translate":"exp_guide1_fuelmod_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb13"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]
+                      "with":[
+                        {
+                          "text":"\ufa37",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_tools_thermometer_name"},
+                              {"translate":"exp_guide1_thermometer_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa38"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                            ]
+                          }
+                        }
+                      ]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\ufb12","hoverEvent":{"action":"show_text","contents":[{"translate":"exp_items_speedmod_name"},{"translate":"exp_guide1_speedmod_tip"},{"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb14"}]},{"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}]}}]}
+                      "with":[
+                        {
+                          "text":"\ufb09",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_drone_name"},
+                              {"translate":"exp_guide1_drone_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb04"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff22\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufb11",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_items_fuelmod_name"},
+                              {"translate":"exp_guide1_fuelmod_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb13"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufb12",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_items_speedmod_name"},
+                              {"translate":"exp_guide1_speedmod_tip"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb14"}]},
+                              {"translate":"exp_guide_craftedin"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    }
                   ]
                 },
                 {
@@ -854,9 +990,10 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_magnboots_name"},
-                              {"translate":"exp_guide1_magnboots_tip"},
+                              {"translate":"exp_suit_diver_helmet"},
+                              {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa21"}]},
+                              {"translate":"exp_guide1_tintedglasstip"},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
                             ]
@@ -874,8 +1011,8 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_rocketboots_name"},
-                              {"translate":"exp_guide1_rocketboots_tip"},
+                              {"translate":"exp_suit_diver_chestplate"},
+                              {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa22"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
@@ -894,8 +1031,8 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_rocketboots_name"},
-                              {"translate":"exp_guide1_rocketboots_tip"},
+                              {"translate":"exp_suit_diver_leggings"},
+                              {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa23"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
@@ -914,8 +1051,8 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_rocketboots_name"},
-                              {"translate":"exp_guide1_rocketboots_tip"},
+                              {"translate":"exp_suit_diver_boots"},
+                              {"translate":"exp_suit_diver_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa24"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
@@ -937,9 +1074,10 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_magnboots_name"},
-                              {"translate":"exp_guide1_magnboots_tip"},
+                              {"translate":"exp_suit_nasa_helmet"},
+                              {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa25"}]},
+                              {"translate":"exp_guide1_tintedglasstip"},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
                             ]
@@ -957,8 +1095,8 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_rocketboots_name"},
-                              {"translate":"exp_guide1_rocketboots_tip"},
+                              {"translate":"exp_suit_nasa_chestplate"},
+                              {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa26"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
@@ -977,8 +1115,8 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_rocketboots_name"},
-                              {"translate":"exp_guide1_rocketboots_tip"},
+                              {"translate":"exp_suit_nasa_leggings"},
+                              {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa27"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
@@ -997,8 +1135,8 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_armor_rocketboots_name"},
-                              {"translate":"exp_guide1_rocketboots_tip"},
+                              {"translate":"exp_suit_nasa_boots"},
+                              {"translate":"exp_suit_nasa_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa28"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
@@ -1020,11 +1158,12 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_modules_warming_name"},
-                              {"translate":"exp_guide1_warmingmodule_tip"},
+                              {"translate":"exp_modules_coldresist_name"},{"translate":"exp_modules_mk1"},
+                              {"translate":"exp_modules_coldresist_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff83"}]},
                               {"translate":"exp_guide_craftedin"},
-                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
                             ]
                           }
                         }
@@ -1040,11 +1179,141 @@
                           "hoverEvent":{
                             "action":"show_text",
                             "contents":[
-                              {"translate":"exp_modules_cooling_name"},
-                              {"translate":"exp_guide1_coolingmodule_tip"},
+                              {"translate":"exp_modules_heatresist_name"},{"translate":"exp_modules_mk1"},
+                              {"translate":"exp_modules_heatresist_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff82"}]},
                               {"translate":"exp_guide_craftedin"},
-                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]}
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufa33",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_modules_durability_name"},{"translate":"exp_modules_mk1"},
+                              {"translate":"exp_modules_durability_guidelore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb05"}]},
+                              {"translate":"exp_guide_craftedin"},
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufb17",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_modules_rocket_name"},
+                              {"translate":"exp_modules_rocket_guidelore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb19"}]},
+                              {"translate":"exp_guide_craftedin"},
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufb16",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_modules_magnetic_name"},
+                              {"translate":"exp_modules_magnetic_guidelore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb18"}]},
+                              {"translate":"exp_guide_craftedin"},
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "text": "\n\n"
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufa29",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_modules_coldresist_name"},{"translate":"exp_modules_mk2"},
+                              {"translate":"exp_modules_coldresist_guidelore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa31"}]},
+                              {"translate":"exp_guide_craftedin"},
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufa30",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_modules_heatresist_name"},{"translate":"exp_modules_mk2"},
+                              {"translate":"exp_modules_heatresist_guidelore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa32"}]},
+                              {"translate":"exp_guide_craftedin"},
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
+                            ]
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "translate":"exp_guide_item_display",
+                      "color":"white",
+                      "font":"expansion:default",
+                      "with":[
+                        {
+                          "text":"\ufa34",
+                          "hoverEvent":{
+                            "action":"show_text",
+                            "contents":[
+                              {"translate":"exp_modules_durability_name"},{"translate":"exp_modules_mk2"},
+                              {"translate":"exp_modules_durability_guidelore"},
+                              {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb06"}]},
+                              {"translate":"exp_guide_craftedin"},
+                              {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
+                              {"translate":"exp_modules_guidelore"},{"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff28\n"}]}
                             ]
                           }
                         }
@@ -1101,13 +1370,6 @@
                 {
                   "raw": [
                     {
-                      "translate":"exp_guide1_chapter3"
-                    }
-                  ]
-                },
-                {
-                  "raw": [
-                    {
                       "translate":"exp_guide_picture_display",
                       "color":"white",
                       "font":"expansion:default",
@@ -1141,22 +1403,22 @@
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_habitable",
+                      "translate":"exp_guide1_moontemp",
                       "color":"black",
                       "font":"minecraft:default",
-                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_nomodule"}}},{"translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
+                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}},{"translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff30","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide_click"}]}}]
+                      "with":[{"text":"\uff30","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide_click"}]}}]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1181,13 +1443,13 @@
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_habitable","color":"black","font":"minecraft:default","hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_nomodule"}}
+                      "translate":"exp_guide1_marstemp","color":"black","font":"minecraft:default","hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1209,13 +1471,13 @@
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_scorching","color":"black","font":"minecraft:default","hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_coolmodule"}}
+                      "translate":"exp_guide1_venustemp","color":"black","font":"minecraft:default","hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1237,12 +1499,12 @@
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_glacial",
+                      "translate":"exp_guide1_jupitertemp",
                       "color":"black",
                       "font":"minecraft:default",
                       "hoverEvent":{
                         "action":"show_text",
-                        "contents":{"translate":"exp_guide1_heatmodule"}
+                        "contents":{"translate":"exp_guide1_tempexplainer"}
                         }
                       },
                     {"translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"},
@@ -1253,7 +1515,7 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"12"},
+                          "clickEvent":{"action":"change_page","value":"11"},
                           "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
@@ -1278,8 +1540,8 @@
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_glacial","color":"black","font":"minecraft:default",
-                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_heatmodule"}}
+                      "translate":"exp_guide1_europatemp","color":"black","font":"minecraft:default",
+                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
@@ -1291,7 +1553,7 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"12"},
+                          "clickEvent":{"action":"change_page","value":"11"},
                           "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
@@ -1316,10 +1578,10 @@
                       "translate":"exp_guide1_temperature","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide1_glacial",
+                      "translate":"exp_guide1_spacetemp",
                       "color":"black",
                       "font":"minecraft:default",
-                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_heatmodule"}}
+                      "hoverEvent":{"action":"show_text","contents":{"translate":"exp_guide1_tempexplainer"}}
                     },
                     {
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
@@ -1331,7 +1593,7 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"12"},
+                          "clickEvent":{"action":"change_page","value":"11"},
                           "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]

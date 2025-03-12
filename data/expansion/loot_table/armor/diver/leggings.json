@@ -37,14 +37,14 @@
                 "modifiers": [
                   {
                     "attribute": "minecraft:armor",
-                    "id": "armor",
+                    "id": "exp.legs_armor",
                     "amount": 3,
                     "operation": "add_value",
                     "slot": "legs"
                   },
                   {
                     "attribute": "minecraft:movement_speed",
-                    "id": "armor",
+                    "id": "exp.movement_speed",
                     "amount": 0,
                     "operation": "add_multiplied_base",
                     "slot": "legs"

@@ -18,7 +18,6 @@ execute unless items block ~ ~ ~ container.16 *[!custom_data~{gui_item:1b}] if d
 function expansion:blocks/enhancer/upgrade/apply/effects/init_loop
 
 # display the module icons
-function expansion:spacesuits/module_icons/init_loop
 item modify entity @s contents expansion:space_equipment/display_module_icons
 
 # Copy the modstorage from storage back to the equipment

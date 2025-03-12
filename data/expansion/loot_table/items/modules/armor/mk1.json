@@ -1,0 +1,76 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:item",
+            "name": "minecraft:jigsaw",
+            "functions": [
+              {
+                "function": "minecraft:set_name",
+                "name": [
+                  {
+                    "translate": "exp_modules_armor_name",
+                    "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_mk1"
+                  }
+                ]
+              },
+              {
+                "function": "minecraft:set_components",
+                    "components": {
+                      "item_model": "expansion:modules/equipment",
+                      "custom_model_data": {
+                        "strings": ["armor"],
+                        "floats": [1]
+                      },
+                    "minecraft:max_stack_size": 64,
+                    "!minecraft:max_damage": {},
+                    "minecraft:unbreakable": {
+                        "show_in_tooltip": false
+                        }
+                    }
+              },
+              {
+                "function": "minecraft:set_custom_data",
+                "tag": "{exp_item:{name:\"armor_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,armor:{add_value:2.0d},allowedIDs:[103,102,101,100],icon:{layer1:\"\ufb01\",layer2:\"\uff42\"}}"
+              },
+              {
+                "function": "minecraft:set_lore",
+                "mode": "replace_all",
+                "lore": [
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_modules_ifadded"
+                  },
+                  [
+                    {
+                      "translate": "exp_modules_armor_lore"
+                    },
+                    {
+                      "text": "+2",
+                      "color": "green",
+                      "bold": true,
+                      "italic": false
+                    }
+                  ],
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_modules_whenapplied"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+  

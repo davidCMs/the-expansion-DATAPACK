@@ -21,7 +21,8 @@
                     "components": {
                       "item_model": "expansion:modules/equipment",
                       "custom_model_data": {
-                        "strings": ["rocket"]
+                        "strings": ["rocket"],
+                        "floats": [1]
                       },
                     "minecraft:max_stack_size": 64,
                     "!minecraft:max_damage": {},
@@ -32,7 +33,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"rocket_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,cold_resist:{modifier:1},heat_resist:{modifier:-5},allowedIDs:[100],icon:\"\uff40\"}"
+                "tag": "{exp_item:{name:\"rocket_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,cold_resist:{modifier:1},heat_resist:{modifier:-5},allowedIDs:[100],icon:{layer1:\"\ufb01\",layer2:\"\uff46\"}}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -43,19 +44,6 @@
                   },
                   {
                     "translate": "exp_modules_ifadded"
-                  },
-                  {
-                    "text": ""
-                  },
-                  [
-                    {
-                      "text": "6 seconds of vertical flight (not stackable)",
-                      "color": "aqua",
-                      "italic": false
-                    }
-                  ],
-                  {
-                    "text": ""
                   },
                   [
                     {
@@ -79,11 +67,28 @@
                       "italic": false
                     }
                   ],
+                  [
+                    {
+                      "translate": "exp_modules_rocket_lore"
+                    },
+                    {
+                      "translate": "exp_modules_unstackeable"
+                    }
+                  ],
                   {
                     "text": ""
                   },
                   {
                     "translate": "exp_modules_whenapplied"
+                  },
+                  {
+                    "text": ""
+                  },
+                  {
+                    "translate": "exp_modules_exclusive"
+                  },
+                  {
+                    "translate": "exp_modules_exclusive_boots"
                   }
                 ]
               }

@@ -7,4 +7,4 @@ execute unless score #temp exp.unique_id = @p[tag=exp.returning] exp.unique_id r
 # return the player if a match has been found
 execute if score #temp exp.unique_id = @p[tag=exp.returning] exp.unique_id run function expansion:items/transporter/return/init
 
-tag @p[tag=exp.returning] add exp.returning
+tag @p[tag=exp.returning] remove exp.returning

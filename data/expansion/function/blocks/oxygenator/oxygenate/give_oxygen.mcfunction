@@ -1,4 +1,4 @@
-execute unless entity @s[tag=exp.has_oxygen] run function expansion:blocks/oxygenator/oxygenate/titles/oxygenated
+execute unless entity @s[tag=exp.inside_habitable_space] run function expansion:blocks/oxygenator/oxygenate/titles/oxygenated
 
-tag @s add exp.has_oxygen
+tag @s add exp.inside_habitable_space
 tag @s remove exp.recieved_oxygen

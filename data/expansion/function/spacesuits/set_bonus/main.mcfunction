@@ -1,3 +1,6 @@
+# when wearing a full set and having oxygen, get water breathing
+execute if score @s exp.oxygen_lvl matches 1.. run effect give @s water_breathing 1 1 true
+
 # run set bonus functions based on the armor set
 execute if predicate expansion:armor/diver/set run return run function expansion:spacesuits/set_bonus/diver
 execute if predicate expansion:armor/nasa/set run return run function expansion:spacesuits/set_bonus/nasa
