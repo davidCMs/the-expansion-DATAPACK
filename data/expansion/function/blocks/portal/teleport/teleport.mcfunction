@@ -10,6 +10,5 @@ execute if score #temp exp.dim_test matches 8 in expansion:space align xyz posit
 execute if score #temp exp.dim_test matches 9 in expansion:asteroids align xyz positioned ~0.5 ~ ~0.5 run tp @s ~ ~ ~ ~ ~
 
 # cooldown and nausea to indicate
-scoreboard players set @s exp.portal_cooldown 60
 effect give @s nausea 1 10 true
 playsound expansion:portal.transport block @s ~ ~ ~ 1 1 0

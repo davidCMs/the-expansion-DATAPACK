@@ -9,12 +9,15 @@
           "functions": [
             {
               "function": "minecraft:set_name",
-              "name": 
+              "name": [
                 {
                   "translate": "exp_tools_oxygentank_name",
                   "italic": false
                 },
-              "entity": "this"
+                {
+                  "translate": "exp_modules_mk1"
+                }
+              ]
             },
             {
               "function": "minecraft:set_components",
@@ -38,6 +41,19 @@
               "function": "minecraft:set_lore",
               "mode": "replace_all",
               "lore": [
+                {
+                  "text": ""
+                },
+                [
+                  {
+                    "translate": "exp_tools_oxygentank_pressure"
+                  },
+                  {
+                    "text": "100%",
+                    "color": "aqua",
+                    "bold": true
+                  }
+                ],
                 {
                   "text": ""
                 },

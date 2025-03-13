@@ -34,6 +34,21 @@
                 "function": "minecraft:set_lore",
             "mode": "replace_all",
                 "lore": [
+                  {
+                    "translate": "exp_lore_tooltips"
+                  },
+                  {
+                    "translate": "exp_tools_thermometer_tip1"
+                  },
+                  {
+                    "translate": "exp_tools_thermometer_tip2"
+                  },
+                  {
+                    "translate": "exp_tools_thermometer_tip3"
+                  },
+                  {
+                    "translate": "exp_tools_thermometer_tip4"
+                  }
                 ]
               }
             ]

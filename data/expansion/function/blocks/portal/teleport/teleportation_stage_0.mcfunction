@@ -11,6 +11,6 @@ execute if score #temp exp.hold_count matches 2 summon minecraft:marker run func
 data remove storage expansion:portal portal_out
 
 # remove tag in the same tick
-scoreboard players set @s exp.portal_cooldown 20
+scoreboard players set @s exp.portal_cooldown 60
 scoreboard players reset #temp exp.bool
 tag @s remove exp.teleported

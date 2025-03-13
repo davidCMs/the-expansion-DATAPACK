@@ -31,30 +31,6 @@
           },
           {
             "type": "minecraft:loot_table",
-            "value": "expansion:items/simple_mechanism",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                },
-                "add": false
-              },
-              {
-                "function": "minecraft:enchanted_count_increase",
-                "enchantment": "minecraft:looting",
-                "count": {
-                  "type": "minecraft:uniform",
-                  "min": 0,
-                  "max": 1
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
             "value": "expansion:items/copper_wire",
             "functions": [
               {
@@ -86,6 +62,30 @@
           {
             "type": "minecraft:loot_table",
             "value": "expansion:items/computing_core",
+            "functions": [
+              {
+                "function": "minecraft:set_count",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                },
+                "add": false
+              },
+              {
+                "function": "minecraft:enchanted_count_increase",
+                "enchantment": "minecraft:looting",
+                "count": {
+                  "type": "minecraft:uniform",
+                  "min": 0,
+                  "max": 1
+                }
+              }
+            ]
+          },
+          {
+            "type": "minecraft:loot_table",
+            "value": "expansion:items/simple_mechanism",
             "functions": [
               {
                 "function": "minecraft:set_count",

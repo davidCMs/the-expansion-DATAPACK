@@ -32,6 +32,12 @@
                 "function": "minecraft:set_lore",
             "mode": "replace_all",
                 "lore": [
+                  {
+                    "translate": "exp_lore_tooltips"
+                  },
+                  {
+                    "translate": "exp_tools_repairkit_tip1"
+                  }
                 ]
               }
             ]
