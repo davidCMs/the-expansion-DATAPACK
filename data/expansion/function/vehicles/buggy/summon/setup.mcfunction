@@ -4,7 +4,7 @@ tag @s remove exp.new_vehicle
 function expansion:blocks/set_rotation
 
 # summon and mount the animated model 
-execute rotated ~ 0 run function animated_java:buggy/summon {args: {}}
+execute at @s rotated ~ 0 run function animated_java:buggy/summon {args: {}}
 ride @e[type=item_display,tag=aj.buggy.root,distance=..0.01,limit=1] mount @s
 
 # copy the buggy item to a storage
