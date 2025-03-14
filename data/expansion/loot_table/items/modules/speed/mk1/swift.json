@@ -9,19 +9,27 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": {
-                  "translate": "exp_modules_magnetic_name",
-                  "color": "white",
-                  "italic": false
-                },
-                "entity": "this"
+                "name": [
+                  {
+                    "translate": "exp_modules_secondary_swift",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_speed_name",
+                    "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_mk1"
+                  }
+                ]
               },
               {
                 "function": "minecraft:set_components",
                     "components": {
                       "item_model": "expansion:modules/equipment",
                       "custom_model_data": {
-                        "strings": ["magnetic"],
+                        "strings": ["speed"],
                         "floats": [1]
                       },
                     "minecraft:max_stack_size": 64,
@@ -33,7 +41,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"magnetic_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,allowedIDs:[100],icon:{layer1:\"\ufb01\",layer2:\"\uff45\"}}"
+                "tag": "{exp_item:{name:\"speed_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,secondary:\"swift\",speed:{add_percent:30},max_damage:{add_percent:-40},cold_resist:{modifier:-2},heat_resist:{modifier:-3},allowedIDs:[101],icon:{layer1:\"\ufb01\",layer2:\"\uff43\"}}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -47,28 +55,28 @@
                   },
                   [
                     {
-                      "translate": "exp_modules_coldresist_lore"
+                      "translate": "exp_modules_speed_lore"
                     },
                     {
-                      "text": "-1",
-                      "color": "red",
+                      "text": "+20%",
+                      "color": "green",
                       "bold": true,
                       "italic": false
-                    }
-                  ],
-                  [
-                    {
-                      "translate": "exp_modules_magnetic_lore"
-                    },
-                    {
-                      "translate": "exp_modules_unstackeable"
                     }
                   ]
                 ]
               },
               {
                 "function": "minecraft:reference",
+                "name": "expansion:modules/swift_lore"
+              },
+              {
+                "function": "minecraft:reference",
                 "name": "expansion:modules/moduletip"
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/exclusive_leggings"
               }
             ]
           }

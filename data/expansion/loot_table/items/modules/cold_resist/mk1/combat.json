@@ -9,19 +9,27 @@
             "functions": [
               {
                 "function": "minecraft:set_name",
-                "name": {
-                  "translate": "exp_modules_magnetic_name",
-                  "color": "white",
-                  "italic": false
-                },
-                "entity": "this"
+                "name": [
+                  {
+                    "translate": "exp_modules_secondary_combat",
+                    "color": "white",
+                    "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_coldresist_name",
+                    "italic": false
+                  },
+                  {
+                    "translate": "exp_modules_mk1"
+                  }
+                ]
               },
               {
                 "function": "minecraft:set_components",
                     "components": {
                       "item_model": "expansion:modules/equipment",
                       "custom_model_data": {
-                        "strings": ["magnetic"],
+                        "strings": ["warming"],
                         "floats": [1]
                       },
                     "minecraft:max_stack_size": 64,
@@ -33,7 +41,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"magnetic_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,allowedIDs:[100],icon:{layer1:\"\ufb01\",layer2:\"\uff45\"}}"
+                "tag": "{exp_item:{name:\"cold_resist_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,secondary:\"combat\",mk:1,cold_resist:{modifier:-3},heat_resist:{modifier:-7},armor:{add_value:5.0d},speed:{add_percent:10},allowedIDs:[103,102,101,100],icon:{layer1:\"\ufb01\",layer2:\"\uff40\"}}"
               },
               {
                 "function": "minecraft:set_lore",
@@ -50,21 +58,28 @@
                       "translate": "exp_modules_coldresist_lore"
                     },
                     {
-                      "text": "-1",
-                      "color": "red",
+                      "text": "+1",
+                      "color": "green",
                       "bold": true,
                       "italic": false
                     }
                   ],
                   [
                     {
-                      "translate": "exp_modules_magnetic_lore"
+                      "translate": "exp_modules_heatresist_lore"
                     },
                     {
-                      "translate": "exp_modules_unstackeable"
+                      "text": "-2",
+                      "color": "red",
+                      "bold": true,
+                      "italic": false
                     }
                   ]
                 ]
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/combat_lore"
               },
               {
                 "function": "minecraft:reference",

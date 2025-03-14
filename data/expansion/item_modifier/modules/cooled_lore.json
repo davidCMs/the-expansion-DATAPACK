@@ -1,0 +1,42 @@
+{
+  "function": "minecraft:set_lore",
+  "mode": "append",
+  "lore": [
+    {
+      "text": ""
+    },
+    [
+      {
+        "translate": "exp_modules_secondary_explainer"
+      },
+      {
+        "translate": "exp_modules_secondary_reinforced",
+        "bold": true,
+        "italic": false,
+        "color": "gray"
+      }
+    ],
+    [
+      {
+        "translate": "exp_modules_coldresist_cooled"
+      },
+      {
+        "text": "-3",
+        "color": "red",
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "translate": "exp_modules_heatresist_lore"
+      },
+      {
+        "text": "+5",
+        "color": "green",
+        "bold": true,
+        "italic": false
+      }
+    ]
+  ]
+}

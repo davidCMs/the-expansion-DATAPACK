@@ -59,15 +59,16 @@
                     "text": ""
                   },
                   {
-                    "translate": "exp_modules_whenapplied"
-                  },
-                  {
                     "text": ""
                   },
                   {
                     "translate": "exp_modules_permanent"
                   }
                 ]
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/moduletip"
               }
             ]
           }

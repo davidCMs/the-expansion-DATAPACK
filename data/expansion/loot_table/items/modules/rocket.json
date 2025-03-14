@@ -74,23 +74,12 @@
                     {
                       "translate": "exp_modules_unstackeable"
                     }
-                  ],
-                  {
-                    "text": ""
-                  },
-                  {
-                    "translate": "exp_modules_whenapplied"
-                  },
-                  {
-                    "text": ""
-                  },
-                  {
-                    "translate": "exp_modules_exclusive"
-                  },
-                  {
-                    "translate": "exp_modules_exclusive_boots"
-                  }
+                  ]
                 ]
+              },
+              {
+                "function": "minecraft:reference",
+                "name": "expansion:modules/moduletip"
               }
             ]
           }

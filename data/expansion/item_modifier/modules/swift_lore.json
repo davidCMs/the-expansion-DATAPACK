@@ -1,0 +1,64 @@
+{
+  "function": "minecraft:set_lore",
+  "mode": "append",
+  "lore": [
+    {
+      "text": ""
+    },
+    [
+      {
+        "translate": "exp_modules_secondary_explainer"
+      },
+      {
+        "translate": "exp_modules_secondary_swift",
+        "bold": true,
+        "italic": false,
+        "color": "gray"
+      }
+    ],
+    [
+      {
+        "translate": "exp_modules_speed_lore"
+      },
+      {
+        "text": "+15%",
+        "color": "green",
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "translate": "exp_modules_durability_lore"
+      },
+      {
+        "text": "-40%",
+        "color": "red",
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "translate": "exp_modules_coldresist_lore"
+      },
+      {
+        "text": "-2",
+        "color": "red",
+        "bold": true,
+        "italic": false
+      }
+    ],
+    [
+      {
+        "translate": "exp_modules_heatresist_lore"
+      },
+      {
+        "text": "-3",
+        "color": "red",
+        "bold": true,
+        "italic": false
+      }
+    ]
+  ]
+}
