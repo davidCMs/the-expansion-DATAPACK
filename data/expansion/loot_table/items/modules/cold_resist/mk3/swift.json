@@ -41,7 +41,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"cold_resist_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,secondary:\"swift\",cold_resist:{modifier:6},heat_resist:{modifier:-11},max_damage:{add_percent:-40},speed:{add_percent:10},allowedIDs:[103,102,101,100],icon:{layer1:\"\ufb03\",layer2:\"\uff40\"}}"
+                "tag": "{exp_item:{name:\"cold_resist_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,secondary:\"swift\",cold_resist:{modifier:6},heat_resist:{modifier:-11},max_damage:{add_percent:-40},speed:{add_percent:15},allowedIDs:[103,102,101,100],icon:{layer1:\"\ufb03\",layer2:\"\uff40\"}}"
               },
               {
                 "function": "minecraft:set_lore",

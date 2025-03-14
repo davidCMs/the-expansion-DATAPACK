@@ -10,7 +10,7 @@
         "translate": "exp_modules_secondary_explainer"
       },
       {
-        "translate": "exp_modules_secondary_reinforced",
+        "translate": "exp_modules_secondary_cooled",
         "bold": true,
         "italic": false,
         "color": "gray"
@@ -18,7 +18,7 @@
     ],
     [
       {
-        "translate": "exp_modules_coldresist_cooled"
+        "translate": "exp_modules_coldresist_lore"
       },
       {
         "text": "-3",

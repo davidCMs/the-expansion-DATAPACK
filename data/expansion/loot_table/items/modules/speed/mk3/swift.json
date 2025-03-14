@@ -41,7 +41,7 @@
               },
               {
                 "function": "minecraft:set_custom_data",
-                "tag": "{exp_item:{name:\"speed_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,secondary:\"swift\",speed:{add_percent:60},max_damage:{add_percent:-40},cold_resist:{modifier:-2},heat_resist:{modifier:-3},allowedIDs:[101],icon:{layer1:\"\ufb03\",layer2:\"\uff43\"}}"
+                "tag": "{exp_item:{name:\"speed_module\",crafting_count:1,max_stack_size:64},upgrade_module:1b,secondary:\"swift\",speed:{add_percent:65},max_damage:{add_percent:-40},cold_resist:{modifier:-2},heat_resist:{modifier:-3},allowedIDs:[101],icon:{layer1:\"\ufb03\",layer2:\"\uff43\"}}"
               },
               {
                 "function": "minecraft:set_lore",
