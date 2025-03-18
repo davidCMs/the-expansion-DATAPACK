@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 40,
+            "value": "expansion:items/modules/armor/mk3/regular"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/armor/mk3/combat"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/armor/mk3/cooled"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/armor/mk3/heated"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/armor/mk3/reinforced"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/armor/mk3/stable"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/armor/mk3/swift"
+          }
+        ]
+      }
+    ]
+  }

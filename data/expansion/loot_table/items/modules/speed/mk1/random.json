@@ -1,0 +1,44 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 40,
+            "value": "expansion:items/modules/speed/mk1/regular"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/speed/mk1/combat"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/speed/mk1/cooled"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/speed/mk1/heated"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/speed/mk1/reinforced"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/speed/mk1/stable"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/speed/mk1/swift"
+          }
+        ]
+      }
+    ]
+  }

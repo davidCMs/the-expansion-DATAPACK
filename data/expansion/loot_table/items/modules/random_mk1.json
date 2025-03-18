@@ -1,0 +1,39 @@
+{
+    "pools": [
+      {
+        "rolls": 1,
+        "entries": [
+          {
+            "type": "minecraft:loot_table",
+            "weight": 20,
+            "value": "expansion:items/modules/armor/mk1/random"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 20,
+            "value": "expansion:items/modules/cold_resist/mk1/random"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 20,
+            "value": "expansion:items/modules/durability/mk1/random"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 20,
+            "value": "expansion:items/modules/heat_resist/mk1/random"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 20,
+            "value": "expansion:items/modules/speed/mk1/random"
+          },
+          {
+            "type": "minecraft:loot_table",
+            "weight": 10,
+            "value": "expansion:items/modules/slot"
+          }
+        ]
+      }
+    ]
+  }
