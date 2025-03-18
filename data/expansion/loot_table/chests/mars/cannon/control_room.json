@@ -34,7 +34,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:weapons/railgun"
+          "value": "expansion:chests/mars/random_module"
         }
       ]
     },
@@ -44,7 +44,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/modules/equipment/heat_resist"
+          "value": "expansion:chests/mars/chest_filler"
         }
       ]
     },
@@ -103,67 +103,6 @@
               "count": {
                 "min": 10,
                 "max": 20
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "rolls": 2,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:polished_andesite",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:andesite",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:redstone",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 20,
-                "max": 30
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:comparator",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
               }
             }
           ]

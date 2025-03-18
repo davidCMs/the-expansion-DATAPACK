@@ -21,7 +21,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:items/cooling_element"
+          "value": "expansion:chests/mars/random_module"
         }
       ]
     },
@@ -31,7 +31,7 @@
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:weapons/railgun"
+          "value": "expansion:chests/mars/random_equipment"
         }
       ]
     },
@@ -68,63 +68,6 @@
                 "min": 20,
                 "max": 39,
                 "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:iron_axe",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 2,
-          "value": "expansion:items/processing_unit",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 5,
-                "max": 10
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 3,
-          "value": "expansion:items/steel_ingot",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 20
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 2,
-          "value": "expansion:items/steel_plate",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 20
               }
             }
           ]
@@ -189,6 +132,16 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:chests/mars/chest_filler"
         }
       ]
     }

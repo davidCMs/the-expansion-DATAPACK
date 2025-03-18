@@ -1,7 +1,7 @@
 {
     "pools": [
       {
-        "rolls": 4,
+        "rolls": 2,
         "entries": [
           {
             "type": "minecraft:loot_table",
@@ -13,20 +13,6 @@
                 "count": {
                   "min": 7,
                   "max": 12
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "expansion:items/steel_plate",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 1,
-                  "max": 3
                 }
               }
             ]
@@ -48,34 +34,6 @@
           {
             "type": "minecraft:loot_table",
             "weight": 1,
-            "value": "expansion:items/gear",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 3,
-                  "max": 6
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "expansion:items/copper_wire",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 7,
-                  "max": 12
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
             "value": "expansion:items/electromagnet",
             "functions": [
               {
@@ -83,48 +41,6 @@
                 "count": {
                   "min": 1,
                   "max": 3
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:loot_table",
-            "weight": 1,
-            "value": "expansion:items/fan",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 2,
-                  "max": 4
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:copper_ingot",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 7,
-                  "max": 12
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:iron_ingot",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 8,
-                  "max": 15
                 }
               }
             ]
@@ -161,48 +77,6 @@
             "type": "minecraft:item",
             "weight": 1,
             "name": "minecraft:raw_copper",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 8,
-                  "max": 15
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:coal",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 8,
-                  "max": 15
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:stone",
-            "functions": [
-              {
-                "function": "minecraft:set_count",
-                "count": {
-                  "min": 8,
-                  "max": 15
-                }
-              }
-            ]
-          },
-          {
-            "type": "minecraft:item",
-            "weight": 1,
-            "name": "minecraft:redstone",
             "functions": [
               {
                 "function": "minecraft:set_count",

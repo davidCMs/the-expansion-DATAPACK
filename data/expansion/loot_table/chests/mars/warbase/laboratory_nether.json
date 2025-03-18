@@ -182,6 +182,16 @@
           ]
         }
       ]
-    }
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:chests/mars/chest_filler"
+        }
+      ]
+    }    
   ]
 }

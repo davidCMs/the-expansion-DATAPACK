@@ -1,32 +1,27 @@
 {
   "pools": [
     {
-      "rolls": 2,
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:loot_table",
           "weight": 1,
-          "value": "expansion:armor/magnetic_boots"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:tools/cryoblaster"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 2,
-          "value": "expansion:tools/oxygen_tanks/tier1/random"
-        },
-        {
-          "type": "minecraft:loot_table",
-          "weight": 1,
-          "value": "expansion:tools/oxygen_tanks/tier2/random"
+          "value": "expansion:chests/mars/random_module"
         }
       ]
     },
     {
-      "rolls": 6,
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:chests/mars/random_equipment"
+        }
+      ]
+    },
+    {
+      "rolls": 2,
       "entries": [
         {
           "type": "minecraft:item",
@@ -69,131 +64,12 @@
               }
             }
           ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:diamond_pickaxe",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:diamond_sword",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:diamond_axe",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:book",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_boots",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_chestplate",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
-        },
-        {
-          "type": "minecraft:item",
-          "weight": 3,
-          "name": "minecraft:iron_leggings",
-          "functions": [
-            {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "min": 20,
-                "max": 39,
-                "type": "minecraft:uniform"
-              }
-            }
-          ]
         }
       ]
     },
     {
-      "rolls": 3,
+      "rolls": 2,
       "entries": [
-        {
-          "type": "minecraft:item",
-          "weight": 1,
-          "name": "minecraft:polished_andesite",
-          "functions": [
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "min": 10,
-                "max": 15
-              }
-            }
-          ]
-        },
         {
           "type": "minecraft:item",
           "weight": 1,
@@ -235,6 +111,16 @@
               }
             }
           ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:chests/mars/chest_filler"
         }
       ]
     }

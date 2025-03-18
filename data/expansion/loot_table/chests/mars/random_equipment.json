@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "value": "expansion:armor/trooper/random"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:weapons/railgun"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:tools/cryoblaster"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:tools/oxygen_tanks/tier2/random"
+        }
+      ]
+    }
+  ]
+}

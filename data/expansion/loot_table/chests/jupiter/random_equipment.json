@@ -1,0 +1,19 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 3,
+          "value": "expansion:armor/pilot/random"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:tools/oxygen_tanks/tier3/random"
+        }
+      ]
+    }
+  ]
+}
