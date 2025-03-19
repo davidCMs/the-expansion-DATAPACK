@@ -64,25 +64,28 @@
                       "translate":"exp_guide1_contents_temperature","clickEvent":{"action":"change_page","value":"5"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_checklist","clickEvent":{"action":"change_page","value":"6"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_spacesuit","clickEvent":{"action":"change_page","value":"6"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_chapter2","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_checklist","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_itemrecipes","clickEvent":{"action":"change_page","value":"7"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_chapter2","clickEvent":{"action":"change_page","value":"8"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_blockrecipes","clickEvent":{"action":"change_page","value":"8"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_itemrecipes","clickEvent":{"action":"change_page","value":"8"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_toolrecipes","clickEvent":{"action":"change_page","value":"9"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_blockrecipes","clickEvent":{"action":"change_page","value":"9"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"10"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_toolrecipes","clickEvent":{"action":"change_page","value":"10"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_vehiclerecipes","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                    },
+                    {
+                      "translate":"exp_guide1_contents_vehiclerecipes","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     }
                   ]
                 },
@@ -92,33 +95,30 @@
                       "translate":"exp_guide1_contents"
                     },
                     {
-                      "translate":"exp_guide1_contents_chapter3","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_chapter3","clickEvent":{"action":"change_page","value":"13"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_moon","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_moon","clickEvent":{"action":"change_page","value":"13"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_mars","clickEvent":{"action":"change_page","value":"13"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_mars","clickEvent":{"action":"change_page","value":"14"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_venus","clickEvent":{"action":"change_page","value":"14"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_venus","clickEvent":{"action":"change_page","value":"15"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_jupiter","clickEvent":{"action":"change_page","value":"15"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_jupiter","clickEvent":{"action":"change_page","value":"16"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_europa","clickEvent":{"action":"change_page","value":"16"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_europa","clickEvent":{"action":"change_page","value":"17"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_asteroids","clickEvent":{"action":"change_page","value":"17"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_asteroids","clickEvent":{"action":"change_page","value":"18"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     }
                   ]
                 },
                 {
                   "raw": [
-                    {
-                      "translate":"exp_guide1_oxygen_title"
-                    },
                     {
                       "translate":"exp_guide1_oxygen_body"
                     }
@@ -127,10 +127,14 @@
                 {
                   "raw": [
                     {
-                      "translate":"exp_guide1_temperature_title"
-                    },
-                    {
                       "translate":"exp_guide1_temperature_body"
+                    }
+                  ]
+                },
+                {
+                  "raw": [
+                    {
+                      "translate":"exp_guide1_spacesuit_body"
                     }
                   ]
                 },
@@ -1412,13 +1416,13 @@
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff30","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide_click"}]}}]
+                      "with":[{"text":"\uff30","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_rocket_name"},{"translate":"exp_guide_click"}]}}]
                     },
                     {
                       "translate":"exp_guide_item_display",
                       "color":"white",
                       "font":"expansion:default",
-                      "with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1449,7 +1453,7 @@
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1477,7 +1481,7 @@
                       "translate":"exp_guide1_accessibility","color":"black","font":"minecraft:default"
                     },
                     {
-                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
+                      "translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff32","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}}]
                     }
                   ]
                 },
@@ -1515,7 +1519,7 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"11"},
+                          "clickEvent":{"action":"change_page","value":"12"},
                           "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
@@ -1553,7 +1557,7 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"11"},
+                          "clickEvent":{"action":"change_page","value":"12"},
                           "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]
@@ -1593,7 +1597,7 @@
                       "with":[
                         {
                           "text":"\uff32",
-                          "clickEvent":{"action":"change_page","value":"11"},
+                          "clickEvent":{"action":"change_page","value":"12"},
                           "hoverEvent":{"action":"show_text","contents":[{"translate":"exp_vehicles_spaceship_name"},{"translate":"exp_guide_click"}]}
                         }
                       ]

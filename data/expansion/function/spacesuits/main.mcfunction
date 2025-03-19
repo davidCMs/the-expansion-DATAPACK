@@ -5,7 +5,7 @@ execute if function expansion:spacesuits/equip/check_tags run function expansion
 execute if predicate expansion:armor/all run function expansion:spacesuits/set_bonus/main
 
 # Periodically loop through the armor pieces and re-calculate the durability, while also adding any temperature damage
-execute if predicate expansion:periodic/10 unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:spacesuits/integrity/main
+execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] unless entity @s[gamemode=creative] unless entity @s[gamemode=spectator] run function expansion:spacesuits/integrity/main
 
 # Display oxygen level and suit integrity in the actionbar
 execute if predicate expansion:periodic/10 unless entity @s[tag=exp.inside_vehicle] run function expansion:spacesuits/actionbar

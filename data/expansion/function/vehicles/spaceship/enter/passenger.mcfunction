@@ -22,7 +22,7 @@ execute unless score @s exp.passenger_count matches 1.. run function expansion:v
 
 # store the helmet of the player inside the storage. 
 # this obscure thing is done so the view isn't obstructed by helmets if multiple players are inside the spaceship
-execute on passengers if entity @s[type=armor_stand] run function expansion:vehicles/spaceship/enter/store_helmet
+#execute on passengers if entity @s[type=armor_stand] run function expansion:vehicles/spaceship/enter/store_helmet
 
 # keep track of the number of passengers and assign the first one a separate tag
 scoreboard players add @s exp.passenger_count 1

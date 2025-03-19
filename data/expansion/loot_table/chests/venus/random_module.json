@@ -1,0 +1,29 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 4,
+          "value": "expansion:items/modules/random_mk2"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 2,
+          "value": "expansion:items/modules/heat_resist/mk2/random"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/modules/heat_resist/mk3/random"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "value": "expansion:items/modules/slot"
+        }
+      ]
+    }
+  ]
+}

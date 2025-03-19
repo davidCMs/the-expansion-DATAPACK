@@ -3,8 +3,8 @@ execute store result score @s exp.yaw run data get entity @s Rotation[0]
 
 # highlight markers in the view
 scoreboard players operation #temp exp.yaw -= @s exp.yaw
-execute if score #temp exp.yaw matches -30..30 unless entity @s[tag=exp.highlighted_marker] run function expansion:vehicles/spaceship/markers/show_marker
-execute unless score #temp exp.yaw matches -30..30 if entity @s[tag=exp.highlighted_marker] run function expansion:vehicles/spaceship/markers/hide_marker
+execute if score #temp exp.yaw matches -40..40 unless entity @s[tag=exp.highlighted_marker] run function expansion:vehicles/spaceship/markers/show_marker
+execute unless score #temp exp.yaw matches -40..40 if entity @s[tag=exp.highlighted_marker] run function expansion:vehicles/spaceship/markers/hide_marker
 
 # rotate the markers towards the planet
 execute if entity @s[tag=exp.earth_marker] facing 0 128 0 run return run rotate @s ~ ~

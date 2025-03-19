@@ -10,8 +10,11 @@ execute on passengers if entity @s[type=camel] run function expansion:vehicles/l
 # root entity
 tag @s add exp.return_capsule
 tag @s remove exp.lunar_module
+tag @s add exp.landing_earth
 attribute @s scale base set 0
 effect clear @s levitation
+effect clear @s slow_falling
+attribute @s safe_fall_distance base set 10000
 scoreboard players reset @s exp.timer_2
 
 # move the passenger here

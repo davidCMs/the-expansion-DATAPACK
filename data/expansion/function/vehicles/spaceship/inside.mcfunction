@@ -2,7 +2,7 @@
 execute if score @s exp.fuel_level matches 1.. run function expansion:vehicles/spaceship/propulsion/propulsion
 
 # actionbar
-execute if predicate expansion:periodic/10 run function expansion:vehicles/spaceship/actionbar
+execute if predicate expansion:periodic/2 run function expansion:vehicles/spaceship/actionbar
 
 # make the spaceship float in space when speed is 0 (or when fuel runs out)
 execute if score @s exp.speed matches ..10 run function expansion:vehicles/spaceship/propulsion/no_speed

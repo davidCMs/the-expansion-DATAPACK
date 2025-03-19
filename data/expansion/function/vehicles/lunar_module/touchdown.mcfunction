@@ -1,1 +1,1 @@
-execute on passengers on passengers run tag @s remove exp.landing_moon
+tag @s remove exp.landing_moon
