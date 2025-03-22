@@ -39,7 +39,11 @@
               "minecraft:jigsaw"
             ],
             "predicates": {
-              "minecraft:custom_data": "{warming_module:1b}"
+              "minecraft:custom_data":{
+                "exp_item":{
+                  "name":"cold_resist_module"
+                }
+              }
             }
           }
         ]
