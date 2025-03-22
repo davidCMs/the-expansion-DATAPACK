@@ -48,6 +48,9 @@
                 },
                 {
                   "translate": "exp_vehicles_spaceship_tip3"
+                },
+                {
+                  "translate": "exp_vehicles_spaceship_tip4"
                 }
               ]
             }

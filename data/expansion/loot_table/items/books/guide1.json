@@ -82,7 +82,7 @@
                       "translate":"exp_guide1_contents_toolrecipes","clickEvent":{"action":"change_page","value":"10"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
-                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
+                      "translate":"exp_guide1_contents_armorrecipes","clickEvent":{"action":"change_page","value":"11"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
                     },
                     {
                       "translate":"exp_guide1_contents_vehiclerecipes","clickEvent":{"action":"change_page","value":"12"},"hoverEvent":{"action":"show_text","contents":[{"translate":"exp_guide1_clicktogo"}]}
@@ -1163,7 +1163,7 @@
                             "action":"show_text",
                             "contents":[
                               {"translate":"exp_modules_coldresist_name"},{"translate":"exp_modules_mk1"},
-                              {"translate":"exp_modules_coldresist_guidelore"},
+                              {"translate":"exp_modules_coldresistmk1_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff83"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
@@ -1184,7 +1184,7 @@
                             "action":"show_text",
                             "contents":[
                               {"translate":"exp_modules_heatresist_name"},{"translate":"exp_modules_mk1"},
-                              {"translate":"exp_modules_heatresist_guidelore"},
+                              {"translate":"exp_modules_heatresistmk1_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\uff82"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
@@ -1205,7 +1205,7 @@
                             "action":"show_text",
                             "contents":[
                               {"translate":"exp_modules_durability_name"},{"translate":"exp_modules_mk1"},
-                              {"translate":"exp_modules_durability_guidelore"},
+                              {"translate":"exp_modules_durabilitymk1_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb05"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
@@ -1271,7 +1271,7 @@
                             "action":"show_text",
                             "contents":[
                               {"translate":"exp_modules_coldresist_name"},{"translate":"exp_modules_mk2"},
-                              {"translate":"exp_modules_coldresist_guidelore"},
+                              {"translate":"exp_modules_coldresistmk2_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa31"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
@@ -1292,7 +1292,7 @@
                             "action":"show_text",
                             "contents":[
                               {"translate":"exp_modules_heatresist_name"},{"translate":"exp_modules_mk2"},
-                              {"translate":"exp_modules_heatresist_guidelore"},
+                              {"translate":"exp_modules_heatresistmk2_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufa32"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
@@ -1313,7 +1313,7 @@
                             "action":"show_text",
                             "contents":[
                               {"translate":"exp_modules_durability_name"},{"translate":"exp_modules_mk2"},
-                              {"translate":"exp_modules_durability_guidelore"},
+                              {"translate":"exp_modules_durabilitymk2_guidelore"},
                               {"translate":"exp_guide_item_hover","color":"white","font":"expansion:default","with":[{"text":"\ufb06"}]},
                               {"translate":"exp_guide_craftedin"},
                               {"translate":"exp_guide_item_display","color":"white","font":"expansion:default","with":[{"text":"\uff21\n"}]},
