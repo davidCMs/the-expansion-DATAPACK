@@ -2,7 +2,7 @@ data merge entity @s {CustomNameVisible:0b,teleport_duration:20,brightness:{sky:
 
 # prepare text displays
 execute on passengers if entity @s[tag=exp.planetarium_text_display] run function expansion:blocks/planetarium/prepare/planet_names
-execute on passengers if entity @s[tag=exp.planetarium_infoboard] run function expansion:blocks/planetarium/prepare/infoboard
+#execute on passengers if entity @s[tag=exp.planetarium_infoboard] run function expansion:blocks/planetarium/prepare/infoboard
 
 tag @s add exp.planetarium_part
 execute on passengers run tag @s add exp.planetarium_part
