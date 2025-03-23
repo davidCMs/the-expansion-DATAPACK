@@ -14,14 +14,14 @@ execute unless entity @s[tag=exp.planetarium_freemove] run function expansion:bl
 execute unless entity @s[tag=exp.planetarium_freemove] positioned as @s run function expansion:blocks/planetarium/spin/set_display_offset
 
 # rotation
-execute rotated as @s[tag=exp.root_display] run rotate @s ~-0.6 ~
-execute rotated as @s[tag=exp.mini_earth,tag=!exp.root_display] run rotate @s ~-5 ~
-execute rotated as @s[tag=exp.mini_moon,tag=!exp.root_display] run rotate @s ~-0.67 ~
-execute rotated as @s[tag=exp.mini_mars,tag=!exp.root_display] run rotate @s ~-8.1 ~
-execute rotated as @s[tag=exp.mini_venus,tag=!exp.root_display] run rotate @s ~0.2 ~
-execute rotated as @s[tag=exp.mini_jupiter,tag=!exp.root_display] run rotate @s ~-12.2 ~
-execute rotated as @s[tag=exp.mini_europa,tag=!exp.root_display] run rotate @s ~1.14 ~
-execute if entity @s[tag=exp.planetarium_freemove,tag=!exp.root_display] run function expansion:blocks/planetarium/spin/comets
+execute rotated as @s[tag=exp.root_display] run rotate @s ~-12 ~
+execute rotated as @s[tag=exp.mini_earth,tag=!exp.root_display] run rotate @s ~-100 ~
+execute rotated as @s[tag=exp.mini_moon,tag=!exp.root_display] run rotate @s ~-13.4 ~
+execute rotated as @s[tag=exp.mini_mars,tag=!exp.root_display] run rotate @s ~-162 ~
+execute rotated as @s[tag=exp.mini_venus,tag=!exp.root_display] run rotate @s ~4 ~
+execute rotated as @s[tag=exp.mini_jupiter,tag=!exp.root_display] run rotate @s ~-244 ~
+execute rotated as @s[tag=exp.mini_europa,tag=!exp.root_display] run rotate @s ~22.8 ~
+#execute if entity @s[tag=exp.planetarium_freemove,tag=!exp.root_display] run function expansion:blocks/planetarium/spin/comets
 
 # reset the node to its previous state
 execute if entity @s[tag=exp.disabled_node,tag=!exp.root_display] run function expansion:blocks/planetarium/enable_node
